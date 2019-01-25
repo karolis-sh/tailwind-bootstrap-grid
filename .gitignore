@@ -1,0 +1,7 @@
+# npm files
+node_modules
+*.log*
+
+# other
+.vscode
+*.*~
