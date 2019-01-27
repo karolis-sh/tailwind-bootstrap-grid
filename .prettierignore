@@ -1,9 +1,14 @@
 *.*
 !*.js
 !*.json
+!*.css
 !*.md
 
 # npm files
 node_modules
 package.json
 package-lock.json
+
+# Build output
+/build
+/sample/output.css

@@ -1,0 +1,28 @@
+# tailwind-bootstrap-grid
+
+Boostrap v4 flexbox grid system as a tailwindcss plugin.
+
+## Installation
+
+```
+npm i -D tailwind-bootstrap-grid
+```
+
+In `tailwind.js` file:
+
+```
+module.exports = {
+  plugins: [require('tailwind-bootstrap-grid')()],
+};
+```
+
+And don't forget to include `components` and `utilities` in your tailwind base
+css file:
+
+```css
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+```
+
+Check the [repository](https://github.com/buz-zard/tailwind-bootstrap-grid) for details.

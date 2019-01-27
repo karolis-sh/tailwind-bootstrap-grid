@@ -1,2 +1,6 @@
 # npm files
 node_modules
+
+# Build output
+/build
+/sample/output.css
