@@ -2,6 +2,10 @@
 node_modules
 *.log*
 
+# Build output
+/build
+/sample/output.css
+
 # other
 .vscode
 *.*~
