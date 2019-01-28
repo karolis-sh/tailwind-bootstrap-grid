@@ -1,9 +1,11 @@
 # tailwind-bootstrap-grid
 
+[![npm version][version-badge]][version]
+[![Build Status][build-badge]][build]
 [![License: MIT][license-badge]][license]
 [![code style: prettier][code-style-badge]][code-style]
 
-Boostrap v4 flexbox grid system as a tailwindcss plugin.
+Bootstrap v4 flexbox grid system as a tailwindcss plugin.
 
 ## Installation
 
@@ -67,6 +69,10 @@ module.exports = {
 
 MIT
 
+[version-badge]: https://badge.fury.io/js/tailwind-bootstrap-grid.svg
+[version]: https://www.npmjs.com/package/tailwind-bootstrap-grid
+[build-badge]: https://travis-ci.org/buz-zard/tailwind-bootstrap-grid.svg?branch=master
+[build]: https://travis-ci.org/buz-zard/tailwind-bootstrap-grid
 [license-badge]: https://img.shields.io/badge/License-MIT-yellow.svg
 [license]: https://opensource.org/licenses/MIT
 [code-style-badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg
