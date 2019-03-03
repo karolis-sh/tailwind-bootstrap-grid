@@ -51,7 +51,7 @@ html {
 
 .react-live__preview {
   border: 0.2rem solid #212529;
-  padding: 15px 30px;
+  padding: 15px;
 }
 
 .react-live__editor {

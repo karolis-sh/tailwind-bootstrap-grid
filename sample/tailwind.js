@@ -10,6 +10,11 @@ module.exports = {
   plugins: [
     require('../index')({
       gridColumns: 3,
+      containerMaxWidths: {
+        mobile: '20em',
+        tablet: '40em',
+        desktop: '60em',
+      },
     }),
   ],
 
@@ -67,7 +72,7 @@ module.exports = {
   },
 
   options: {
-    // prefix: '✅-',
+    prefix: '✅-',
     separator: '_🚧_',
   },
 };
