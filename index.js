@@ -7,6 +7,7 @@ const reduceCSSCalc = require('reduce-css-calc');
  * @param {string} [gridGutterWidth="30px"] - Spacing value
  * @param {boolean} [generateContainer=true] - Whether the plugin should generate .container class
  * @param {boolean} [generateNoGutters=true] - Whether the plugin should generate .no-gutter class
+ * @param {Object} [containerMaxWidths={ sm: '540px', md: '720px', lg: '960px', xl: '1140px' }] - the `max-width` container value for each breakpoint
  */
 /**
  * Setup tailwind-bootstrap-grid plugin
@@ -17,7 +18,8 @@ module.exports = ({
   gridGutterWidth = '30px',
   generateContainer = true,
   generateNoGutters = true,
-} = {}) => (options, ...rest) => {
+  containerMaxWidths = { sm: '540px', md: '720px', lg: '960px', xl: '1140px' },
+} = {}) => options => {
   const { addUtilities, addComponents, config, e } = options;
   const screens = config('screens');
   const { separator: cssSeparator } = config('options');
@@ -33,11 +35,26 @@ module.exports = ({
     // Container
     // =========================================================================
     if (generateContainer) {
-      // eslint-disable-next-line global-require
-      require('tailwindcss/plugins/container')({
-        center: true,
-        ...spacingCSS({ padding: spacing }),
-      })(options, ...rest);
+      addComponents([
+        {
+          '.container': {
+            width: '100%',
+            marginRight: 'auto',
+            marginLeft: 'auto',
+            ...spacingCSS({
+              paddingRight: spacing,
+              paddingLeft: spacing,
+            }),
+          },
+        },
+        ...Object.entries(screens).map(([name, value]) => ({
+          [`@screen ${name}`]: {
+            '.container': {
+              maxWidth: containerMaxWidths[name] || value,
+            },
+          },
+        })),
+      ]);
 
       addUtilities(
         [

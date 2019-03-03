@@ -41,6 +41,9 @@ This will generate Boostrap v4 [flexbox grid](https://getbootstrap.com/docs/4.0/
 - `generateContainer` (default - `true`) - whether to generate `.container` and
   `.container-fluid` classes
 - `generateNoGutters` (default - `true`) - whether to generate `.no-gutter` class
+- `containerMaxWidths` (default -
+  `{ sm: '540px', md: '720px', lg: '960px', xl: '1140px' }`) - the `max-width`
+  container value for each breakpoint
 
 For example to generate 10 column grid with no gutter and skip the container:
 
@@ -61,7 +64,7 @@ module.exports = {
 
 - ✅ custom screens
 - ✅ custom separator
-- ⛔️ custom prefix
+- 🚧 custom prefix - `no-gutters` class doesn't fully support it
 
 ## Related
 
