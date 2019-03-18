@@ -21,8 +21,8 @@ module.exports = ({
   containerMaxWidths = { sm: '540px', md: '720px', lg: '960px', xl: '1140px' },
 } = {}) => options => {
   const { addUtilities, addComponents, config, e } = options;
-  const screens = config('screens');
-  const { separator: cssSeparator } = config('options');
+  const screens = config('theme.screens');
+  const { separator: cssSeparator } = config;
 
   const screenPrefixes = Object.keys(screens).map(item => e(`${item}${cssSeparator}`));
   const spacing = gridGutterWidth ? reduceCSSCalc(`calc(${gridGutterWidth} / 2)`) : null;
