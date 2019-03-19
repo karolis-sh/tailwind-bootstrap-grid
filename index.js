@@ -23,8 +23,8 @@ module.exports = ({
   rtl = false,
 } = {}) => options => {
   const { addUtilities, addComponents, config, e } = options;
-  const screens = config('screens');
-  const { separator: cssSeparator } = config('options');
+  const screens = config('theme.screens');
+  const cssSeparator = config('separator');
 
   const screenPrefixes = Object.keys(screens).map(item => e(`${item}${cssSeparator}`));
   const spacing = gridGutterWidth ? reduceCSSCalc(`calc(${gridGutterWidth} / 2)`) : null;

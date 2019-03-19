@@ -3,9 +3,11 @@ const config = require('./tailwind.base');
 
 module.exports = {
   ...config,
-  screens: {
-    mobile: '1em',
-    desktop: '2em',
+  themes: {
+    screens: {
+      mobile: '1em',
+      desktop: '2em',
+    },
   },
   plugins: [
     require('../index')({
@@ -13,8 +15,6 @@ module.exports = {
       rtl: true,
     }),
   ],
-  options: {
-    prefix: '✅-',
-    separator: '_🚧_',
-  },
+  prefix: '✅-',
+  separator: '_🚧_',
 };

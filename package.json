@@ -97,17 +97,17 @@
     "react-hot-loader": "^4.8.4",
     "react-live": "^1.12.0",
     "rimraf": "^2.6.3",
-    "semantic-release": "^15.13.12",
+    "semantic-release": "^16.0.0-beta.19",
     "serve": "^11.0.0",
     "sort-package-json": "^1.22.1",
     "stylefmt": "^6.0.3",
-    "tailwindcss": "^0.7.4",
+    "tailwindcss": "^1.0.1",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.3.1"
   },
   "peerDependencies": {
-    "tailwindcss": "^0"
+    "tailwindcss": "^1 || ^1.0.0-beta"
   },
   "greenkeeper": {
     "ignore": [

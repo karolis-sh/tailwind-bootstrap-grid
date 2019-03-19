@@ -1,10 +1,12 @@
 /* eslint-disable global-require */
 
 module.exports = {
-  screens: {
-    mobile: '60em',
-    tablet: '80em',
-    desktop: '120em',
+  theme: {
+    screens: {
+      mobile: '60em',
+      tablet: '80em',
+      desktop: '120em',
+    },
   },
 
   plugins: [
@@ -18,7 +20,8 @@ module.exports = {
     }),
   ],
 
-  modules: {
+  corePlugins: {
+    container: false,
     appearance: false,
     backgroundAttachment: false,
     backgroundColors: false,
@@ -71,8 +74,6 @@ module.exports = {
     zIndex: false,
   },
 
-  options: {
-    prefix: '✅-',
-    separator: '_🚧_',
-  },
+  prefix: '✅-',
+  separator: '_🚧_',
 };

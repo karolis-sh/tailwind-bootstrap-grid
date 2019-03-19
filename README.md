@@ -35,8 +35,10 @@ css file:
 
 This will generate Boostrap v4 [flexbox grid](https://getbootstrap.com/docs/4.0/layout/grid/).
 
-\* **NOTE**: This plugin will not work with [tailwindcss/plugins/container](https://tailwindcss.com/docs/container/)
-as both plugins expose a `.container` class
+\* **NOTE**: When using the `.container` class from this plugin you will need to
+[disable](https://tailwindcss.com/docs/container/#disabling) the core
+[container container plugin](https://tailwindcss.com/docs/container/) as both plugins
+expose a `.container` class.
 
 ## Features & Tailwind options support
 
@@ -76,8 +78,8 @@ module.exports = {
 ## FAQ
 
 1. _**Why my `.container` doesn't have padding?**_ This plugin will not work properly
-   with [tailwindcss/plugins/container](https://tailwindcss.com/docs/container/)
-   as both plugins expose a `.container` class.
+   with [core container plugin](https://tailwindcss.com/docs/container/) as both
+   plugins expose a `.container` class.
 1. _**How to use rtl css?**_ Set the `ltr` or `rtl` [dir](https://www.w3schools.com/tags/att_global_dir.asp)
    attribute on your container (usually the root `html`).
 
