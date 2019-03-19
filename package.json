@@ -99,6 +99,9 @@
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
   },
+  "peerDependencies": {
+    "tailwindcss": "^0"
+  },
   "greenkeeper": {
     "ignore": [
       "@mdx-js/loader",
