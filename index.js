@@ -8,6 +8,7 @@ const reduceCSSCalc = require('reduce-css-calc');
  * @param {boolean} [generateContainer=true] - Whether the plugin should generate .container class
  * @param {boolean} [generateNoGutters=true] - Whether the plugin should generate .no-gutter class
  * @param {Object} [containerMaxWidths={ sm: '540px', md: '720px', lg: '960px', xl: '1140px' }] - the `max-width` container value for each breakpoint
+ * @param {boolean} [rtl=false] - Whether to enable rtl support
  */
 /**
  * Setup tailwind-bootstrap-grid plugin
@@ -19,6 +20,7 @@ module.exports = ({
   generateContainer = true,
   generateNoGutters = true,
   containerMaxWidths = { sm: '540px', md: '720px', lg: '960px', xl: '1140px' },
+  rtl = false,
 } = {}) => options => {
   const { addUtilities, addComponents, config, e } = options;
   const screens = config('screens');
@@ -172,19 +174,11 @@ module.exports = ({
     addUtilities(
       [
         {
-          '.order-first': {
-            order: '-1',
-          },
-        },
-        {
-          '.order-last': {
-            order: gridColumns + 1,
-          },
+          '.order-first': { order: '-1' },
+          '.order-last': { order: gridColumns + 1 },
         },
         ...[0, ...columns].map(size => ({
-          [`.order-${size}`]: {
-            order: `${size}`,
-          },
+          [`.order-${size}`]: { order: `${size}` },
         })),
       ],
       ['responsive']
@@ -197,11 +191,17 @@ module.exports = ({
     // =========================================================================
     addUtilities(
       [
-        ...[0, ...columns.slice(0, -1)].map(size => ({
-          [`.offset-${size}`]: {
-            marginLeft: `${(100 / gridColumns) * size}%`,
-          },
-        })),
+        ...[0, ...columns.slice(0, -1)].map(size => {
+          const margin = `${(100 / gridColumns) * size}%`;
+          return rtl
+            ? {
+                [`[dir="ltr"] .offset-${size}`]: { marginLeft: margin },
+                [`[dir="rtl"] .offset-${size}`]: { marginRight: margin },
+              }
+            : {
+                [`.offset-${size}`]: { marginLeft: margin },
+              };
+        }),
       ],
       ['responsive']
     );

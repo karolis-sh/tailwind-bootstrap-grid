@@ -8,6 +8,7 @@
     "grid",
     "grid system",
     "layout",
+    "rtl",
     "tailwindcss"
   ],
   "homepage": "https://github.com/buz-zard/tailwind-bootstrap-grid#readme",
@@ -91,6 +92,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.0",
     "react-hot-loader": "^4.8.4",
     "react-live": "^1.12.0",
     "rimraf": "^2.6.3",
