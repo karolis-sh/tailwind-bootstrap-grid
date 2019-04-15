@@ -35,6 +35,9 @@ css file:
 
 This will generate Boostrap v4 [flexbox grid](https://getbootstrap.com/docs/4.0/layout/grid/).
 
+\* **NOTE**: This plugin will not work with [tailwindcss/plugins/container](https://tailwindcss.com/docs/container/)
+as both plugins expose a `.container` class
+
 ## Options
 
 - `gridColumns` (default - `12`) - grid size
