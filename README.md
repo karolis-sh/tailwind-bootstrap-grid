@@ -38,6 +38,13 @@ This will generate Boostrap v4 [flexbox grid](https://getbootstrap.com/docs/4.0/
 \* **NOTE**: This plugin will not work with [tailwindcss/plugins/container](https://tailwindcss.com/docs/container/)
 as both plugins expose a `.container` class
 
+## Features & Tailwind options support
+
+- ✅ custom screens
+- ✅ custom separator
+- 🚧 custom prefix (`no-gutters` class doesn't fully support it)
+- ✅ rtl
+
 ## Options
 
 - `gridColumns` (default - `12`) - grid size
@@ -48,6 +55,7 @@ as both plugins expose a `.container` class
 - `containerMaxWidths` (default -
   `{ sm: '540px', md: '720px', lg: '960px', xl: '1140px' }`) - the `max-width`
   container value for each breakpoint
+- `rtl` (default - `false`) - rtl support (inverses the offset classes)
 
 For example to generate 10 column grid with no gutter and skip the container:
 
@@ -63,12 +71,6 @@ module.exports = {
   ],
 };
 ```
-
-## Tailwind configuration support
-
-- ✅ custom screens
-- ✅ custom separator
-- 🚧 custom prefix - `no-gutters` class doesn't fully support it
 
 ## Related
 

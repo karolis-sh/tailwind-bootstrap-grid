@@ -1,15 +1,17 @@
 /* eslint-disable global-require */
 
 module.exports = {
-  // https://getbootstrap.com/docs/4.1/layout/grid/#grid-options
   screens: {
-    sm: '576px',
-    md: '768px',
-    lg: '992px',
-    xl: '1200px',
+    mobile: '1em',
+    desktop: '2em',
   },
 
-  plugins: [require('../index')({ rtl: true })],
+  plugins: [
+    require('../index')({
+      gridColumns: 3,
+      rtl: true,
+    }),
+  ],
 
   modules: {
     appearance: false,
@@ -62,5 +64,10 @@ module.exports = {
     whitespace: false,
     width: false,
     zIndex: false,
+  },
+
+  options: {
+    prefix: '✅-',
+    separator: '_🚧_',
   },
 };

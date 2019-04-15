@@ -25,4 +25,22 @@ describe('tailwind-bootstrap-grid', () => {
     expect(result.warnings().length).toBe(0);
     expect(result.css).toMatchSnapshot();
   });
+
+  it('should handle rtl', async () => {
+    const result = await postcss()
+      .use(tailwindcss(path.resolve(__dirname, 'tailwind.rtl.js')))
+      .process(CSS_INPUT, { from: undefined });
+
+    expect(result.warnings().length).toBe(0);
+    expect(result.css).toMatchSnapshot();
+  });
+
+  it('should handle rtl option and custom prefix, separator', async () => {
+    const result = await postcss()
+      .use(tailwindcss(path.resolve(__dirname, 'tailwind.rtl-prefix-separator.js')))
+      .process(CSS_INPUT, { from: undefined });
+
+    expect(result.warnings().length).toBe(0);
+    expect(result.css).toMatchSnapshot();
+  });
 });

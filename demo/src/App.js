@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { MDXProvider } from '@mdx-js/tag';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import GithubCorner from './GithubCorner';
+import Direction from './Direction';
 import About from './About.mdx';
 import Demo from './Demo.mdx';
 
@@ -12,8 +13,8 @@ function Editor(props) {
     return (
       <LiveProvider code={children} className="react-live">
         <LivePreview className="react-live__preview" />
-        <LiveEditor className="react-live__editor" />
-        <LiveError className="react-live__error" />
+        <LiveEditor className="react-live__editor" dir="ltr" />
+        <LiveError className="react-live__error" dir="ltr" />
       </LiveProvider>
     );
   }
@@ -32,6 +33,7 @@ export default function App() {
       <About />
       <hr />
       <Demo />
+      <Direction />
     </MDXProvider>
   );
 }
