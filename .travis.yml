@@ -10,7 +10,7 @@ node_js:
   - '8'
 script:
   - npm run build
-  - npm run lint
+  - npm run qa
 
 jobs:
   include:
