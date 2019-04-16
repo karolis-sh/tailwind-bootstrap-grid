@@ -34,6 +34,7 @@
     "qa": "run-p test lint",
     "semantic-release": "semantic-release",
     "start": "cross-env NODE_ENV=development webpack-dev-server --hot --config demo/webpack.config.js",
+    "tdd": "npm test -- --watch",
     "test": "jest tests",
     "try-demo": "run-s clean build:demo && serve build",
     "upgrade-interactive": "npx npm-check --update"
