@@ -55,7 +55,8 @@ as both plugins expose a `.container` class
 - `containerMaxWidths` (default -
   `{ sm: '540px', md: '720px', lg: '960px', xl: '1140px' }`) - the `max-width`
   container value for each breakpoint
-- `rtl` (default - `false`) - rtl support (inverses the offset classes)
+- `rtl` (default - `false`) - rtl support (`.offset-x` classes will start
+  responding to `[dir=ltr]` / `[dir=rtl]`)
 
 For example to generate 10 column grid with no gutter and skip the container:
 
@@ -71,6 +72,14 @@ module.exports = {
   ],
 };
 ```
+
+## FAQ
+
+1. _**Why my `.container` doesn't have padding?**_ This plugin will not work properly
+   with [tailwindcss/plugins/container](https://tailwindcss.com/docs/container/)
+   as both plugins expose a `.container` class.
+1. _**How to use rtl css?**_ Set the `ltr` or `rtl` [dir](https://www.w3schools.com/tags/att_global_dir.asp)
+   attribute on your container (usually the root `html`).
 
 ## Related
 
