@@ -34,6 +34,7 @@
     "qa": "run-p test lint",
     "semantic-release": "semantic-release",
     "start": "cross-env NODE_ENV=development webpack-dev-server --hot --config demo/webpack.config.js",
+    "tdd": "npm test -- --watch",
     "test": "jest tests",
     "try-demo": "run-s clean build:demo && serve build",
     "upgrade-interactive": "npx npm-check --update"
@@ -96,7 +97,7 @@
     "react-hot-loader": "^4.8.4",
     "react-live": "^1.12.0",
     "rimraf": "^2.6.3",
-    "semantic-release": "^15.13.3",
+    "semantic-release": "^15.13.12",
     "serve": "^11.0.0",
     "sort-package-json": "^1.22.1",
     "stylefmt": "^6.0.3",
