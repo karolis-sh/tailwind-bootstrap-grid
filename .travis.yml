@@ -11,9 +11,3 @@ node_js:
 script:
   - npm run build
   - npm run qa
-
-jobs:
-  include:
-    - stage: release
-      script:
-        - npm run semantic-release
