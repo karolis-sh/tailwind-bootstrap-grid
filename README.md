@@ -44,8 +44,8 @@ expose a `.container` class.
 
 - ✅ custom screens
 - ✅ custom separator
-- 🚧 custom prefix (`no-gutters` class doesn't fully support it)
-- ✅ rtl
+- ✅ custom prefix
+- ✅ rtl support
 
 ## Options
 

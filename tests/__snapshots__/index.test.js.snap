@@ -33,13 +33,13 @@ exports[`tailwind-bootstrap-grid should handle custom prefix and separator 1`] =
 }
 
 .PF-row.PF-no-gutters > .PF-col,
-.PF-row.PF-no-gutters > .PF-mobile_SP_col,
-.PF-row.PF-no-gutters > .PF-tablet_SP_col,
-.PF-row.PF-no-gutters > .PF-desktop_SP_col,
-.PF-row.PF-no-gutters > [class*=\\"col-\\"],
-.PF-row.PF-no-gutters > [class*=\\"mobile_SP_col-\\"],
-.PF-row.PF-no-gutters > [class*=\\"tablet_SP_col-\\"],
-.PF-row.PF-no-gutters > [class*=\\"desktop_SP_col-\\"] {
+.PF-row.PF-no-gutters > .mobile_SP_PF-col,
+.PF-row.PF-no-gutters > .tablet_SP_PF-col,
+.PF-row.PF-no-gutters > .desktop_SP_PF-col,
+.PF-row.PF-no-gutters > [class*=\\"PF-col-\\"],
+.PF-row.PF-no-gutters > [class*=\\"mobile_SP_PF-col-\\"],
+.PF-row.PF-no-gutters > [class*=\\"tablet_SP_PF-col-\\"],
+.PF-row.PF-no-gutters > [class*=\\"desktop_SP_PF-col-\\"] {
   padding-right: 0;
   padding-left: 0;
 }
@@ -60,25 +60,25 @@ exports[`tailwind-bootstrap-grid should handle custom prefix and separator 1`] =
 }
 
 .PF-col,
-.PF-mobile_SP_col,
-.PF-tablet_SP_col,
-.PF-desktop_SP_col,
+.mobile_SP_PF-col,
+.tablet_SP_PF-col,
+.desktop_SP_PF-col,
 .PF-col-auto,
-.PF-mobile_SP_col-auto,
-.PF-tablet_SP_col-auto,
-.PF-desktop_SP_col-auto,
+.mobile_SP_PF-col-auto,
+.tablet_SP_PF-col-auto,
+.desktop_SP_PF-col-auto,
 .PF-col-1,
-.PF-mobile_SP_col-1,
-.PF-tablet_SP_col-1,
-.PF-desktop_SP_col-1,
+.mobile_SP_PF-col-1,
+.tablet_SP_PF-col-1,
+.desktop_SP_PF-col-1,
 .PF-col-2,
-.PF-mobile_SP_col-2,
-.PF-tablet_SP_col-2,
-.PF-desktop_SP_col-2,
+.mobile_SP_PF-col-2,
+.tablet_SP_PF-col-2,
+.desktop_SP_PF-col-2,
 .PF-col-3,
-.PF-mobile_SP_col-3,
-.PF-tablet_SP_col-3,
-.PF-desktop_SP_col-3 {
+.mobile_SP_PF-col-3,
+.tablet_SP_PF-col-3,
+.desktop_SP_PF-col-3 {
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -1600,15 +1600,15 @@ exports[`tailwind-bootstrap-grid should handle rtl option and custom prefix, sep
 }
 
 .PF-row.PF-no-gutters > .PF-col,
-.PF-row.PF-no-gutters > .PF-sm_SP_col,
-.PF-row.PF-no-gutters > .PF-md_SP_col,
-.PF-row.PF-no-gutters > .PF-lg_SP_col,
-.PF-row.PF-no-gutters > .PF-xl_SP_col,
-.PF-row.PF-no-gutters > [class*=\\"col-\\"],
-.PF-row.PF-no-gutters > [class*=\\"sm_SP_col-\\"],
-.PF-row.PF-no-gutters > [class*=\\"md_SP_col-\\"],
-.PF-row.PF-no-gutters > [class*=\\"lg_SP_col-\\"],
-.PF-row.PF-no-gutters > [class*=\\"xl_SP_col-\\"] {
+.PF-row.PF-no-gutters > .sm_SP_PF-col,
+.PF-row.PF-no-gutters > .md_SP_PF-col,
+.PF-row.PF-no-gutters > .lg_SP_PF-col,
+.PF-row.PF-no-gutters > .xl_SP_PF-col,
+.PF-row.PF-no-gutters > [class*=\\"PF-col-\\"],
+.PF-row.PF-no-gutters > [class*=\\"sm_SP_PF-col-\\"],
+.PF-row.PF-no-gutters > [class*=\\"md_SP_PF-col-\\"],
+.PF-row.PF-no-gutters > [class*=\\"lg_SP_PF-col-\\"],
+.PF-row.PF-no-gutters > [class*=\\"xl_SP_PF-col-\\"] {
   padding-right: 0;
   padding-left: 0;
 }
@@ -1629,30 +1629,30 @@ exports[`tailwind-bootstrap-grid should handle rtl option and custom prefix, sep
 }
 
 .PF-col,
-.PF-sm_SP_col,
-.PF-md_SP_col,
-.PF-lg_SP_col,
-.PF-xl_SP_col,
+.sm_SP_PF-col,
+.md_SP_PF-col,
+.lg_SP_PF-col,
+.xl_SP_PF-col,
 .PF-col-auto,
-.PF-sm_SP_col-auto,
-.PF-md_SP_col-auto,
-.PF-lg_SP_col-auto,
-.PF-xl_SP_col-auto,
+.sm_SP_PF-col-auto,
+.md_SP_PF-col-auto,
+.lg_SP_PF-col-auto,
+.xl_SP_PF-col-auto,
 .PF-col-1,
-.PF-sm_SP_col-1,
-.PF-md_SP_col-1,
-.PF-lg_SP_col-1,
-.PF-xl_SP_col-1,
+.sm_SP_PF-col-1,
+.md_SP_PF-col-1,
+.lg_SP_PF-col-1,
+.xl_SP_PF-col-1,
 .PF-col-2,
-.PF-sm_SP_col-2,
-.PF-md_SP_col-2,
-.PF-lg_SP_col-2,
-.PF-xl_SP_col-2,
+.sm_SP_PF-col-2,
+.md_SP_PF-col-2,
+.lg_SP_PF-col-2,
+.xl_SP_PF-col-2,
 .PF-col-3,
-.PF-sm_SP_col-3,
-.PF-md_SP_col-3,
-.PF-lg_SP_col-3,
-.PF-xl_SP_col-3 {
+.sm_SP_PF-col-3,
+.md_SP_PF-col-3,
+.lg_SP_PF-col-3,
+.xl_SP_PF-col-3 {
   position: relative;
   width: 100%;
   padding-right: 15px;
