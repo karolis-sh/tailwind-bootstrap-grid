@@ -15,6 +15,6 @@ module.exports = {
       rtl: true,
     }),
   ],
-  prefix: '✅-',
-  separator: '_🚧_',
+  prefix: 'PF-',
+  separator: '_SP_',
 };

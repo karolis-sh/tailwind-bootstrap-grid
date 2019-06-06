@@ -20,6 +20,6 @@ module.exports = {
       },
     }),
   ],
-  prefix: '✅-',
-  separator: '_🚧_',
+  prefix: 'PF-',
+  separator: '_SP_',
 };

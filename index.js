@@ -22,9 +22,12 @@ module.exports = ({
   containerMaxWidths = { sm: '540px', md: '720px', lg: '960px', xl: '1140px' },
   rtl = false,
 } = {}) => options => {
-  const { addUtilities, addComponents, config, e } = options;
+  const { addUtilities, addComponents, config, prefix, e } = options;
   const screens = config('theme.screens');
   const cssSeparator = config('separator');
+  const cssPrefix = prefix('.x')
+    .replace(/^\./, '')
+    .replace(/x$/, '');
 
   const screenPrefixes = Object.keys(screens).map(item => e(`${item}${cssSeparator}`));
   const spacing = gridGutterWidth ? reduceCSSCalc(`calc(${gridGutterWidth} / 2)`) : null;
@@ -96,23 +99,26 @@ module.exports = ({
 
     if (spacing && generateNoGutters) {
       const allColSelector = `${[
-        '& > .col',
-        ...screenPrefixes.map(item => `\n& > .${item}col`),
-      ].join(',\n')},\n${[
-        '& > [class*="col-"]',
-        screenPrefixes.map(item => `\n& > [class*="${item}col-"]`),
-      ].join(',\n')}`;
+        `& > ${prefix('.col')}`,
+        ...screenPrefixes.map(item => `& > .${item}${cssPrefix}col`),
+      ].join(',\n')},${[
+        `& > [class*="${cssPrefix}col-"]`,
+        screenPrefixes.map(item => `& > [class*="${item}${cssPrefix}col-"]`),
+      ].join(',')}`;
 
-      addComponents({
-        '.row.no-gutters': {
-          marginRight: 0,
-          marginLeft: 0,
-          [allColSelector]: {
-            paddingRight: 0,
-            paddingLeft: 0,
+      addComponents(
+        {
+          [prefix('.row.no-gutters')]: {
+            marginRight: 0,
+            marginLeft: 0,
+            [allColSelector]: {
+              paddingRight: 0,
+              paddingLeft: 0,
+            },
           },
         },
-      });
+        { respectPrefix: false }
+      );
     }
   }
 
@@ -122,23 +128,26 @@ module.exports = ({
     // =========================================================================
     const allColumnClasses = _.flatten(
       ['col', 'col-auto', ...columns.map(size => `col-${size}`)].map(item => [
-        `.${item}`,
-        ...screenPrefixes.map(screenPrefix => `.${screenPrefix}${item}`),
+        `.${cssPrefix}${item}`,
+        ...screenPrefixes.map(screenPrefix => `.${screenPrefix}${cssPrefix}${item}`),
       ])
     );
 
-    addUtilities([
-      {
-        [allColumnClasses.join(',\n')]: {
-          position: 'relative',
-          width: '100%',
-          ...spacingCSS({
-            paddingRight: spacing,
-            paddingLeft: spacing,
-          }),
+    addUtilities(
+      [
+        {
+          [allColumnClasses.join(',\n')]: {
+            position: 'relative',
+            width: '100%',
+            ...spacingCSS({
+              paddingRight: spacing,
+              paddingLeft: spacing,
+            }),
+          },
         },
-      },
-    ]);
+      ],
+      { respectPrefix: false }
+    );
 
     addUtilities(
       [

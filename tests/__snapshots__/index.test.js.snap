@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`tailwind-bootstrap-grid should handle custom prefix and separator 1`] = `
-".\\\\2705-container {
+".PF-container {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -10,48 +10,41 @@ exports[`tailwind-bootstrap-grid should handle custom prefix and separator 1`] =
 }
 
 @media (min-width: 60em) {
-  .\\\\2705-container {
+  .PF-container {
     max-width: 20em;
   }
 }
 
 @media (min-width: 80em) {
-  .\\\\2705-container {
+  .PF-container {
     max-width: 40em;
   }
 }
 
 @media (min-width: 120em) {
-  .\\\\2705-container {
+  .PF-container {
     max-width: 60em;
   }
 }
 
-.\\\\2705-row.\\\\2705-no-gutters {
+.PF-row.PF-no-gutters {
   margin-right: 0;
   margin-left: 0;
 }
 
-.\\\\2705-row.\\\\2705-no-gutters > .\\\\2705-col,
-
-.\\\\2705-row.\\\\2705-no-gutters > .\\\\2705-mobile_\\\\1F6A7_col,
-
-.\\\\2705-row.\\\\2705-no-gutters > .\\\\2705-tablet_\\\\1F6A7_col,
-
-.\\\\2705-row.\\\\2705-no-gutters > .\\\\2705-desktop_\\\\1F6A7_col,
-
-.\\\\2705-row.\\\\2705-no-gutters > [class*=\\"col-\\"],
-
-.\\\\2705-row.\\\\2705-no-gutters > [class*=\\"mobile_\\\\1F6A7_col-\\"],
-
-.\\\\2705-row.\\\\2705-no-gutters > [class*=\\"tablet_\\\\1F6A7_col-\\"],
-
-.\\\\2705-row.\\\\2705-no-gutters > [class*=\\"desktop_\\\\1F6A7_col-\\"] {
+.PF-row.PF-no-gutters > .PF-col,
+.PF-row.PF-no-gutters > .mobile_SP_PF-col,
+.PF-row.PF-no-gutters > .tablet_SP_PF-col,
+.PF-row.PF-no-gutters > .desktop_SP_PF-col,
+.PF-row.PF-no-gutters > [class*=\\"PF-col-\\"],
+.PF-row.PF-no-gutters > [class*=\\"mobile_SP_PF-col-\\"],
+.PF-row.PF-no-gutters > [class*=\\"tablet_SP_PF-col-\\"],
+.PF-row.PF-no-gutters > [class*=\\"desktop_SP_PF-col-\\"] {
   padding-right: 0;
   padding-left: 0;
 }
 
-.\\\\2705-container-fluid {
+.PF-container-fluid {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -59,104 +52,104 @@ exports[`tailwind-bootstrap-grid should handle custom prefix and separator 1`] =
   margin-left: auto;
 }
 
-.\\\\2705-row {
+.PF-row {
   display: flex;
   flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
 }
 
-.\\\\2705-col,
-.\\\\2705-mobile_\\\\1F6A7_col,
-.\\\\2705-tablet_\\\\1F6A7_col,
-.\\\\2705-desktop_\\\\1F6A7_col,
-.\\\\2705-col-auto,
-.\\\\2705-mobile_\\\\1F6A7_col-auto,
-.\\\\2705-tablet_\\\\1F6A7_col-auto,
-.\\\\2705-desktop_\\\\1F6A7_col-auto,
-.\\\\2705-col-1,
-.\\\\2705-mobile_\\\\1F6A7_col-1,
-.\\\\2705-tablet_\\\\1F6A7_col-1,
-.\\\\2705-desktop_\\\\1F6A7_col-1,
-.\\\\2705-col-2,
-.\\\\2705-mobile_\\\\1F6A7_col-2,
-.\\\\2705-tablet_\\\\1F6A7_col-2,
-.\\\\2705-desktop_\\\\1F6A7_col-2,
-.\\\\2705-col-3,
-.\\\\2705-mobile_\\\\1F6A7_col-3,
-.\\\\2705-tablet_\\\\1F6A7_col-3,
-.\\\\2705-desktop_\\\\1F6A7_col-3 {
+.PF-col,
+.mobile_SP_PF-col,
+.tablet_SP_PF-col,
+.desktop_SP_PF-col,
+.PF-col-auto,
+.mobile_SP_PF-col-auto,
+.tablet_SP_PF-col-auto,
+.desktop_SP_PF-col-auto,
+.PF-col-1,
+.mobile_SP_PF-col-1,
+.tablet_SP_PF-col-1,
+.desktop_SP_PF-col-1,
+.PF-col-2,
+.mobile_SP_PF-col-2,
+.tablet_SP_PF-col-2,
+.desktop_SP_PF-col-2,
+.PF-col-3,
+.mobile_SP_PF-col-3,
+.tablet_SP_PF-col-3,
+.desktop_SP_PF-col-3 {
   position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
 }
 
-.\\\\2705-col {
+.PF-col {
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%;
 }
 
-.\\\\2705-col-auto {
+.PF-col-auto {
   flex: 0 0 auto;
   width: auto;
   max-width: 100%;
 }
 
-.\\\\2705-col-1 {
+.PF-col-1 {
   flex: 0 0 33.333333333333336%;
   max-width: 33.333333333333336%;
 }
 
-.\\\\2705-col-2 {
+.PF-col-2 {
   flex: 0 0 66.66666666666667%;
   max-width: 66.66666666666667%;
 }
 
-.\\\\2705-col-3 {
+.PF-col-3 {
   flex: 0 0 100%;
   max-width: 100%;
 }
 
-.\\\\2705-order-first {
+.PF-order-first {
   order: -1;
 }
 
-.\\\\2705-order-last {
+.PF-order-last {
   order: 4;
 }
 
-.\\\\2705-order-0 {
+.PF-order-0 {
   order: 0;
 }
 
-.\\\\2705-order-1 {
+.PF-order-1 {
   order: 1;
 }
 
-.\\\\2705-order-2 {
+.PF-order-2 {
   order: 2;
 }
 
-.\\\\2705-order-3 {
+.PF-order-3 {
   order: 3;
 }
 
-.\\\\2705-offset-0 {
+.PF-offset-0 {
   margin-left: 0%;
 }
 
-.\\\\2705-offset-1 {
+.PF-offset-1 {
   margin-left: 33.333333333333336%;
 }
 
-.\\\\2705-offset-2 {
+.PF-offset-2 {
   margin-left: 66.66666666666667%;
 }
 
 @media (min-width: 60em) {
-  .mobile_\\\\1F6A7_\\\\2705-container-fluid {
+  .mobile_SP_PF-container-fluid {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -164,72 +157,72 @@ exports[`tailwind-bootstrap-grid should handle custom prefix and separator 1`] =
     margin-left: auto;
   }
 
-  .mobile_\\\\1F6A7_\\\\2705-col {
+  .mobile_SP_PF-col {
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
   }
 
-  .mobile_\\\\1F6A7_\\\\2705-col-auto {
+  .mobile_SP_PF-col-auto {
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
   }
 
-  .mobile_\\\\1F6A7_\\\\2705-col-1 {
+  .mobile_SP_PF-col-1 {
     flex: 0 0 33.333333333333336%;
     max-width: 33.333333333333336%;
   }
 
-  .mobile_\\\\1F6A7_\\\\2705-col-2 {
+  .mobile_SP_PF-col-2 {
     flex: 0 0 66.66666666666667%;
     max-width: 66.66666666666667%;
   }
 
-  .mobile_\\\\1F6A7_\\\\2705-col-3 {
+  .mobile_SP_PF-col-3 {
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .mobile_\\\\1F6A7_\\\\2705-order-first {
+  .mobile_SP_PF-order-first {
     order: -1;
   }
 
-  .mobile_\\\\1F6A7_\\\\2705-order-last {
+  .mobile_SP_PF-order-last {
     order: 4;
   }
 
-  .mobile_\\\\1F6A7_\\\\2705-order-0 {
+  .mobile_SP_PF-order-0 {
     order: 0;
   }
 
-  .mobile_\\\\1F6A7_\\\\2705-order-1 {
+  .mobile_SP_PF-order-1 {
     order: 1;
   }
 
-  .mobile_\\\\1F6A7_\\\\2705-order-2 {
+  .mobile_SP_PF-order-2 {
     order: 2;
   }
 
-  .mobile_\\\\1F6A7_\\\\2705-order-3 {
+  .mobile_SP_PF-order-3 {
     order: 3;
   }
 
-  .mobile_\\\\1F6A7_\\\\2705-offset-0 {
+  .mobile_SP_PF-offset-0 {
     margin-left: 0%;
   }
 
-  .mobile_\\\\1F6A7_\\\\2705-offset-1 {
+  .mobile_SP_PF-offset-1 {
     margin-left: 33.333333333333336%;
   }
 
-  .mobile_\\\\1F6A7_\\\\2705-offset-2 {
+  .mobile_SP_PF-offset-2 {
     margin-left: 66.66666666666667%;
   }
 }
 
 @media (min-width: 80em) {
-  .tablet_\\\\1F6A7_\\\\2705-container-fluid {
+  .tablet_SP_PF-container-fluid {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -237,72 +230,72 @@ exports[`tailwind-bootstrap-grid should handle custom prefix and separator 1`] =
     margin-left: auto;
   }
 
-  .tablet_\\\\1F6A7_\\\\2705-col {
+  .tablet_SP_PF-col {
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
   }
 
-  .tablet_\\\\1F6A7_\\\\2705-col-auto {
+  .tablet_SP_PF-col-auto {
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
   }
 
-  .tablet_\\\\1F6A7_\\\\2705-col-1 {
+  .tablet_SP_PF-col-1 {
     flex: 0 0 33.333333333333336%;
     max-width: 33.333333333333336%;
   }
 
-  .tablet_\\\\1F6A7_\\\\2705-col-2 {
+  .tablet_SP_PF-col-2 {
     flex: 0 0 66.66666666666667%;
     max-width: 66.66666666666667%;
   }
 
-  .tablet_\\\\1F6A7_\\\\2705-col-3 {
+  .tablet_SP_PF-col-3 {
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .tablet_\\\\1F6A7_\\\\2705-order-first {
+  .tablet_SP_PF-order-first {
     order: -1;
   }
 
-  .tablet_\\\\1F6A7_\\\\2705-order-last {
+  .tablet_SP_PF-order-last {
     order: 4;
   }
 
-  .tablet_\\\\1F6A7_\\\\2705-order-0 {
+  .tablet_SP_PF-order-0 {
     order: 0;
   }
 
-  .tablet_\\\\1F6A7_\\\\2705-order-1 {
+  .tablet_SP_PF-order-1 {
     order: 1;
   }
 
-  .tablet_\\\\1F6A7_\\\\2705-order-2 {
+  .tablet_SP_PF-order-2 {
     order: 2;
   }
 
-  .tablet_\\\\1F6A7_\\\\2705-order-3 {
+  .tablet_SP_PF-order-3 {
     order: 3;
   }
 
-  .tablet_\\\\1F6A7_\\\\2705-offset-0 {
+  .tablet_SP_PF-offset-0 {
     margin-left: 0%;
   }
 
-  .tablet_\\\\1F6A7_\\\\2705-offset-1 {
+  .tablet_SP_PF-offset-1 {
     margin-left: 33.333333333333336%;
   }
 
-  .tablet_\\\\1F6A7_\\\\2705-offset-2 {
+  .tablet_SP_PF-offset-2 {
     margin-left: 66.66666666666667%;
   }
 }
 
 @media (min-width: 120em) {
-  .desktop_\\\\1F6A7_\\\\2705-container-fluid {
+  .desktop_SP_PF-container-fluid {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -310,66 +303,66 @@ exports[`tailwind-bootstrap-grid should handle custom prefix and separator 1`] =
     margin-left: auto;
   }
 
-  .desktop_\\\\1F6A7_\\\\2705-col {
+  .desktop_SP_PF-col {
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
   }
 
-  .desktop_\\\\1F6A7_\\\\2705-col-auto {
+  .desktop_SP_PF-col-auto {
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
   }
 
-  .desktop_\\\\1F6A7_\\\\2705-col-1 {
+  .desktop_SP_PF-col-1 {
     flex: 0 0 33.333333333333336%;
     max-width: 33.333333333333336%;
   }
 
-  .desktop_\\\\1F6A7_\\\\2705-col-2 {
+  .desktop_SP_PF-col-2 {
     flex: 0 0 66.66666666666667%;
     max-width: 66.66666666666667%;
   }
 
-  .desktop_\\\\1F6A7_\\\\2705-col-3 {
+  .desktop_SP_PF-col-3 {
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .desktop_\\\\1F6A7_\\\\2705-order-first {
+  .desktop_SP_PF-order-first {
     order: -1;
   }
 
-  .desktop_\\\\1F6A7_\\\\2705-order-last {
+  .desktop_SP_PF-order-last {
     order: 4;
   }
 
-  .desktop_\\\\1F6A7_\\\\2705-order-0 {
+  .desktop_SP_PF-order-0 {
     order: 0;
   }
 
-  .desktop_\\\\1F6A7_\\\\2705-order-1 {
+  .desktop_SP_PF-order-1 {
     order: 1;
   }
 
-  .desktop_\\\\1F6A7_\\\\2705-order-2 {
+  .desktop_SP_PF-order-2 {
     order: 2;
   }
 
-  .desktop_\\\\1F6A7_\\\\2705-order-3 {
+  .desktop_SP_PF-order-3 {
     order: 3;
   }
 
-  .desktop_\\\\1F6A7_\\\\2705-offset-0 {
+  .desktop_SP_PF-offset-0 {
     margin-left: 0%;
   }
 
-  .desktop_\\\\1F6A7_\\\\2705-offset-1 {
+  .desktop_SP_PF-offset-1 {
     margin-left: 33.333333333333336%;
   }
 
-  .desktop_\\\\1F6A7_\\\\2705-offset-2 {
+  .desktop_SP_PF-offset-2 {
     margin-left: 66.66666666666667%;
   }
 }
@@ -409,19 +402,12 @@ exports[`tailwind-bootstrap-grid should handle defaults 1`] = `
 }
 
 .row.no-gutters > .col,
-
 .row.no-gutters > .mobile\\\\:col,
-
 .row.no-gutters > .tablet\\\\:col,
-
 .row.no-gutters > .desktop\\\\:col,
-
 .row.no-gutters > [class*=\\"col-\\"],
-
 .row.no-gutters > [class*=\\"mobile\\\\:col-\\"],
-
 .row.no-gutters > [class*=\\"tablet\\\\:col-\\"],
-
 .row.no-gutters > [class*=\\"desktop\\\\:col-\\"] {
   padding-right: 0;
   padding-left: 0;
@@ -1283,15 +1269,10 @@ exports[`tailwind-bootstrap-grid should handle rtl 1`] = `
 }
 
 .row.no-gutters > .col,
-
 .row.no-gutters > .mobile\\\\:col,
-
 .row.no-gutters > .desktop\\\\:col,
-
 .row.no-gutters > [class*=\\"col-\\"],
-
 .row.no-gutters > [class*=\\"mobile\\\\:col-\\"],
-
 .row.no-gutters > [class*=\\"desktop\\\\:col-\\"] {
   padding-right: 0;
   padding-left: 0;
@@ -1581,7 +1562,7 @@ exports[`tailwind-bootstrap-grid should handle rtl 1`] = `
 `;
 
 exports[`tailwind-bootstrap-grid should handle rtl option and custom prefix, separator 1`] = `
-".\\\\2705-container {
+".PF-container {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -1590,58 +1571,49 @@ exports[`tailwind-bootstrap-grid should handle rtl option and custom prefix, sep
 }
 
 @media (min-width: 640px) {
-  .\\\\2705-container {
+  .PF-container {
     max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
-  .\\\\2705-container {
+  .PF-container {
     max-width: 720px;
   }
 }
 
 @media (min-width: 1024px) {
-  .\\\\2705-container {
+  .PF-container {
     max-width: 960px;
   }
 }
 
 @media (min-width: 1280px) {
-  .\\\\2705-container {
+  .PF-container {
     max-width: 1140px;
   }
 }
 
-.\\\\2705-row.\\\\2705-no-gutters {
+.PF-row.PF-no-gutters {
   margin-right: 0;
   margin-left: 0;
 }
 
-.\\\\2705-row.\\\\2705-no-gutters > .\\\\2705-col,
-
-.\\\\2705-row.\\\\2705-no-gutters > .\\\\2705-sm_\\\\1F6A7_col,
-
-.\\\\2705-row.\\\\2705-no-gutters > .\\\\2705-md_\\\\1F6A7_col,
-
-.\\\\2705-row.\\\\2705-no-gutters > .\\\\2705-lg_\\\\1F6A7_col,
-
-.\\\\2705-row.\\\\2705-no-gutters > .\\\\2705-xl_\\\\1F6A7_col,
-
-.\\\\2705-row.\\\\2705-no-gutters > [class*=\\"col-\\"],
-
-.\\\\2705-row.\\\\2705-no-gutters > [class*=\\"sm_\\\\1F6A7_col-\\"],
-
-.\\\\2705-row.\\\\2705-no-gutters > [class*=\\"md_\\\\1F6A7_col-\\"],
-
-.\\\\2705-row.\\\\2705-no-gutters > [class*=\\"lg_\\\\1F6A7_col-\\"],
-
-.\\\\2705-row.\\\\2705-no-gutters > [class*=\\"xl_\\\\1F6A7_col-\\"] {
+.PF-row.PF-no-gutters > .PF-col,
+.PF-row.PF-no-gutters > .sm_SP_PF-col,
+.PF-row.PF-no-gutters > .md_SP_PF-col,
+.PF-row.PF-no-gutters > .lg_SP_PF-col,
+.PF-row.PF-no-gutters > .xl_SP_PF-col,
+.PF-row.PF-no-gutters > [class*=\\"PF-col-\\"],
+.PF-row.PF-no-gutters > [class*=\\"sm_SP_PF-col-\\"],
+.PF-row.PF-no-gutters > [class*=\\"md_SP_PF-col-\\"],
+.PF-row.PF-no-gutters > [class*=\\"lg_SP_PF-col-\\"],
+.PF-row.PF-no-gutters > [class*=\\"xl_SP_PF-col-\\"] {
   padding-right: 0;
   padding-left: 0;
 }
 
-.\\\\2705-container-fluid {
+.PF-container-fluid {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -1649,121 +1621,121 @@ exports[`tailwind-bootstrap-grid should handle rtl option and custom prefix, sep
   margin-left: auto;
 }
 
-.\\\\2705-row {
+.PF-row {
   display: flex;
   flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
 }
 
-.\\\\2705-col,
-.\\\\2705-sm_\\\\1F6A7_col,
-.\\\\2705-md_\\\\1F6A7_col,
-.\\\\2705-lg_\\\\1F6A7_col,
-.\\\\2705-xl_\\\\1F6A7_col,
-.\\\\2705-col-auto,
-.\\\\2705-sm_\\\\1F6A7_col-auto,
-.\\\\2705-md_\\\\1F6A7_col-auto,
-.\\\\2705-lg_\\\\1F6A7_col-auto,
-.\\\\2705-xl_\\\\1F6A7_col-auto,
-.\\\\2705-col-1,
-.\\\\2705-sm_\\\\1F6A7_col-1,
-.\\\\2705-md_\\\\1F6A7_col-1,
-.\\\\2705-lg_\\\\1F6A7_col-1,
-.\\\\2705-xl_\\\\1F6A7_col-1,
-.\\\\2705-col-2,
-.\\\\2705-sm_\\\\1F6A7_col-2,
-.\\\\2705-md_\\\\1F6A7_col-2,
-.\\\\2705-lg_\\\\1F6A7_col-2,
-.\\\\2705-xl_\\\\1F6A7_col-2,
-.\\\\2705-col-3,
-.\\\\2705-sm_\\\\1F6A7_col-3,
-.\\\\2705-md_\\\\1F6A7_col-3,
-.\\\\2705-lg_\\\\1F6A7_col-3,
-.\\\\2705-xl_\\\\1F6A7_col-3 {
+.PF-col,
+.sm_SP_PF-col,
+.md_SP_PF-col,
+.lg_SP_PF-col,
+.xl_SP_PF-col,
+.PF-col-auto,
+.sm_SP_PF-col-auto,
+.md_SP_PF-col-auto,
+.lg_SP_PF-col-auto,
+.xl_SP_PF-col-auto,
+.PF-col-1,
+.sm_SP_PF-col-1,
+.md_SP_PF-col-1,
+.lg_SP_PF-col-1,
+.xl_SP_PF-col-1,
+.PF-col-2,
+.sm_SP_PF-col-2,
+.md_SP_PF-col-2,
+.lg_SP_PF-col-2,
+.xl_SP_PF-col-2,
+.PF-col-3,
+.sm_SP_PF-col-3,
+.md_SP_PF-col-3,
+.lg_SP_PF-col-3,
+.xl_SP_PF-col-3 {
   position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
 }
 
-.\\\\2705-col {
+.PF-col {
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%;
 }
 
-.\\\\2705-col-auto {
+.PF-col-auto {
   flex: 0 0 auto;
   width: auto;
   max-width: 100%;
 }
 
-.\\\\2705-col-1 {
+.PF-col-1 {
   flex: 0 0 33.333333333333336%;
   max-width: 33.333333333333336%;
 }
 
-.\\\\2705-col-2 {
+.PF-col-2 {
   flex: 0 0 66.66666666666667%;
   max-width: 66.66666666666667%;
 }
 
-.\\\\2705-col-3 {
+.PF-col-3 {
   flex: 0 0 100%;
   max-width: 100%;
 }
 
-.\\\\2705-order-first {
+.PF-order-first {
   order: -1;
 }
 
-.\\\\2705-order-last {
+.PF-order-last {
   order: 4;
 }
 
-.\\\\2705-order-0 {
+.PF-order-0 {
   order: 0;
 }
 
-.\\\\2705-order-1 {
+.PF-order-1 {
   order: 1;
 }
 
-.\\\\2705-order-2 {
+.PF-order-2 {
   order: 2;
 }
 
-.\\\\2705-order-3 {
+.PF-order-3 {
   order: 3;
 }
 
-[dir=\\"ltr\\"] .\\\\2705-offset-0 {
+[dir=\\"ltr\\"] .PF-offset-0 {
   margin-left: 0%;
 }
 
-[dir=\\"rtl\\"] .\\\\2705-offset-0 {
+[dir=\\"rtl\\"] .PF-offset-0 {
   margin-right: 0%;
 }
 
-[dir=\\"ltr\\"] .\\\\2705-offset-1 {
+[dir=\\"ltr\\"] .PF-offset-1 {
   margin-left: 33.333333333333336%;
 }
 
-[dir=\\"rtl\\"] .\\\\2705-offset-1 {
+[dir=\\"rtl\\"] .PF-offset-1 {
   margin-right: 33.333333333333336%;
 }
 
-[dir=\\"ltr\\"] .\\\\2705-offset-2 {
+[dir=\\"ltr\\"] .PF-offset-2 {
   margin-left: 66.66666666666667%;
 }
 
-[dir=\\"rtl\\"] .\\\\2705-offset-2 {
+[dir=\\"rtl\\"] .PF-offset-2 {
   margin-right: 66.66666666666667%;
 }
 
 @media (min-width: 640px) {
-  .sm_\\\\1F6A7_\\\\2705-container-fluid {
+  .sm_SP_PF-container-fluid {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -1771,84 +1743,84 @@ exports[`tailwind-bootstrap-grid should handle rtl option and custom prefix, sep
     margin-left: auto;
   }
 
-  .sm_\\\\1F6A7_\\\\2705-col {
+  .sm_SP_PF-col {
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
   }
 
-  .sm_\\\\1F6A7_\\\\2705-col-auto {
+  .sm_SP_PF-col-auto {
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
   }
 
-  .sm_\\\\1F6A7_\\\\2705-col-1 {
+  .sm_SP_PF-col-1 {
     flex: 0 0 33.333333333333336%;
     max-width: 33.333333333333336%;
   }
 
-  .sm_\\\\1F6A7_\\\\2705-col-2 {
+  .sm_SP_PF-col-2 {
     flex: 0 0 66.66666666666667%;
     max-width: 66.66666666666667%;
   }
 
-  .sm_\\\\1F6A7_\\\\2705-col-3 {
+  .sm_SP_PF-col-3 {
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .sm_\\\\1F6A7_\\\\2705-order-first {
+  .sm_SP_PF-order-first {
     order: -1;
   }
 
-  .sm_\\\\1F6A7_\\\\2705-order-last {
+  .sm_SP_PF-order-last {
     order: 4;
   }
 
-  .sm_\\\\1F6A7_\\\\2705-order-0 {
+  .sm_SP_PF-order-0 {
     order: 0;
   }
 
-  .sm_\\\\1F6A7_\\\\2705-order-1 {
+  .sm_SP_PF-order-1 {
     order: 1;
   }
 
-  .sm_\\\\1F6A7_\\\\2705-order-2 {
+  .sm_SP_PF-order-2 {
     order: 2;
   }
 
-  .sm_\\\\1F6A7_\\\\2705-order-3 {
+  .sm_SP_PF-order-3 {
     order: 3;
   }
 
-  [dir=\\"ltr\\"] .sm_\\\\1F6A7_\\\\2705-offset-0 {
+  [dir=\\"ltr\\"] .sm_SP_PF-offset-0 {
     margin-left: 0%;
   }
 
-  [dir=\\"rtl\\"] .sm_\\\\1F6A7_\\\\2705-offset-0 {
+  [dir=\\"rtl\\"] .sm_SP_PF-offset-0 {
     margin-right: 0%;
   }
 
-  [dir=\\"ltr\\"] .sm_\\\\1F6A7_\\\\2705-offset-1 {
+  [dir=\\"ltr\\"] .sm_SP_PF-offset-1 {
     margin-left: 33.333333333333336%;
   }
 
-  [dir=\\"rtl\\"] .sm_\\\\1F6A7_\\\\2705-offset-1 {
+  [dir=\\"rtl\\"] .sm_SP_PF-offset-1 {
     margin-right: 33.333333333333336%;
   }
 
-  [dir=\\"ltr\\"] .sm_\\\\1F6A7_\\\\2705-offset-2 {
+  [dir=\\"ltr\\"] .sm_SP_PF-offset-2 {
     margin-left: 66.66666666666667%;
   }
 
-  [dir=\\"rtl\\"] .sm_\\\\1F6A7_\\\\2705-offset-2 {
+  [dir=\\"rtl\\"] .sm_SP_PF-offset-2 {
     margin-right: 66.66666666666667%;
   }
 }
 
 @media (min-width: 768px) {
-  .md_\\\\1F6A7_\\\\2705-container-fluid {
+  .md_SP_PF-container-fluid {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -1856,84 +1828,84 @@ exports[`tailwind-bootstrap-grid should handle rtl option and custom prefix, sep
     margin-left: auto;
   }
 
-  .md_\\\\1F6A7_\\\\2705-col {
+  .md_SP_PF-col {
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
   }
 
-  .md_\\\\1F6A7_\\\\2705-col-auto {
+  .md_SP_PF-col-auto {
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
   }
 
-  .md_\\\\1F6A7_\\\\2705-col-1 {
+  .md_SP_PF-col-1 {
     flex: 0 0 33.333333333333336%;
     max-width: 33.333333333333336%;
   }
 
-  .md_\\\\1F6A7_\\\\2705-col-2 {
+  .md_SP_PF-col-2 {
     flex: 0 0 66.66666666666667%;
     max-width: 66.66666666666667%;
   }
 
-  .md_\\\\1F6A7_\\\\2705-col-3 {
+  .md_SP_PF-col-3 {
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .md_\\\\1F6A7_\\\\2705-order-first {
+  .md_SP_PF-order-first {
     order: -1;
   }
 
-  .md_\\\\1F6A7_\\\\2705-order-last {
+  .md_SP_PF-order-last {
     order: 4;
   }
 
-  .md_\\\\1F6A7_\\\\2705-order-0 {
+  .md_SP_PF-order-0 {
     order: 0;
   }
 
-  .md_\\\\1F6A7_\\\\2705-order-1 {
+  .md_SP_PF-order-1 {
     order: 1;
   }
 
-  .md_\\\\1F6A7_\\\\2705-order-2 {
+  .md_SP_PF-order-2 {
     order: 2;
   }
 
-  .md_\\\\1F6A7_\\\\2705-order-3 {
+  .md_SP_PF-order-3 {
     order: 3;
   }
 
-  [dir=\\"ltr\\"] .md_\\\\1F6A7_\\\\2705-offset-0 {
+  [dir=\\"ltr\\"] .md_SP_PF-offset-0 {
     margin-left: 0%;
   }
 
-  [dir=\\"rtl\\"] .md_\\\\1F6A7_\\\\2705-offset-0 {
+  [dir=\\"rtl\\"] .md_SP_PF-offset-0 {
     margin-right: 0%;
   }
 
-  [dir=\\"ltr\\"] .md_\\\\1F6A7_\\\\2705-offset-1 {
+  [dir=\\"ltr\\"] .md_SP_PF-offset-1 {
     margin-left: 33.333333333333336%;
   }
 
-  [dir=\\"rtl\\"] .md_\\\\1F6A7_\\\\2705-offset-1 {
+  [dir=\\"rtl\\"] .md_SP_PF-offset-1 {
     margin-right: 33.333333333333336%;
   }
 
-  [dir=\\"ltr\\"] .md_\\\\1F6A7_\\\\2705-offset-2 {
+  [dir=\\"ltr\\"] .md_SP_PF-offset-2 {
     margin-left: 66.66666666666667%;
   }
 
-  [dir=\\"rtl\\"] .md_\\\\1F6A7_\\\\2705-offset-2 {
+  [dir=\\"rtl\\"] .md_SP_PF-offset-2 {
     margin-right: 66.66666666666667%;
   }
 }
 
 @media (min-width: 1024px) {
-  .lg_\\\\1F6A7_\\\\2705-container-fluid {
+  .lg_SP_PF-container-fluid {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -1941,84 +1913,84 @@ exports[`tailwind-bootstrap-grid should handle rtl option and custom prefix, sep
     margin-left: auto;
   }
 
-  .lg_\\\\1F6A7_\\\\2705-col {
+  .lg_SP_PF-col {
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
   }
 
-  .lg_\\\\1F6A7_\\\\2705-col-auto {
+  .lg_SP_PF-col-auto {
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
   }
 
-  .lg_\\\\1F6A7_\\\\2705-col-1 {
+  .lg_SP_PF-col-1 {
     flex: 0 0 33.333333333333336%;
     max-width: 33.333333333333336%;
   }
 
-  .lg_\\\\1F6A7_\\\\2705-col-2 {
+  .lg_SP_PF-col-2 {
     flex: 0 0 66.66666666666667%;
     max-width: 66.66666666666667%;
   }
 
-  .lg_\\\\1F6A7_\\\\2705-col-3 {
+  .lg_SP_PF-col-3 {
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .lg_\\\\1F6A7_\\\\2705-order-first {
+  .lg_SP_PF-order-first {
     order: -1;
   }
 
-  .lg_\\\\1F6A7_\\\\2705-order-last {
+  .lg_SP_PF-order-last {
     order: 4;
   }
 
-  .lg_\\\\1F6A7_\\\\2705-order-0 {
+  .lg_SP_PF-order-0 {
     order: 0;
   }
 
-  .lg_\\\\1F6A7_\\\\2705-order-1 {
+  .lg_SP_PF-order-1 {
     order: 1;
   }
 
-  .lg_\\\\1F6A7_\\\\2705-order-2 {
+  .lg_SP_PF-order-2 {
     order: 2;
   }
 
-  .lg_\\\\1F6A7_\\\\2705-order-3 {
+  .lg_SP_PF-order-3 {
     order: 3;
   }
 
-  [dir=\\"ltr\\"] .lg_\\\\1F6A7_\\\\2705-offset-0 {
+  [dir=\\"ltr\\"] .lg_SP_PF-offset-0 {
     margin-left: 0%;
   }
 
-  [dir=\\"rtl\\"] .lg_\\\\1F6A7_\\\\2705-offset-0 {
+  [dir=\\"rtl\\"] .lg_SP_PF-offset-0 {
     margin-right: 0%;
   }
 
-  [dir=\\"ltr\\"] .lg_\\\\1F6A7_\\\\2705-offset-1 {
+  [dir=\\"ltr\\"] .lg_SP_PF-offset-1 {
     margin-left: 33.333333333333336%;
   }
 
-  [dir=\\"rtl\\"] .lg_\\\\1F6A7_\\\\2705-offset-1 {
+  [dir=\\"rtl\\"] .lg_SP_PF-offset-1 {
     margin-right: 33.333333333333336%;
   }
 
-  [dir=\\"ltr\\"] .lg_\\\\1F6A7_\\\\2705-offset-2 {
+  [dir=\\"ltr\\"] .lg_SP_PF-offset-2 {
     margin-left: 66.66666666666667%;
   }
 
-  [dir=\\"rtl\\"] .lg_\\\\1F6A7_\\\\2705-offset-2 {
+  [dir=\\"rtl\\"] .lg_SP_PF-offset-2 {
     margin-right: 66.66666666666667%;
   }
 }
 
 @media (min-width: 1280px) {
-  .xl_\\\\1F6A7_\\\\2705-container-fluid {
+  .xl_SP_PF-container-fluid {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -2026,78 +1998,78 @@ exports[`tailwind-bootstrap-grid should handle rtl option and custom prefix, sep
     margin-left: auto;
   }
 
-  .xl_\\\\1F6A7_\\\\2705-col {
+  .xl_SP_PF-col {
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
   }
 
-  .xl_\\\\1F6A7_\\\\2705-col-auto {
+  .xl_SP_PF-col-auto {
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
   }
 
-  .xl_\\\\1F6A7_\\\\2705-col-1 {
+  .xl_SP_PF-col-1 {
     flex: 0 0 33.333333333333336%;
     max-width: 33.333333333333336%;
   }
 
-  .xl_\\\\1F6A7_\\\\2705-col-2 {
+  .xl_SP_PF-col-2 {
     flex: 0 0 66.66666666666667%;
     max-width: 66.66666666666667%;
   }
 
-  .xl_\\\\1F6A7_\\\\2705-col-3 {
+  .xl_SP_PF-col-3 {
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .xl_\\\\1F6A7_\\\\2705-order-first {
+  .xl_SP_PF-order-first {
     order: -1;
   }
 
-  .xl_\\\\1F6A7_\\\\2705-order-last {
+  .xl_SP_PF-order-last {
     order: 4;
   }
 
-  .xl_\\\\1F6A7_\\\\2705-order-0 {
+  .xl_SP_PF-order-0 {
     order: 0;
   }
 
-  .xl_\\\\1F6A7_\\\\2705-order-1 {
+  .xl_SP_PF-order-1 {
     order: 1;
   }
 
-  .xl_\\\\1F6A7_\\\\2705-order-2 {
+  .xl_SP_PF-order-2 {
     order: 2;
   }
 
-  .xl_\\\\1F6A7_\\\\2705-order-3 {
+  .xl_SP_PF-order-3 {
     order: 3;
   }
 
-  [dir=\\"ltr\\"] .xl_\\\\1F6A7_\\\\2705-offset-0 {
+  [dir=\\"ltr\\"] .xl_SP_PF-offset-0 {
     margin-left: 0%;
   }
 
-  [dir=\\"rtl\\"] .xl_\\\\1F6A7_\\\\2705-offset-0 {
+  [dir=\\"rtl\\"] .xl_SP_PF-offset-0 {
     margin-right: 0%;
   }
 
-  [dir=\\"ltr\\"] .xl_\\\\1F6A7_\\\\2705-offset-1 {
+  [dir=\\"ltr\\"] .xl_SP_PF-offset-1 {
     margin-left: 33.333333333333336%;
   }
 
-  [dir=\\"rtl\\"] .xl_\\\\1F6A7_\\\\2705-offset-1 {
+  [dir=\\"rtl\\"] .xl_SP_PF-offset-1 {
     margin-right: 33.333333333333336%;
   }
 
-  [dir=\\"ltr\\"] .xl_\\\\1F6A7_\\\\2705-offset-2 {
+  [dir=\\"ltr\\"] .xl_SP_PF-offset-2 {
     margin-left: 66.66666666666667%;
   }
 
-  [dir=\\"rtl\\"] .xl_\\\\1F6A7_\\\\2705-offset-2 {
+  [dir=\\"rtl\\"] .xl_SP_PF-offset-2 {
     margin-right: 66.66666666666667%;
   }
 }
