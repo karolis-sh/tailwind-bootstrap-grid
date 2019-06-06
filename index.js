@@ -98,7 +98,7 @@ module.exports = ({
       const allColSelector = `${[
         '& > .col',
         ...screenPrefixes.map(item => `\n& > .${item}col`),
-      ].join(',\n')},\n${[
+      ].join(',')},\n${[
         '& > [class*="col-"]',
         screenPrefixes.map(item => `\n& > [class*="${item}col-"]`),
       ].join(',\n')}`;

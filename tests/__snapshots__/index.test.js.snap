@@ -33,19 +33,12 @@ exports[`tailwind-bootstrap-grid should handle custom prefix and separator 1`] =
 }
 
 .PF-row.PF-no-gutters > .PF-col,
-
 .PF-row.PF-no-gutters > .PF-mobile_SP_col,
-
 .PF-row.PF-no-gutters > .PF-tablet_SP_col,
-
 .PF-row.PF-no-gutters > .PF-desktop_SP_col,
-
 .PF-row.PF-no-gutters > [class*=\\"col-\\"],
-
 .PF-row.PF-no-gutters > [class*=\\"mobile_SP_col-\\"],
-
 .PF-row.PF-no-gutters > [class*=\\"tablet_SP_col-\\"],
-
 .PF-row.PF-no-gutters > [class*=\\"desktop_SP_col-\\"] {
   padding-right: 0;
   padding-left: 0;
@@ -409,19 +402,12 @@ exports[`tailwind-bootstrap-grid should handle defaults 1`] = `
 }
 
 .row.no-gutters > .col,
-
 .row.no-gutters > .mobile\\\\:col,
-
 .row.no-gutters > .tablet\\\\:col,
-
 .row.no-gutters > .desktop\\\\:col,
-
 .row.no-gutters > [class*=\\"col-\\"],
-
 .row.no-gutters > [class*=\\"mobile\\\\:col-\\"],
-
 .row.no-gutters > [class*=\\"tablet\\\\:col-\\"],
-
 .row.no-gutters > [class*=\\"desktop\\\\:col-\\"] {
   padding-right: 0;
   padding-left: 0;
@@ -1283,15 +1269,10 @@ exports[`tailwind-bootstrap-grid should handle rtl 1`] = `
 }
 
 .row.no-gutters > .col,
-
 .row.no-gutters > .mobile\\\\:col,
-
 .row.no-gutters > .desktop\\\\:col,
-
 .row.no-gutters > [class*=\\"col-\\"],
-
 .row.no-gutters > [class*=\\"mobile\\\\:col-\\"],
-
 .row.no-gutters > [class*=\\"desktop\\\\:col-\\"] {
   padding-right: 0;
   padding-left: 0;
@@ -1619,23 +1600,14 @@ exports[`tailwind-bootstrap-grid should handle rtl option and custom prefix, sep
 }
 
 .PF-row.PF-no-gutters > .PF-col,
-
 .PF-row.PF-no-gutters > .PF-sm_SP_col,
-
 .PF-row.PF-no-gutters > .PF-md_SP_col,
-
 .PF-row.PF-no-gutters > .PF-lg_SP_col,
-
 .PF-row.PF-no-gutters > .PF-xl_SP_col,
-
 .PF-row.PF-no-gutters > [class*=\\"col-\\"],
-
 .PF-row.PF-no-gutters > [class*=\\"sm_SP_col-\\"],
-
 .PF-row.PF-no-gutters > [class*=\\"md_SP_col-\\"],
-
 .PF-row.PF-no-gutters > [class*=\\"lg_SP_col-\\"],
-
 .PF-row.PF-no-gutters > [class*=\\"xl_SP_col-\\"] {
   padding-right: 0;
   padding-left: 0;
