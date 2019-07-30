@@ -99,7 +99,7 @@
     "rimraf": "^2.6.3",
     "serve": "^11.0.0",
     "sort-package-json": "^1.22.1",
-    "standard-version": "^6.0.1",
+    "standard-version": "^7.0.0",
     "stylefmt": "^6.0.3",
     "tailwindcss": "^1.0.1",
     "webpack": "^4.30.0",
