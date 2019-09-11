@@ -11,13 +11,13 @@
     "rtl",
     "tailwindcss"
   ],
-  "homepage": "https://github.com/buz-zard/tailwind-bootstrap-grid#readme",
+  "homepage": "https://github.com/karolis-sh/tailwind-bootstrap-grid#readme",
   "bugs": {
-    "url": "https://github.com/buz-zard/tailwind-bootstrap-grid/issues"
+    "url": "https://github.com/karolis-sh/tailwind-bootstrap-grid/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/buz-zard/tailwind-bootstrap-grid.git"
+    "url": "git+https://github.com/karolis-sh/tailwind-bootstrap-grid.git"
   },
   "license": "MIT",
   "author": "Karolis Šarapnickis",

@@ -92,8 +92,8 @@ MIT
 
 [version-badge]: https://badge.fury.io/js/tailwind-bootstrap-grid.svg
 [version]: https://www.npmjs.com/package/tailwind-bootstrap-grid
-[build-badge]: https://travis-ci.org/buz-zard/tailwind-bootstrap-grid.svg?branch=master
-[build]: https://travis-ci.org/buz-zard/tailwind-bootstrap-grid
+[build-badge]: https://travis-ci.org/karolis-sh/tailwind-bootstrap-grid.svg?branch=master
+[build]: https://travis-ci.org/karolis-sh/tailwind-bootstrap-grid
 [license-badge]: https://img.shields.io/badge/License-MIT-yellow.svg
 [license]: https://opensource.org/licenses/MIT
 [code-style-badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg
