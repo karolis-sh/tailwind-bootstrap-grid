@@ -108,12 +108,5 @@
   },
   "peerDependencies": {
     "tailwindcss": "^1 || ^1.0.0-beta"
-  },
-  "greenkeeper": {
-    "ignore": [
-      "@mdx-js/loader",
-      "@mdx-js/tag",
-      "react-live"
-    ]
   }
 }

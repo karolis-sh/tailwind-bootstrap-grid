@@ -4,7 +4,6 @@
 [![Build Status][build-badge]][build]
 [![License: MIT][license-badge]][license]
 [![code style: prettier][code-style-badge]][code-style]
-[![Greenkeeper badge](https://badges.greenkeeper.io/buz-zard/tailwind-bootstrap-grid.svg)](https://greenkeeper.io/)
 
 Bootstrap v4 flexbox grid system as a tailwindcss plugin.
 
