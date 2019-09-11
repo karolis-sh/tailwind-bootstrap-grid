@@ -64,7 +64,7 @@
     }
   },
   "dependencies": {
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.15",
     "reduce-css-calc": "^2.1.6"
   },
   "devDependencies": {
