@@ -3,7 +3,7 @@ import React from 'react';
 export default () => (
   <React.Fragment>
     <a
-      href="https://github.com/buz-zard/tailwind-bootstrap-grid"
+      href="https://github.com/karolis-sh/tailwind-bootstrap-grid"
       className="github-corner"
       aria-label="View source on GitHub"
     >
