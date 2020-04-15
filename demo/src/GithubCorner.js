@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default () => (
-  <React.Fragment>
+  <>
     <a
       href="https://github.com/karolis-sh/tailwind-bootstrap-grid"
       className="github-corner"
@@ -36,5 +36,5 @@ export default () => (
       </svg>
     </a>
     <style />
-  </React.Fragment>
+  </>
 );
