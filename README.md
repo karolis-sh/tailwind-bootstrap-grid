@@ -1,7 +1,7 @@
 # tailwind-bootstrap-grid
 
 [![npm version][version-badge]][version]
-[![Build Status][build-badge]][build]
+![Build Status](https://github.com/karolis-sh/tailwind-bootstrap-grid/workflows/Node.js%20CI/badge.svg)
 [![License: MIT][license-badge]][license]
 [![code style: prettier][code-style-badge]][code-style]
 
@@ -92,8 +92,6 @@ MIT
 
 [version-badge]: https://badge.fury.io/js/tailwind-bootstrap-grid.svg
 [version]: https://www.npmjs.com/package/tailwind-bootstrap-grid
-[build-badge]: https://travis-ci.org/karolis-sh/tailwind-bootstrap-grid.svg?branch=master
-[build]: https://travis-ci.org/karolis-sh/tailwind-bootstrap-grid
 [license-badge]: https://img.shields.io/badge/License-MIT-yellow.svg
 [license]: https://opensource.org/licenses/MIT
 [code-style-badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg
