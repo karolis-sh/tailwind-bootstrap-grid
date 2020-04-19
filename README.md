@@ -32,7 +32,7 @@ css file:
 @tailwind utilities;
 ```
 
-This will generate Boostrap v4 [flexbox grid](https://getbootstrap.com/docs/4.0/layout/grid/).
+This will generate Bootstrap v4 [flexbox grid](https://getbootstrap.com/docs/4.0/layout/grid/).
 
 \* **NOTE**: When using the `.container` class from this plugin you will need to
 [disable](https://tailwindcss.com/docs/container/#disabling) the core
