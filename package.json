@@ -98,7 +98,7 @@
     "rimraf": "^3.0.0",
     "serve": "^11.1.0",
     "sort-package-json": "^1.41.0",
-    "standard-version": "^7.0.0",
+    "standard-version": "^8.0.1",
     "stylefmt": "^6.0.3",
     "tailwindcss": "^1.0.1",
     "webpack": "^4.39.3",
