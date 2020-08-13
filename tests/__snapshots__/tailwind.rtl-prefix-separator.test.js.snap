@@ -33,6 +33,54 @@ exports[`should handle rtl option and custom prefix, separator 1`] = `
   }
 }
 
+.PF-container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 640px) {
+  .sm_SP_PF-container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .md_SP_PF-container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg_SP_PF-container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl_SP_PF-container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .PF-row.PF-no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -50,14 +98,6 @@ exports[`should handle rtl option and custom prefix, separator 1`] = `
 .PF-row.PF-no-gutters > [class*=\\"xl_SP_PF-col-\\"] {
   padding-right: 0;
   padding-left: 0;
-}
-
-.PF-container-fluid {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .PF-row {
@@ -174,14 +214,6 @@ exports[`should handle rtl option and custom prefix, separator 1`] = `
 }
 
 @media (min-width: 640px) {
-  .sm_SP_PF-container-fluid {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   .sm_SP_PF-col {
     flex-basis: 0;
     flex-grow: 1;
@@ -259,14 +291,6 @@ exports[`should handle rtl option and custom prefix, separator 1`] = `
 }
 
 @media (min-width: 768px) {
-  .md_SP_PF-container-fluid {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   .md_SP_PF-col {
     flex-basis: 0;
     flex-grow: 1;
@@ -344,14 +368,6 @@ exports[`should handle rtl option and custom prefix, separator 1`] = `
 }
 
 @media (min-width: 1024px) {
-  .lg_SP_PF-container-fluid {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   .lg_SP_PF-col {
     flex-basis: 0;
     flex-grow: 1;
@@ -429,14 +445,6 @@ exports[`should handle rtl option and custom prefix, separator 1`] = `
 }
 
 @media (min-width: 1280px) {
-  .xl_SP_PF-container-fluid {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   .xl_SP_PF-col {
     flex-basis: 0;
     flex-grow: 1;

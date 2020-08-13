@@ -4,7 +4,7 @@ const reduceCSSCalc = require('reduce-css-calc');
 /**
  * @typedef {Object} PluginOptions - The tailwind-bootstrap-grid plugin options
  * @param {number} [gridColumns=12] - Number of columns
- * @param {string} [gridGutterWidth="30px"] - Spacing value
+ * @param {string|Object} [gridGutterWidth="30px"] - Spacing value or spacing values for each breakpoint
  * @param {boolean} [generateContainer=true] - Whether the plugin should generate .container class
  * @param {boolean} [generateNoGutters=true] - Whether the plugin should generate .no-gutter class
  * @param {Object} [containerMaxWidths={ sm: '540px', md: '720px', lg: '960px', xl: '1140px' }] - the `max-width` container value for each breakpoint
@@ -28,10 +28,11 @@ module.exports = ({
   const cssPrefix = prefix('.x').replace(/^\./, '').replace(/x$/, '');
 
   const screenPrefixes = Object.keys(screens).map((item) => e(`${item}${cssSeparator}`));
-  const spacing = gridGutterWidth ? reduceCSSCalc(`calc(${gridGutterWidth} / 2)`) : null;
   const columns = Array.from(Array(gridColumns), (value, index) => index + 1);
 
-  const spacingCSS = (value) => (spacing ? value : {});
+  const isSpacingResponsive = _.isObject(gridGutterWidth);
+  const getSpacing = (spacing) => (spacing ? reduceCSSCalc(`calc(${spacing} / 2)`) : null);
+  const getSpacingCSS = (spacing, func) => (spacing ? func(getSpacing(spacing)) : {});
 
   {
     // =========================================================================
@@ -44,36 +45,74 @@ module.exports = ({
             width: '100%',
             marginRight: 'auto',
             marginLeft: 'auto',
-            ...spacingCSS({
-              paddingRight: spacing,
-              paddingLeft: spacing,
-            }),
+            ...(!isSpacingResponsive
+              ? getSpacingCSS(gridGutterWidth, (spacing) => ({
+                  paddingRight: spacing,
+                  paddingLeft: spacing,
+                }))
+              : {}),
           },
         },
         ...Object.entries(screens).map(([name, value]) => ({
           [`@screen ${name}`]: {
             '.container': {
               maxWidth: containerMaxWidths[name] || value,
+              ...(isSpacingResponsive
+                ? getSpacingCSS(gridGutterWidth[name], (spacing) => ({
+                    paddingRight: spacing,
+                    paddingLeft: spacing,
+                  }))
+                : {}),
             },
           },
         })),
       ]);
 
-      addUtilities(
+      addComponents(
         [
           {
-            '.container-fluid': {
+            [prefix('.container-fluid')]: {
               width: '100%',
-              ...spacingCSS({
-                paddingRight: spacing,
-                paddingLeft: spacing,
-              }),
+              ...(!isSpacingResponsive
+                ? getSpacingCSS(gridGutterWidth, (spacing) => ({
+                    paddingRight: spacing,
+                    paddingLeft: spacing,
+                  }))
+                : {}),
               marginRight: 'auto',
               marginLeft: 'auto',
             },
           },
+          ...(isSpacingResponsive
+            ? Object.entries(screens).map(([name]) =>
+                getSpacingCSS(gridGutterWidth[name], (spacing) => ({
+                  [`@screen ${name}`]: {
+                    [prefix('.container-fluid')]: {
+                      paddingRight: spacing,
+                      paddingLeft: spacing,
+                    },
+                  },
+                }))
+              )
+            : []),
+          ...Object.entries(screens).map(([name], index) => ({
+            [`@screen ${name}`]: {
+              [`.${screenPrefixes[index]}${cssPrefix}container-fluid`]: {
+                width: '100%',
+                ...getSpacingCSS(
+                  isSpacingResponsive ? gridGutterWidth[name] : gridGutterWidth,
+                  (spacing) => ({
+                    paddingRight: spacing,
+                    paddingLeft: spacing,
+                  })
+                ),
+                marginRight: 'auto',
+                marginLeft: 'auto',
+              },
+            },
+          })),
         ],
-        ['responsive']
+        { respectPrefix: false }
       );
     }
   }
@@ -87,15 +126,29 @@ module.exports = ({
         '.row': {
           display: 'flex',
           flexWrap: 'wrap',
-          ...spacingCSS({
-            marginLeft: `-${spacing}`,
-            marginRight: `-${spacing}`,
-          }),
+          ...(!isSpacingResponsive
+            ? getSpacingCSS(gridGutterWidth, (spacing) => ({
+                marginLeft: `-${spacing}`,
+                marginRight: `-${spacing}`,
+              }))
+            : {}),
         },
       },
+      ...(isSpacingResponsive
+        ? Object.entries(screens).map(([name]) =>
+            getSpacingCSS(gridGutterWidth[name], (spacing) => ({
+              [`@screen ${name}`]: {
+                '.row': {
+                  marginLeft: `-${spacing}`,
+                  marginRight: `-${spacing}`,
+                },
+              },
+            }))
+          )
+        : []),
     ]);
 
-    if (spacing && generateNoGutters) {
+    if (!_.isEmpty(gridGutterWidth) && generateNoGutters) {
       const allColSelector = `${[
         `& > ${prefix('.col')}`,
         ...screenPrefixes.map((item) => `& > .${item}${cssPrefix}col`),
@@ -137,12 +190,26 @@ module.exports = ({
           [allColumnClasses.join(',\n')]: {
             position: 'relative',
             width: '100%',
-            ...spacingCSS({
-              paddingRight: spacing,
-              paddingLeft: spacing,
-            }),
+            ...(!isSpacingResponsive
+              ? getSpacingCSS(gridGutterWidth, (spacing) => ({
+                  paddingRight: spacing,
+                  paddingLeft: spacing,
+                }))
+              : {}),
           },
         },
+        ...(isSpacingResponsive
+          ? Object.entries(screens).map(([name]) =>
+              getSpacingCSS(gridGutterWidth[name], (spacing) => ({
+                [`@screen ${name}`]: {
+                  [allColumnClasses.join(',\n')]: {
+                    paddingRight: spacing,
+                    paddingLeft: spacing,
+                  },
+                },
+              }))
+            )
+          : []),
       ],
       { respectPrefix: false }
     );
