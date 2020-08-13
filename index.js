@@ -21,19 +21,17 @@ module.exports = ({
   generateNoGutters = true,
   containerMaxWidths = { sm: '540px', md: '720px', lg: '960px', xl: '1140px' },
   rtl = false,
-} = {}) => options => {
+} = {}) => (options) => {
   const { addUtilities, addComponents, config, prefix, e } = options;
   const screens = config('theme.screens');
   const cssSeparator = config('separator');
-  const cssPrefix = prefix('.x')
-    .replace(/^\./, '')
-    .replace(/x$/, '');
+  const cssPrefix = prefix('.x').replace(/^\./, '').replace(/x$/, '');
 
-  const screenPrefixes = Object.keys(screens).map(item => e(`${item}${cssSeparator}`));
+  const screenPrefixes = Object.keys(screens).map((item) => e(`${item}${cssSeparator}`));
   const spacing = gridGutterWidth ? reduceCSSCalc(`calc(${gridGutterWidth} / 2)`) : null;
   const columns = Array.from(Array(gridColumns), (value, index) => index + 1);
 
-  const spacingCSS = value => (spacing ? value : {});
+  const spacingCSS = (value) => (spacing ? value : {});
 
   {
     // =========================================================================
@@ -100,10 +98,10 @@ module.exports = ({
     if (spacing && generateNoGutters) {
       const allColSelector = `${[
         `& > ${prefix('.col')}`,
-        ...screenPrefixes.map(item => `& > .${item}${cssPrefix}col`),
+        ...screenPrefixes.map((item) => `& > .${item}${cssPrefix}col`),
       ].join(',\n')},${[
         `& > [class*="${cssPrefix}col-"]`,
-        screenPrefixes.map(item => `& > [class*="${item}${cssPrefix}col-"]`),
+        screenPrefixes.map((item) => `& > [class*="${item}${cssPrefix}col-"]`),
       ].join(',')}`;
 
       addComponents(
@@ -127,9 +125,9 @@ module.exports = ({
     // Columns
     // =========================================================================
     const allColumnClasses = _.flatten(
-      ['col', 'col-auto', ...columns.map(size => `col-${size}`)].map(item => [
+      ['col', 'col-auto', ...columns.map((size) => `col-${size}`)].map((item) => [
         `.${cssPrefix}${item}`,
-        ...screenPrefixes.map(screenPrefix => `.${screenPrefix}${cssPrefix}${item}`),
+        ...screenPrefixes.map((screenPrefix) => `.${screenPrefix}${cssPrefix}${item}`),
       ])
     );
 
@@ -165,7 +163,7 @@ module.exports = ({
             maxWidth: '100%',
           },
         },
-        ...columns.map(size => ({
+        ...columns.map((size) => ({
           [`.col-${size}`]: {
             flex: `0 0 ${(100 / gridColumns) * size}%`,
             maxWidth: `${(100 / gridColumns) * size}%`,
@@ -186,7 +184,7 @@ module.exports = ({
           '.order-first': { order: '-1' },
           '.order-last': { order: gridColumns + 1 },
         },
-        ...[0, ...columns].map(size => ({
+        ...[0, ...columns].map((size) => ({
           [`.order-${size}`]: { order: `${size}` },
         })),
       ],
@@ -200,7 +198,7 @@ module.exports = ({
     // =========================================================================
     addUtilities(
       [
-        ...[0, ...columns.slice(0, -1)].map(size => {
+        ...[0, ...columns.slice(0, -1)].map((size) => {
           const margin = `${(100 / gridColumns) * size}%`;
           return rtl
             ? {
