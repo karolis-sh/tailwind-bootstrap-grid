@@ -21,6 +21,34 @@ exports[`should handle rtl 1`] = `
   }
 }
 
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1em) {
+  .mobile\\\\:container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 2em) {
+  .desktop\\\\:container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .row.no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -34,14 +62,6 @@ exports[`should handle rtl 1`] = `
 .row.no-gutters > [class*=\\"desktop\\\\:col-\\"] {
   padding-right: 0;
   padding-left: 0;
-}
-
-.container-fluid {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .row {
@@ -148,14 +168,6 @@ exports[`should handle rtl 1`] = `
 }
 
 @media (min-width: 1em) {
-  .mobile\\\\:container-fluid {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   .mobile\\\\:col {
     flex-basis: 0;
     flex-grow: 1;
@@ -233,14 +245,6 @@ exports[`should handle rtl 1`] = `
 }
 
 @media (min-width: 2em) {
-  .desktop\\\\:container-fluid {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   .desktop\\\\:col {
     flex-basis: 0;
     flex-grow: 1;
