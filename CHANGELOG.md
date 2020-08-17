@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.1](https://github.com/karolis-sh/tailwind-bootstrap-grid/compare/v2.2.0...v2.2.1) (2020-08-17)
+
+### Bug Fixes
+
+- default gutter width when using gutters by breakpoint ([e77a5ef](https://github.com/karolis-sh/tailwind-bootstrap-grid/commit/e77a5ef7fac3f3ab7e3a0f8719999ef2b2d9ba06))
+
 ## [2.2.0](https://github.com/karolis-sh/tailwind-bootstrap-grid/compare/v2.1.0...v2.2.0) (2020-08-17)
 
 ### Features
