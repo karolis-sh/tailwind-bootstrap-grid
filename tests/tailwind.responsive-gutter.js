@@ -13,7 +13,8 @@ module.exports = {
   plugins: [
     require('../index')({
       gridColumns: 3,
-      gridGutterWidth: {
+      gridGutterWidth: '1em',
+      gridGutterWidths: {
         mobile: '2em',
         tablet: '4em',
         desktop: '6em',

@@ -5,6 +5,8 @@ exports[`should handle responsive gutter 1`] = `
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
 }
 
 @media (min-width: 60em) {
@@ -33,6 +35,8 @@ exports[`should handle responsive gutter 1`] = `
 
 .PF-container-fluid {
   width: 100%;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
   margin-right: auto;
   margin-left: auto;
 }
@@ -108,6 +112,8 @@ exports[`should handle responsive gutter 1`] = `
 .PF-row {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -0.5em;
+  margin-right: -0.5em;
 }
 
 @media (min-width: 60em) {
@@ -153,6 +159,8 @@ exports[`should handle responsive gutter 1`] = `
 .desktop_SP_PF-col-3 {
   position: relative;
   width: 100%;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
 }
 
 @media (min-width: 60em) {

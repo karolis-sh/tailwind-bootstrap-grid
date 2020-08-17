@@ -49,8 +49,8 @@ expose a `.container` class.
 ## Options
 
 - `gridColumns` (default - `12`) - grid size
-- `gridGutterWidth` (default - `"30px"`) - gutter width or gutter widths for each
-  breakpoint
+- `gridGutterWidth` (default - `"30px"`) - gutter width
+- `gridGutterWidths` (default - `{}`) - gutter widths for each breakpoint
 - `generateContainer` (default - `true`) - whether to generate `.container` and
   `.container-fluid` classes
 - `generateNoGutters` (default - `true`) - whether to generate `.no-gutter` class
