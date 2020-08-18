@@ -122,19 +122,9 @@ module.exports = ({
           })),
         },
       },
-      ...Object.entries(screens).map(([name]) =>
-        getSpacingCSS(gridGutterWidths[name], (spacing) => ({
-          [`@screen ${name}`]: {
-            '.row': {
-              marginLeft: `-${spacing}`,
-              marginRight: `-${spacing}`,
-            },
-          },
-        }))
-      ),
     ]);
 
-    if ((gridGutterWidth || !_.isEmpty(gridGutterWidths)) && generateNoGutters) {
+    if (gridGutterWidth && generateNoGutters) {
       const allColSelector = `${[
         `& > ${prefix('.col')}`,
         ...screenPrefixes.map((item) => `& > .${item}${cssPrefix}col`),
@@ -182,16 +172,6 @@ module.exports = ({
             })),
           },
         },
-        ...Object.entries(screens).map(([name]) =>
-          getSpacingCSS(gridGutterWidths[name], (spacing) => ({
-            [`@screen ${name}`]: {
-              [allColumnClasses.join(',\n')]: {
-                paddingRight: spacing,
-                paddingLeft: spacing,
-              },
-            },
-          }))
-        ),
       ],
       { respectPrefix: false }
     );
