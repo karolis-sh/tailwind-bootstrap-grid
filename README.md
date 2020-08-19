@@ -39,7 +39,7 @@ This will generate Bootstrap v4 [flexbox grid](https://getbootstrap.com/docs/4.0
 [container container plugin](https://tailwindcss.com/docs/container/) as both plugins
 expose a `.container` class.
 
-## Features & Tailwind options support
+## Features & Tailwind CSS options support
 
 - ✅ custom screens
 - ✅ custom separator
