@@ -8,6 +8,7 @@ const reduceCSSCalc = require('reduce-css-calc');
  * @param {Object} [gridGutterWidths={}] - spacing values for each breakpoint
  * @param {boolean} [generateContainer=true] - Whether the plugin should generate .container class
  * @param {boolean} [generateNoGutters=true] - Whether the plugin should generate .no-gutter class
+ * @param {boolean} [generateMaxWidth=false] - Whether the plugin should generate .max-width-${screen} class
  * @param {Object} [containerMaxWidths={ sm: '540px', md: '720px', lg: '960px', xl: '1140px' }] - the `max-width` container value for each breakpoint
  * @param {boolean} [rtl=false] - Whether to enable rtl support
  */
@@ -21,6 +22,7 @@ module.exports = ({
   gridGutterWidths = {},
   generateContainer = true,
   generateNoGutters = true,
+  generateMaxWidth = false,
   containerMaxWidths = { sm: '540px', md: '720px', lg: '960px', xl: '1140px' },
   rtl = false,
 } = {}) => (options) => {
@@ -241,5 +243,22 @@ module.exports = ({
       ],
       ['responsive']
     );
+  }
+
+  {
+    // =========================================================================
+    // Max Width
+    // =========================================================================
+    if (generateMaxWidth) {
+      addUtilities([
+        ...Object.entries(screens).map(([name, value]) => ({
+          [`@screen ${name}`]: {
+            [`.max-width-${name}`]: {
+              maxWidth: value,
+            },
+          },
+        })),
+      ]);
+    }
   }
 };

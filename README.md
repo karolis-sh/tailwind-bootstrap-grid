@@ -54,6 +54,8 @@ expose a `.container` class.
 - `generateContainer` (default - `true`) - whether to generate `.container` and
   `.container-fluid` classes
 - `generateNoGutters` (default - `true`) - whether to generate `.no-gutter` class
+- `generateMaxWidth` (default - `false`) - whether to generate `.max-width-{screen}`
+  class
 - `containerMaxWidths` (default -
   `{ sm: '540px', md: '720px', lg: '960px', xl: '1140px' }`) - the `max-width`
   container value for each breakpoint
