@@ -1,14 +1,15 @@
-*.*
+*
+!*/
 !*.js
 !*.json
 !*.css
 !*.md
+!*.yml
 
 # npm files
 node_modules
 package.json
-package-lock.json
 
-# Build output
+# project
 /build
 /sample/output.css
