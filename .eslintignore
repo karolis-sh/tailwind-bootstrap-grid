@@ -1,6 +1,6 @@
 # npm files
 node_modules
 
-# Build output
+# project
 /build
 /sample/output.css
