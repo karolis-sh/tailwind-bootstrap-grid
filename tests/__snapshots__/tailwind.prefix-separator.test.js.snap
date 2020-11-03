@@ -116,6 +116,27 @@ exports[`should handle custom prefix and separator 1`] = `
   margin-right: -0.5em;
 }
 
+@media (min-width: 60em) {
+  .PF-row {
+    margin-left: -1em;
+    margin-right: -1em;
+  }
+}
+
+@media (min-width: 80em) {
+  .PF-row {
+    margin-left: -2em;
+    margin-right: -2em;
+  }
+}
+
+@media (min-width: 120em) {
+  .PF-row {
+    margin-left: -3em;
+    margin-right: -3em;
+  }
+}
+
 .PF-col,
 .mobile_SP_PF-col,
 .tablet_SP_PF-col,

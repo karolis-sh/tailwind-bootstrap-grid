@@ -116,6 +116,27 @@ exports[`should handle responsive gutters 1`] = `
   margin-right: -0.5em;
 }
 
+@media (min-width: 60em) {
+  .row {
+    margin-left: -1em;
+    margin-right: -1em;
+  }
+}
+
+@media (min-width: 80em) {
+  .row {
+    margin-left: -2em;
+    margin-right: -2em;
+  }
+}
+
+@media (min-width: 120em) {
+  .row {
+    margin-left: -3em;
+    margin-right: -3em;
+  }
+}
+
 .col,
 .mobile\\\\:col,
 .tablet\\\\:col,
