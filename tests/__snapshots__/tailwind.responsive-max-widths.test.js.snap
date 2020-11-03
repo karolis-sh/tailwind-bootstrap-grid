@@ -1,72 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should handle responsive gutters 1`] = `
+exports[`should handle responsive max widths 1`] = `
 ".container {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 0.5em;
-  padding-left: 0.5em;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 @media (min-width: 60em) {
   .container {
-    max-width: 60em;
-    padding-right: 1em;
-    padding-left: 1em;
+    max-width: 20em;
   }
 }
 
 @media (min-width: 80em) {
   .container {
-    max-width: 80em;
-    padding-right: 2em;
-    padding-left: 2em;
+    max-width: 40em;
   }
 }
 
 @media (min-width: 120em) {
   .container {
-    max-width: 120em;
-    padding-right: 3em;
-    padding-left: 3em;
+    max-width: 60em;
   }
 }
 
 .container-fluid {
   width: 100%;
-  padding-right: 0.5em;
-  padding-left: 0.5em;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
 
 @media (min-width: 60em) {
-  .container-fluid {
-    padding-right: 1em;
-    padding-left: 1em;
-  }
-}
-
-@media (min-width: 80em) {
-  .container-fluid {
-    padding-right: 2em;
-    padding-left: 2em;
-  }
-}
-
-@media (min-width: 120em) {
-  .container-fluid {
-    padding-right: 3em;
-    padding-left: 3em;
-  }
-}
-
-@media (min-width: 60em) {
   .mobile\\\\:container-fluid {
     width: 100%;
-    padding-right: 1em;
-    padding-left: 1em;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -75,8 +48,8 @@ exports[`should handle responsive gutters 1`] = `
 @media (min-width: 80em) {
   .tablet\\\\:container-fluid {
     width: 100%;
-    padding-right: 2em;
-    padding-left: 2em;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -85,8 +58,8 @@ exports[`should handle responsive gutters 1`] = `
 @media (min-width: 120em) {
   .desktop\\\\:container-fluid {
     width: 100%;
-    padding-right: 3em;
-    padding-left: 3em;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -112,8 +85,8 @@ exports[`should handle responsive gutters 1`] = `
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -0.5em;
-  margin-right: -0.5em;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .col,
@@ -138,8 +111,8 @@ exports[`should handle responsive gutters 1`] = `
 .desktop\\\\:col-3 {
   position: relative;
   width: 100%;
-  padding-right: 0.5em;
-  padding-left: 0.5em;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .col {

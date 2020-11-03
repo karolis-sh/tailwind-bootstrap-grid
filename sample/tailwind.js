@@ -10,7 +10,7 @@ module.exports = {
   },
 
   plugins: [
-    require('../index')({
+    require('../lib')({
       gridColumns: 3,
       containerMaxWidths: {
         mobile: '20em',

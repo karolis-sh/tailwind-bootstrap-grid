@@ -5,41 +5,68 @@ exports[`should handle custom prefix and separator 1`] = `
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
 }
 
 @media (min-width: 60em) {
   .PF-container {
     max-width: 20em;
+    padding-right: 1em;
+    padding-left: 1em;
   }
 }
 
 @media (min-width: 80em) {
   .PF-container {
     max-width: 40em;
+    padding-right: 2em;
+    padding-left: 2em;
   }
 }
 
 @media (min-width: 120em) {
   .PF-container {
     max-width: 60em;
+    padding-right: 3em;
+    padding-left: 3em;
   }
 }
 
 .PF-container-fluid {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
   margin-right: auto;
   margin-left: auto;
 }
 
 @media (min-width: 60em) {
+  .PF-container-fluid {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+}
+
+@media (min-width: 80em) {
+  .PF-container-fluid {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+}
+
+@media (min-width: 120em) {
+  .PF-container-fluid {
+    padding-right: 3em;
+    padding-left: 3em;
+  }
+}
+
+@media (min-width: 60em) {
   .mobile_SP_PF-container-fluid {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 1em;
+    padding-left: 1em;
     margin-right: auto;
     margin-left: auto;
   }
@@ -48,8 +75,8 @@ exports[`should handle custom prefix and separator 1`] = `
 @media (min-width: 80em) {
   .tablet_SP_PF-container-fluid {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 2em;
+    padding-left: 2em;
     margin-right: auto;
     margin-left: auto;
   }
@@ -58,8 +85,8 @@ exports[`should handle custom prefix and separator 1`] = `
 @media (min-width: 120em) {
   .desktop_SP_PF-container-fluid {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 3em;
+    padding-left: 3em;
     margin-right: auto;
     margin-left: auto;
   }
@@ -85,8 +112,8 @@ exports[`should handle custom prefix and separator 1`] = `
 .PF-row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -0.5em;
+  margin-right: -0.5em;
 }
 
 .PF-col,
@@ -111,8 +138,8 @@ exports[`should handle custom prefix and separator 1`] = `
 .desktop_SP_PF-col-3 {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
 }
 
 .PF-col {

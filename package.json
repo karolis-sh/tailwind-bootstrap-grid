@@ -21,7 +21,7 @@
   },
   "license": "MIT",
   "author": "Karolis Šarapnickis",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "run-p build:*",
     "build:demo": "cross-env NODE_ENV=production webpack -p --config demo/webpack.config.js",
@@ -65,6 +65,7 @@
     }
   },
   "dependencies": {
+    "joi": "^17.3.0",
     "lodash": "^4.17.15",
     "reduce-css-calc": "^2.1.6"
   },
