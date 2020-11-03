@@ -163,6 +163,84 @@ exports[`should handle responsive gutters 1`] = `
   padding-left: 0.5em;
 }
 
+@media (min-width: 60em) {
+  .col,
+.mobile\\\\:col,
+.tablet\\\\:col,
+.desktop\\\\:col,
+.col-auto,
+.mobile\\\\:col-auto,
+.tablet\\\\:col-auto,
+.desktop\\\\:col-auto,
+.col-1,
+.mobile\\\\:col-1,
+.tablet\\\\:col-1,
+.desktop\\\\:col-1,
+.col-2,
+.mobile\\\\:col-2,
+.tablet\\\\:col-2,
+.desktop\\\\:col-2,
+.col-3,
+.mobile\\\\:col-3,
+.tablet\\\\:col-3,
+.desktop\\\\:col-3 {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+}
+
+@media (min-width: 80em) {
+  .col,
+.mobile\\\\:col,
+.tablet\\\\:col,
+.desktop\\\\:col,
+.col-auto,
+.mobile\\\\:col-auto,
+.tablet\\\\:col-auto,
+.desktop\\\\:col-auto,
+.col-1,
+.mobile\\\\:col-1,
+.tablet\\\\:col-1,
+.desktop\\\\:col-1,
+.col-2,
+.mobile\\\\:col-2,
+.tablet\\\\:col-2,
+.desktop\\\\:col-2,
+.col-3,
+.mobile\\\\:col-3,
+.tablet\\\\:col-3,
+.desktop\\\\:col-3 {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+}
+
+@media (min-width: 120em) {
+  .col,
+.mobile\\\\:col,
+.tablet\\\\:col,
+.desktop\\\\:col,
+.col-auto,
+.mobile\\\\:col-auto,
+.tablet\\\\:col-auto,
+.desktop\\\\:col-auto,
+.col-1,
+.mobile\\\\:col-1,
+.tablet\\\\:col-1,
+.desktop\\\\:col-1,
+.col-2,
+.mobile\\\\:col-2,
+.tablet\\\\:col-2,
+.desktop\\\\:col-2,
+.col-3,
+.mobile\\\\:col-3,
+.tablet\\\\:col-3,
+.desktop\\\\:col-3 {
+    padding-right: 3em;
+    padding-left: 3em;
+  }
+}
+
 .col {
   flex-basis: 0;
   flex-grow: 1;
