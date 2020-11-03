@@ -27,18 +27,19 @@ module.exports = ({
   const { addUtilities, addComponents, config, prefix, e } = options;
   const screens = config('theme.screens');
   const cssSeparator = config('separator');
-  const cssPrefix = prefix('.x').replace(/^\./, '').replace(/x$/, '');
 
-  const screenPrefixes = Object.keys(screens).map((item) => e(`${item}${cssSeparator}`));
+  const cssPrefix = prefix('.x').replace(/^\./, '').replace(/x$/, '');
+  const screenKeys = Object.keys(screens);
+  const screenPrefixes = screenKeys.map((item) => e(`${item}${cssSeparator}`));
   const columns = Array.from(Array(gridColumns), (value, index) => index + 1);
 
-  const getSpacing = (spacing) => (spacing ? reduceCSSCalc(`calc(${spacing} / 2)`) : null);
-  const getSpacingCSS = (spacing, func) => (spacing ? func(getSpacing(spacing)) : {});
+  const getSpacingValue = (spacing) => (spacing ? reduceCSSCalc(`calc(${spacing} / 2)`) : null);
+  const getSpacingCSS = (spacing, func) => (spacing ? func(getSpacingValue(spacing)) : {});
 
   {
-    // =========================================================================
+    // =============================================================================================
     // Container
-    // =========================================================================
+    // =============================================================================================
     if (generateContainer) {
       addComponents([
         {
@@ -52,10 +53,10 @@ module.exports = ({
             })),
           },
         },
-        ...Object.entries(screens).map(([name, value]) => ({
+        ...screenKeys.map((name) => ({
           [`@screen ${name}`]: {
             '.container': {
-              maxWidth: containerMaxWidths[name] || value,
+              maxWidth: containerMaxWidths[name] || screens[name],
               ...getSpacingCSS(gridGutterWidths[name], (spacing) => ({
                 paddingRight: spacing,
                 paddingLeft: spacing,
@@ -78,7 +79,7 @@ module.exports = ({
               marginLeft: 'auto',
             },
           },
-          ...Object.entries(screens).map(([name]) =>
+          ...screenKeys.map((name) =>
             getSpacingCSS(gridGutterWidths[name], (spacing) => ({
               [`@screen ${name}`]: {
                 [prefix('.container-fluid')]: {
@@ -88,7 +89,7 @@ module.exports = ({
               },
             }))
           ),
-          ...Object.entries(screens).map(([name], index) => ({
+          ...screenKeys.map((name, index) => ({
             [`@screen ${name}`]: {
               [`.${screenPrefixes[index]}${cssPrefix}container-fluid`]: {
                 width: '100%',
@@ -108,9 +109,9 @@ module.exports = ({
   }
 
   {
-    // =========================================================================
+    // =============================================================================================
     // Row
-    // =========================================================================
+    // =============================================================================================
     addUtilities([
       {
         '.row': {
@@ -150,9 +151,9 @@ module.exports = ({
   }
 
   {
-    // =========================================================================
+    // =============================================================================================
     // Columns
-    // =========================================================================
+    // =============================================================================================
     const allColumnClasses = _.flatten(
       ['col', 'col-auto', ...columns.map((size) => `col-${size}`)].map((item) => [
         `.${cssPrefix}${item}`,
@@ -204,9 +205,9 @@ module.exports = ({
   }
 
   {
-    // =========================================================================
+    // =============================================================================================
     // Ordering
-    // =========================================================================
+    // =============================================================================================
     addUtilities(
       [
         {
@@ -222,9 +223,9 @@ module.exports = ({
   }
 
   {
-    // =========================================================================
+    // =============================================================================================
     // Offsets
-    // =========================================================================
+    // =============================================================================================
     addUtilities(
       [
         ...[0, ...columns.slice(0, -1)].map((size) => {
