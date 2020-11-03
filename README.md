@@ -19,7 +19,11 @@ In `tailwind.js` file:
 
 ```js
 module.exports = {
-  plugins: [require('tailwind-bootstrap-grid')()],
+  plugins: [
+    require('tailwind-bootstrap-grid')({
+      containerMaxWidths: { sm: '540px', md: '720px', lg: '960px', xl: '1140px' },
+    }),
+  ],
 };
 ```
 
@@ -44,35 +48,25 @@ expose a `.container` class.
 - ✅ custom screens
 - ✅ custom separator
 - ✅ custom prefix
+- ✅ responsive gutters
 - ✅ rtl support
 
 ## Options
 
-- `gridColumns` (default - `12`) - grid size
-- `gridGutterWidth` (default - `"30px"`) - container and rows gutter width
-- `gridGutterWidths` (default - `{}`) - container gutter width for each breakpoint
-- `generateContainer` (default - `true`) - whether to generate `.container` and
-  `.container-fluid` classes
-- `generateNoGutters` (default - `true`) - whether to generate `.no-gutter` class
-- `containerMaxWidths` (default - `{}`) - the `max-width` container value for
-  each breakpoint
-- `rtl` (default - `false`) - rtl support (`.offset-x` classes will start
-  responding to `[dir=ltr]` / `[dir=rtl]`)
+- Original Bootstrap grid's [options](https://getbootstrap.com/docs/4.0/layout/grid/#grid-options):
 
-For example to generate 10 column grid with no gutter and skip the container:
+  - `gridColumns` (default - `12`) - grid size
+  - `gridGutterWidth` (default - `"30px"`) - container and rows gutter width
+  - `containerMaxWidths` (default - `{}`) - the `max-width` container value for
+    each breakpoint
 
-```js
-module.exports = {
-  plugins: [
-    require('tailwind-bootstrap-grid')({
-      gridColumns: 10,
-      gridGutterWidth: 0,
-      generateNoGutters: false,
-      generateContainer: false,
-    }),
-  ],
-};
-```
+- Extra options:
+  - `gridGutterWidths` (default - `{}`) - container gutter width for each breakpoint
+  - `generateNoGutters` (default - `true`) - whether to generate `.no-gutter` class
+  - `generateContainer` (default - `true`) - whether to generate `.container` and
+    `.container-fluid` classes
+  - `rtl` (default - `false`) - rtl support (`.offset-x` classes will start
+    responding to `[dir=ltr]` / `[dir=rtl]`)
 
 ## FAQ
 
