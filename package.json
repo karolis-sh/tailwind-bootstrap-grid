@@ -103,7 +103,7 @@
     "sort-package-json": "^1.46.0",
     "standard-version": "^9.0.0",
     "stylefmt": "^6.0.3",
-    "tailwindcss": "1.0.1",
+    "tailwindcss": "1.9.6",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.8",
     "webpack-dev-server": "^3.8.0"
