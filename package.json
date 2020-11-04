@@ -34,7 +34,7 @@
     "lint:js": "eslint .",
     "lint:md": "markdownlint-cli2 '**/*.md' '!node_modules' '!**/node_modules' '!**/CHANGELOG.md'",
     "qa": "run-p test lint",
-    "release": "yarn && run-s clean build qa && standard-version && git push --follow-tags && npm publish",
+    "release": "yarn && run-s clean build qa && standard-version --no-verify && git push --follow-tags --no-verify && npm publish",
     "start": "cross-env NODE_ENV=development webpack-dev-server --hot --config demo/webpack.config.js",
     "tdd": "npm test -- --watch",
     "test": "jest tests",
