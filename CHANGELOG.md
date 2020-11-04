@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/karolis-sh/tailwind-bootstrap-grid/compare/v3.0.1...v3.1.0) (2020-11-04)
+
+### Features
+
+- add support for tailwindcss@1.9.6 ([781133d](https://github.com/karolis-sh/tailwind-bootstrap-grid/commit/781133d48fae61c58c17f01d480396661b29837c))
+
 ### [3.0.1](https://github.com/karolis-sh/tailwind-bootstrap-grid/compare/v3.0.0...v3.0.1) (2020-11-04)
 
 ### Bug Fixes
