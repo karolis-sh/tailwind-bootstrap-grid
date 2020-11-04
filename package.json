@@ -1,6 +1,6 @@
 {
   "name": "tailwind-bootstrap-grid",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Tailwind CSS plugin to generate Bootstrap flexbox grid system.",
   "keywords": [
     "bootstrap",
