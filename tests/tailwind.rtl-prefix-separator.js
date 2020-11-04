@@ -3,16 +3,14 @@ const config = require('./tailwind.base');
 
 module.exports = {
   ...config,
-  themes: {
-    screens: {
-      mobile: '1em',
-      desktop: '2em',
-    },
+  theme: {
+    screens: { sm: '640px', md: '768px', lg: '1024px', xl: '1280px' },
   },
   plugins: [
-    require('../index')({
+    require('../lib')({
       gridColumns: 3,
       rtl: true,
+      containerMaxWidths: { sm: '540px', md: '720px', lg: '960px', xl: '1140px' },
     }),
   ],
   prefix: 'PF-',

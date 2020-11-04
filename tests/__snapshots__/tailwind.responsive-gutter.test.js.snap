@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should handle responsive gutter 1`] = `
-".PF-container {
+exports[`should handle responsive gutters 1`] = `
+".container {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -10,30 +10,30 @@ exports[`should handle responsive gutter 1`] = `
 }
 
 @media (min-width: 60em) {
-  .PF-container {
-    max-width: 20em;
-    padding-right: 1em;
-    padding-left: 1em;
-  }
-}
-
-@media (min-width: 80em) {
-  .PF-container {
-    max-width: 40em;
-    padding-right: 2em;
-    padding-left: 2em;
-  }
-}
-
-@media (min-width: 120em) {
-  .PF-container {
+  .container {
     max-width: 60em;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+}
+
+@media (min-width: 80em) {
+  .container {
+    max-width: 80em;
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+}
+
+@media (min-width: 120em) {
+  .container {
+    max-width: 120em;
     padding-right: 3em;
     padding-left: 3em;
   }
 }
 
-.PF-container-fluid {
+.container-fluid {
   width: 100%;
   padding-right: 0.5em;
   padding-left: 0.5em;
@@ -42,28 +42,28 @@ exports[`should handle responsive gutter 1`] = `
 }
 
 @media (min-width: 60em) {
-  .PF-container-fluid {
+  .container-fluid {
     padding-right: 1em;
     padding-left: 1em;
   }
 }
 
 @media (min-width: 80em) {
-  .PF-container-fluid {
+  .container-fluid {
     padding-right: 2em;
     padding-left: 2em;
   }
 }
 
 @media (min-width: 120em) {
-  .PF-container-fluid {
+  .container-fluid {
     padding-right: 3em;
     padding-left: 3em;
   }
 }
 
 @media (min-width: 60em) {
-  .mobile_SP_PF-container-fluid {
+  .mobile\\\\:container-fluid {
     width: 100%;
     padding-right: 1em;
     padding-left: 1em;
@@ -73,7 +73,7 @@ exports[`should handle responsive gutter 1`] = `
 }
 
 @media (min-width: 80em) {
-  .tablet_SP_PF-container-fluid {
+  .tablet\\\\:container-fluid {
     width: 100%;
     padding-right: 2em;
     padding-left: 2em;
@@ -83,7 +83,7 @@ exports[`should handle responsive gutter 1`] = `
 }
 
 @media (min-width: 120em) {
-  .desktop_SP_PF-container-fluid {
+  .desktop\\\\:container-fluid {
     width: 100%;
     padding-right: 3em;
     padding-left: 3em;
@@ -92,310 +92,409 @@ exports[`should handle responsive gutter 1`] = `
   }
 }
 
-.PF-row.PF-no-gutters {
+.row.no-gutters {
   margin-right: 0;
   margin-left: 0;
 }
 
-.PF-row.PF-no-gutters > .PF-col,
-.PF-row.PF-no-gutters > .mobile_SP_PF-col,
-.PF-row.PF-no-gutters > .tablet_SP_PF-col,
-.PF-row.PF-no-gutters > .desktop_SP_PF-col,
-.PF-row.PF-no-gutters > [class*=\\"PF-col-\\"],
-.PF-row.PF-no-gutters > [class*=\\"mobile_SP_PF-col-\\"],
-.PF-row.PF-no-gutters > [class*=\\"tablet_SP_PF-col-\\"],
-.PF-row.PF-no-gutters > [class*=\\"desktop_SP_PF-col-\\"] {
+.row.no-gutters > .col,
+.row.no-gutters > .mobile\\\\:col,
+.row.no-gutters > .tablet\\\\:col,
+.row.no-gutters > .desktop\\\\:col,
+.row.no-gutters > [class*=\\"col-\\"],
+.row.no-gutters > [class*=\\"mobile\\\\:col-\\"],
+.row.no-gutters > [class*=\\"tablet\\\\:col-\\"],
+.row.no-gutters > [class*=\\"desktop\\\\:col-\\"] {
   padding-right: 0;
   padding-left: 0;
 }
 
-.PF-row {
+.row {
   display: flex;
   flex-wrap: wrap;
   margin-left: -0.5em;
   margin-right: -0.5em;
 }
 
-.PF-col,
-.mobile_SP_PF-col,
-.tablet_SP_PF-col,
-.desktop_SP_PF-col,
-.PF-col-auto,
-.mobile_SP_PF-col-auto,
-.tablet_SP_PF-col-auto,
-.desktop_SP_PF-col-auto,
-.PF-col-1,
-.mobile_SP_PF-col-1,
-.tablet_SP_PF-col-1,
-.desktop_SP_PF-col-1,
-.PF-col-2,
-.mobile_SP_PF-col-2,
-.tablet_SP_PF-col-2,
-.desktop_SP_PF-col-2,
-.PF-col-3,
-.mobile_SP_PF-col-3,
-.tablet_SP_PF-col-3,
-.desktop_SP_PF-col-3 {
+@media (min-width: 60em) {
+  .row {
+    margin-left: -1em;
+    margin-right: -1em;
+  }
+}
+
+@media (min-width: 80em) {
+  .row {
+    margin-left: -2em;
+    margin-right: -2em;
+  }
+}
+
+@media (min-width: 120em) {
+  .row {
+    margin-left: -3em;
+    margin-right: -3em;
+  }
+}
+
+.col,
+.mobile\\\\:col,
+.tablet\\\\:col,
+.desktop\\\\:col,
+.col-auto,
+.mobile\\\\:col-auto,
+.tablet\\\\:col-auto,
+.desktop\\\\:col-auto,
+.col-1,
+.mobile\\\\:col-1,
+.tablet\\\\:col-1,
+.desktop\\\\:col-1,
+.col-2,
+.mobile\\\\:col-2,
+.tablet\\\\:col-2,
+.desktop\\\\:col-2,
+.col-3,
+.mobile\\\\:col-3,
+.tablet\\\\:col-3,
+.desktop\\\\:col-3 {
   position: relative;
   width: 100%;
   padding-right: 0.5em;
   padding-left: 0.5em;
 }
 
-.PF-col {
+@media (min-width: 60em) {
+  .col,
+.mobile\\\\:col,
+.tablet\\\\:col,
+.desktop\\\\:col,
+.col-auto,
+.mobile\\\\:col-auto,
+.tablet\\\\:col-auto,
+.desktop\\\\:col-auto,
+.col-1,
+.mobile\\\\:col-1,
+.tablet\\\\:col-1,
+.desktop\\\\:col-1,
+.col-2,
+.mobile\\\\:col-2,
+.tablet\\\\:col-2,
+.desktop\\\\:col-2,
+.col-3,
+.mobile\\\\:col-3,
+.tablet\\\\:col-3,
+.desktop\\\\:col-3 {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+}
+
+@media (min-width: 80em) {
+  .col,
+.mobile\\\\:col,
+.tablet\\\\:col,
+.desktop\\\\:col,
+.col-auto,
+.mobile\\\\:col-auto,
+.tablet\\\\:col-auto,
+.desktop\\\\:col-auto,
+.col-1,
+.mobile\\\\:col-1,
+.tablet\\\\:col-1,
+.desktop\\\\:col-1,
+.col-2,
+.mobile\\\\:col-2,
+.tablet\\\\:col-2,
+.desktop\\\\:col-2,
+.col-3,
+.mobile\\\\:col-3,
+.tablet\\\\:col-3,
+.desktop\\\\:col-3 {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+}
+
+@media (min-width: 120em) {
+  .col,
+.mobile\\\\:col,
+.tablet\\\\:col,
+.desktop\\\\:col,
+.col-auto,
+.mobile\\\\:col-auto,
+.tablet\\\\:col-auto,
+.desktop\\\\:col-auto,
+.col-1,
+.mobile\\\\:col-1,
+.tablet\\\\:col-1,
+.desktop\\\\:col-1,
+.col-2,
+.mobile\\\\:col-2,
+.tablet\\\\:col-2,
+.desktop\\\\:col-2,
+.col-3,
+.mobile\\\\:col-3,
+.tablet\\\\:col-3,
+.desktop\\\\:col-3 {
+    padding-right: 3em;
+    padding-left: 3em;
+  }
+}
+
+.col {
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%;
 }
 
-.PF-col-auto {
+.col-auto {
   flex: 0 0 auto;
   width: auto;
   max-width: 100%;
 }
 
-.PF-col-1 {
+.col-1 {
   flex: 0 0 33.333333333333336%;
   max-width: 33.333333333333336%;
 }
 
-.PF-col-2 {
+.col-2 {
   flex: 0 0 66.66666666666667%;
   max-width: 66.66666666666667%;
 }
 
-.PF-col-3 {
+.col-3 {
   flex: 0 0 100%;
   max-width: 100%;
 }
 
-.PF-order-first {
+.order-first {
   order: -1;
 }
 
-.PF-order-last {
+.order-last {
   order: 4;
 }
 
-.PF-order-0 {
+.order-0 {
   order: 0;
 }
 
-.PF-order-1 {
+.order-1 {
   order: 1;
 }
 
-.PF-order-2 {
+.order-2 {
   order: 2;
 }
 
-.PF-order-3 {
+.order-3 {
   order: 3;
 }
 
-.PF-offset-0 {
+.offset-0 {
   margin-left: 0%;
 }
 
-.PF-offset-1 {
+.offset-1 {
   margin-left: 33.333333333333336%;
 }
 
-.PF-offset-2 {
+.offset-2 {
   margin-left: 66.66666666666667%;
 }
 
 @media (min-width: 60em) {
-  .mobile_SP_PF-col {
+  .mobile\\\\:col {
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
   }
 
-  .mobile_SP_PF-col-auto {
+  .mobile\\\\:col-auto {
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
   }
 
-  .mobile_SP_PF-col-1 {
+  .mobile\\\\:col-1 {
     flex: 0 0 33.333333333333336%;
     max-width: 33.333333333333336%;
   }
 
-  .mobile_SP_PF-col-2 {
+  .mobile\\\\:col-2 {
     flex: 0 0 66.66666666666667%;
     max-width: 66.66666666666667%;
   }
 
-  .mobile_SP_PF-col-3 {
+  .mobile\\\\:col-3 {
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .mobile_SP_PF-order-first {
+  .mobile\\\\:order-first {
     order: -1;
   }
 
-  .mobile_SP_PF-order-last {
+  .mobile\\\\:order-last {
     order: 4;
   }
 
-  .mobile_SP_PF-order-0 {
+  .mobile\\\\:order-0 {
     order: 0;
   }
 
-  .mobile_SP_PF-order-1 {
+  .mobile\\\\:order-1 {
     order: 1;
   }
 
-  .mobile_SP_PF-order-2 {
+  .mobile\\\\:order-2 {
     order: 2;
   }
 
-  .mobile_SP_PF-order-3 {
+  .mobile\\\\:order-3 {
     order: 3;
   }
 
-  .mobile_SP_PF-offset-0 {
+  .mobile\\\\:offset-0 {
     margin-left: 0%;
   }
 
-  .mobile_SP_PF-offset-1 {
+  .mobile\\\\:offset-1 {
     margin-left: 33.333333333333336%;
   }
 
-  .mobile_SP_PF-offset-2 {
+  .mobile\\\\:offset-2 {
     margin-left: 66.66666666666667%;
   }
 }
 
 @media (min-width: 80em) {
-  .tablet_SP_PF-col {
+  .tablet\\\\:col {
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
   }
 
-  .tablet_SP_PF-col-auto {
+  .tablet\\\\:col-auto {
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
   }
 
-  .tablet_SP_PF-col-1 {
+  .tablet\\\\:col-1 {
     flex: 0 0 33.333333333333336%;
     max-width: 33.333333333333336%;
   }
 
-  .tablet_SP_PF-col-2 {
+  .tablet\\\\:col-2 {
     flex: 0 0 66.66666666666667%;
     max-width: 66.66666666666667%;
   }
 
-  .tablet_SP_PF-col-3 {
+  .tablet\\\\:col-3 {
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .tablet_SP_PF-order-first {
+  .tablet\\\\:order-first {
     order: -1;
   }
 
-  .tablet_SP_PF-order-last {
+  .tablet\\\\:order-last {
     order: 4;
   }
 
-  .tablet_SP_PF-order-0 {
+  .tablet\\\\:order-0 {
     order: 0;
   }
 
-  .tablet_SP_PF-order-1 {
+  .tablet\\\\:order-1 {
     order: 1;
   }
 
-  .tablet_SP_PF-order-2 {
+  .tablet\\\\:order-2 {
     order: 2;
   }
 
-  .tablet_SP_PF-order-3 {
+  .tablet\\\\:order-3 {
     order: 3;
   }
 
-  .tablet_SP_PF-offset-0 {
+  .tablet\\\\:offset-0 {
     margin-left: 0%;
   }
 
-  .tablet_SP_PF-offset-1 {
+  .tablet\\\\:offset-1 {
     margin-left: 33.333333333333336%;
   }
 
-  .tablet_SP_PF-offset-2 {
+  .tablet\\\\:offset-2 {
     margin-left: 66.66666666666667%;
   }
 }
 
 @media (min-width: 120em) {
-  .desktop_SP_PF-col {
+  .desktop\\\\:col {
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
   }
 
-  .desktop_SP_PF-col-auto {
+  .desktop\\\\:col-auto {
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
   }
 
-  .desktop_SP_PF-col-1 {
+  .desktop\\\\:col-1 {
     flex: 0 0 33.333333333333336%;
     max-width: 33.333333333333336%;
   }
 
-  .desktop_SP_PF-col-2 {
+  .desktop\\\\:col-2 {
     flex: 0 0 66.66666666666667%;
     max-width: 66.66666666666667%;
   }
 
-  .desktop_SP_PF-col-3 {
+  .desktop\\\\:col-3 {
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .desktop_SP_PF-order-first {
+  .desktop\\\\:order-first {
     order: -1;
   }
 
-  .desktop_SP_PF-order-last {
+  .desktop\\\\:order-last {
     order: 4;
   }
 
-  .desktop_SP_PF-order-0 {
+  .desktop\\\\:order-0 {
     order: 0;
   }
 
-  .desktop_SP_PF-order-1 {
+  .desktop\\\\:order-1 {
     order: 1;
   }
 
-  .desktop_SP_PF-order-2 {
+  .desktop\\\\:order-2 {
     order: 2;
   }
 
-  .desktop_SP_PF-order-3 {
+  .desktop\\\\:order-3 {
     order: 3;
   }
 
-  .desktop_SP_PF-offset-0 {
+  .desktop\\\\:offset-0 {
     margin-left: 0%;
   }
 
-  .desktop_SP_PF-offset-1 {
+  .desktop\\\\:offset-1 {
     margin-left: 33.333333333333336%;
   }
 
-  .desktop_SP_PF-offset-2 {
+  .desktop\\\\:offset-2 {
     margin-left: 66.66666666666667%;
   }
 }

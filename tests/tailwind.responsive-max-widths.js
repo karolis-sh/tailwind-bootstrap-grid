@@ -5,15 +5,19 @@ module.exports = {
   ...config,
   theme: {
     screens: {
-      mobile: '1em',
-      desktop: '2em',
+      mobile: '60em',
+      tablet: '80em',
+      desktop: '120em',
     },
   },
   plugins: [
     require('../lib')({
       gridColumns: 3,
-      rtl: true,
-      containerMaxWidths: {},
+      containerMaxWidths: {
+        mobile: '20em',
+        tablet: '40em',
+        desktop: '60em',
+      },
     }),
   ],
 };

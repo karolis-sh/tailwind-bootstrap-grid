@@ -41,46 +41,6 @@ exports[`should handle rtl option and custom prefix, separator 1`] = `
   margin-left: auto;
 }
 
-@media (min-width: 640px) {
-  .sm_SP_PF-container-fluid {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-@media (min-width: 768px) {
-  .md_SP_PF-container-fluid {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg_SP_PF-container-fluid {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl_SP_PF-container-fluid {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
 .PF-row.PF-no-gutters {
   margin-right: 0;
   margin-left: 0;

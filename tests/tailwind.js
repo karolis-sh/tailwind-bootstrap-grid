@@ -10,5 +10,5 @@ module.exports = {
       desktop: '3em',
     },
   },
-  plugins: [require('../index')()],
+  plugins: [require('../lib')({ containerMaxWidths: {} })],
 };

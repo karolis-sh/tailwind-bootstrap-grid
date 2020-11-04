@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should handle rtl 1`] = `
+exports[`should handle responsive max widths 1`] = `
 ".container {
   width: 100%;
   margin-right: auto;
@@ -9,15 +9,21 @@ exports[`should handle rtl 1`] = `
   padding-left: 15px;
 }
 
-@media (min-width: 1em) {
+@media (min-width: 60em) {
   .container {
-    max-width: 1em;
+    max-width: 20em;
   }
 }
 
-@media (min-width: 2em) {
+@media (min-width: 80em) {
   .container {
-    max-width: 2em;
+    max-width: 40em;
+  }
+}
+
+@media (min-width: 120em) {
+  .container {
+    max-width: 60em;
   }
 }
 
@@ -36,9 +42,11 @@ exports[`should handle rtl 1`] = `
 
 .row.no-gutters > .col,
 .row.no-gutters > .mobile\\\\:col,
+.row.no-gutters > .tablet\\\\:col,
 .row.no-gutters > .desktop\\\\:col,
 .row.no-gutters > [class*=\\"col-\\"],
 .row.no-gutters > [class*=\\"mobile\\\\:col-\\"],
+.row.no-gutters > [class*=\\"tablet\\\\:col-\\"],
 .row.no-gutters > [class*=\\"desktop\\\\:col-\\"] {
   padding-right: 0;
   padding-left: 0;
@@ -53,18 +61,23 @@ exports[`should handle rtl 1`] = `
 
 .col,
 .mobile\\\\:col,
+.tablet\\\\:col,
 .desktop\\\\:col,
 .col-auto,
 .mobile\\\\:col-auto,
+.tablet\\\\:col-auto,
 .desktop\\\\:col-auto,
 .col-1,
 .mobile\\\\:col-1,
+.tablet\\\\:col-1,
 .desktop\\\\:col-1,
 .col-2,
 .mobile\\\\:col-2,
+.tablet\\\\:col-2,
 .desktop\\\\:col-2,
 .col-3,
 .mobile\\\\:col-3,
+.tablet\\\\:col-3,
 .desktop\\\\:col-3 {
   position: relative;
   width: 100%;
@@ -123,31 +136,19 @@ exports[`should handle rtl 1`] = `
   order: 3;
 }
 
-[dir=\\"ltr\\"] .offset-0 {
+.offset-0 {
   margin-left: 0%;
 }
 
-[dir=\\"rtl\\"] .offset-0 {
-  margin-right: 0%;
-}
-
-[dir=\\"ltr\\"] .offset-1 {
+.offset-1 {
   margin-left: 33.333333333333336%;
 }
 
-[dir=\\"rtl\\"] .offset-1 {
-  margin-right: 33.333333333333336%;
-}
-
-[dir=\\"ltr\\"] .offset-2 {
+.offset-2 {
   margin-left: 66.66666666666667%;
 }
 
-[dir=\\"rtl\\"] .offset-2 {
-  margin-right: 66.66666666666667%;
-}
-
-@media (min-width: 1em) {
+@media (min-width: 60em) {
   .mobile\\\\:col {
     flex-basis: 0;
     flex-grow: 1;
@@ -199,32 +200,85 @@ exports[`should handle rtl 1`] = `
     order: 3;
   }
 
-  [dir=\\"ltr\\"] .mobile\\\\:offset-0 {
+  .mobile\\\\:offset-0 {
     margin-left: 0%;
   }
 
-  [dir=\\"rtl\\"] .mobile\\\\:offset-0 {
-    margin-right: 0%;
-  }
-
-  [dir=\\"ltr\\"] .mobile\\\\:offset-1 {
+  .mobile\\\\:offset-1 {
     margin-left: 33.333333333333336%;
   }
 
-  [dir=\\"rtl\\"] .mobile\\\\:offset-1 {
-    margin-right: 33.333333333333336%;
-  }
-
-  [dir=\\"ltr\\"] .mobile\\\\:offset-2 {
+  .mobile\\\\:offset-2 {
     margin-left: 66.66666666666667%;
-  }
-
-  [dir=\\"rtl\\"] .mobile\\\\:offset-2 {
-    margin-right: 66.66666666666667%;
   }
 }
 
-@media (min-width: 2em) {
+@media (min-width: 80em) {
+  .tablet\\\\:col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
+  .tablet\\\\:col-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+
+  .tablet\\\\:col-1 {
+    flex: 0 0 33.333333333333336%;
+    max-width: 33.333333333333336%;
+  }
+
+  .tablet\\\\:col-2 {
+    flex: 0 0 66.66666666666667%;
+    max-width: 66.66666666666667%;
+  }
+
+  .tablet\\\\:col-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .tablet\\\\:order-first {
+    order: -1;
+  }
+
+  .tablet\\\\:order-last {
+    order: 4;
+  }
+
+  .tablet\\\\:order-0 {
+    order: 0;
+  }
+
+  .tablet\\\\:order-1 {
+    order: 1;
+  }
+
+  .tablet\\\\:order-2 {
+    order: 2;
+  }
+
+  .tablet\\\\:order-3 {
+    order: 3;
+  }
+
+  .tablet\\\\:offset-0 {
+    margin-left: 0%;
+  }
+
+  .tablet\\\\:offset-1 {
+    margin-left: 33.333333333333336%;
+  }
+
+  .tablet\\\\:offset-2 {
+    margin-left: 66.66666666666667%;
+  }
+}
+
+@media (min-width: 120em) {
   .desktop\\\\:col {
     flex-basis: 0;
     flex-grow: 1;
@@ -276,28 +330,16 @@ exports[`should handle rtl 1`] = `
     order: 3;
   }
 
-  [dir=\\"ltr\\"] .desktop\\\\:offset-0 {
+  .desktop\\\\:offset-0 {
     margin-left: 0%;
   }
 
-  [dir=\\"rtl\\"] .desktop\\\\:offset-0 {
-    margin-right: 0%;
-  }
-
-  [dir=\\"ltr\\"] .desktop\\\\:offset-1 {
+  .desktop\\\\:offset-1 {
     margin-left: 33.333333333333336%;
   }
 
-  [dir=\\"rtl\\"] .desktop\\\\:offset-1 {
-    margin-right: 33.333333333333336%;
-  }
-
-  [dir=\\"ltr\\"] .desktop\\\\:offset-2 {
+  .desktop\\\\:offset-2 {
     margin-left: 66.66666666666667%;
-  }
-
-  [dir=\\"rtl\\"] .desktop\\\\:offset-2 {
-    margin-right: 66.66666666666667%;
   }
 }
 "

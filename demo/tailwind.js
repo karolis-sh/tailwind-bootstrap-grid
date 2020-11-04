@@ -11,7 +11,7 @@ module.exports = {
     },
   },
 
-  plugins: [require('../index')({ rtl: true })],
+  plugins: [require('../lib')({ rtl: true })],
 
   corePlugins: {
     container: false,
