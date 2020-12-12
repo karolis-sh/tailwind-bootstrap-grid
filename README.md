@@ -31,7 +31,7 @@ And don't forget to include `components` and `utilities` in your tailwind base
 css file:
 
 ```css
-@tailwind preflight;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 ```
