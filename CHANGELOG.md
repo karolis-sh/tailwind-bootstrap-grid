@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.2.0](https://github.com/karolis-sh/tailwind-bootstrap-grid/compare/v3.1.0...v3.2.0) (2021-03-03)
+
+
+### Features
+
+* add support for important config option ([75be2c1](https://github.com/karolis-sh/tailwind-bootstrap-grid/commit/75be2c123aa7806b89afe60fe6140c2a525c16eb)), closes [#71](https://github.com/karolis-sh/tailwind-bootstrap-grid/issues/71)
+* add TailwindCSS 2 support ([084772c](https://github.com/karolis-sh/tailwind-bootstrap-grid/commit/084772c43fb99517c4bef9882de9348b595a27e5))
+
 ## [3.1.0](https://github.com/karolis-sh/tailwind-bootstrap-grid/compare/v3.0.1...v3.1.0) (2020-11-04)
 
 ### Features
