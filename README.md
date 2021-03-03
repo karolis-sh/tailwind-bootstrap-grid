@@ -48,6 +48,7 @@ expose a `.container` class.
 - ✅ custom screens
 - ✅ custom separator
 - ✅ custom prefix
+- ✅ important
 - ✅ responsive gutters
 - ✅ rtl support
 
