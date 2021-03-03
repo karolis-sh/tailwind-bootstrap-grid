@@ -75,6 +75,7 @@
     "@k.sh/eslint-config": "^1.21.0",
     "@mdx-js/loader": "^0.20.3",
     "@mdx-js/tag": "^0.20.3",
+    "autoprefixer": "^10.2.4",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.0.6",
     "chalk": "^4.1.0",
@@ -89,7 +90,7 @@
     "lint-staged": "^10.5.4",
     "markdownlint-cli2": "^0.0.14",
     "npm-run-all": "^4.1.5",
-    "postcss": "^7.0.18",
+    "postcss": "^8.2.6",
     "postcss-loader": "^3.0.0",
     "pretty-quick": "^3.1.0",
     "prop-types": "^15.7.2",
@@ -103,12 +104,12 @@
     "sort-package-json": "^1.49.0",
     "standard-version": "^9.0.0",
     "stylefmt": "^6.0.3",
-    "tailwindcss": "1.9.6",
+    "tailwindcss": "^2.0.3",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.8",
     "webpack-dev-server": "^3.8.0"
   },
   "peerDependencies": {
-    "tailwindcss": "^1 || ^1.0.0-beta"
+    "tailwindcss": "^2 || ^1 || ^1.0.0-beta"
   }
 }
