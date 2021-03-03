@@ -6,3 +6,4 @@ package-lock.json
 # project
 /build
 /sample/output.css
+.eslintcache
