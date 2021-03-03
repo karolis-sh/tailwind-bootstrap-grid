@@ -11,4 +11,5 @@ module.exports = {
     },
   },
   plugins: [require('../lib')({ containerMaxWidths: {} })],
+  important: true,
 };
