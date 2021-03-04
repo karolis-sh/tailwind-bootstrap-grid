@@ -68,6 +68,8 @@ expose a `.container` class.
     `.container-fluid` classes
   - `rtl` (default - `false`) - rtl support (`.offset-x` classes will start
     responding to `[dir=ltr]` / `[dir=rtl]`)
+  - `respectImportant` (default - `true`) - whether it should respect the `important`
+    root config option
 
 ## FAQ
 
