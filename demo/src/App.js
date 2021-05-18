@@ -36,9 +36,21 @@ Editor.propTypes = {
   className: PropTypes.string.isRequired,
 };
 
+function Link({ children, ...props }) {
+  return (
+    <a target="_blank" rel="noopener noreferrer" {...props}>
+      {children}
+    </a>
+  );
+}
+
+Link.propTypes = {
+  children: PropTypes.string.isRequired,
+};
+
 export default function App() {
   return (
-    <MDXProvider components={{ code: Editor }}>
+    <MDXProvider components={{ code: Editor, a: Link }}>
       <GithubCorner />
       <About />
       <hr />

@@ -1,10 +1,12 @@
 ## Demo
 
-Based on [Bootstrap docs](https://getbootstrap.com/docs/4.0/layout/grid/#auto-layout-columns) + live code edit.
+Based on [Bootstrap docs](https://getbootstrap.com/docs/5.0/layout/) + live code edit.
 
 ### Auto-layout columns
 
 #### Equal-width
+
+[docs](https://getbootstrap.com/docs/5.0/layout/grid/#equal-width)
 
 ```jsx
 <div class="container">
@@ -31,6 +33,8 @@ Based on [Bootstrap docs](https://getbootstrap.com/docs/4.0/layout/grid/#auto-la
 ```
 
 #### Setting one column width
+
+[docs](https://getbootstrap.com/docs/5.0/layout/grid/#setting-one-column-width)
 
 ```jsx
 <div class="container">
@@ -61,6 +65,8 @@ Based on [Bootstrap docs](https://getbootstrap.com/docs/4.0/layout/grid/#auto-la
 
 #### Variable width content
 
+[docs](https://getbootstrap.com/docs/5.0/layout/grid/#variable-width-content)
+
 ```jsx
 <div class="container">
   <div class="row" style={{ justifyContent: "center" }}>
@@ -88,23 +94,11 @@ Based on [Bootstrap docs](https://getbootstrap.com/docs/4.0/layout/grid/#auto-la
 </div>
 ```
 
-#### Equal-width multi-row
-
-```jsx
-<div class="container">
-  <div class="row">
-    <div class="col">Column</div>
-    <div class="col">Column</div>
-    <div class="w-100"></div>
-    <div class="col">Column</div>
-    <div class="col">Column</div>
-  </div>
-</div>
-```
-
 ### Responsive classes
 
 #### All breakpoints
+
+[docs](https://getbootstrap.com/docs/5.0/layout/grid/#all-breakpoints)
 
 ```jsx
 <div class="container">
@@ -123,75 +117,114 @@ Based on [Bootstrap docs](https://getbootstrap.com/docs/4.0/layout/grid/#auto-la
 
 ### Stacked to horizontal
 
+[docs](https://getbootstrap.com/docs/5.0/layout/grid/#stacked-to-horizontal)
+
 ```jsx
 <div class="container">
   <div class="row">
-    <div class="sm:col-8">.sm:col-8</div>
-    <div class="sm:col-4">.sm:col-4</div>
+    <div class="sm:col-8">sm:col-8</div>
+    <div class="sm:col-4">sm:col-4</div>
   </div>
   <div class="row">
-    <div class="sm:col">.sm:col</div>
-    <div class="sm:col">.sm:col</div>
-    <div class="sm:col">.sm:col</div>
+    <div class="sm:col">sm:col</div>
+    <div class="sm:col">sm:col</div>
+    <div class="sm:col">sm:col</div>
   </div>
 </div>
 ```
 
 ### Mix and match
 
+[docs](https://getbootstrap.com/docs/5.0/layout/grid/#mix-and-match)
+
 ```jsx
 <div class="container">
   {/* Stack the columns on mobile by making one full-width and the other half-width */}
   <div class="row">
-    <div class="col-12 md:col-8">.col-12 .md:col-8</div>
-    <div class="col-6 md:col-4">.col-6 .md:col-4</div>
+    <div class="col-12 md:col-8">col-12 md:col-8</div>
+    <div class="col-6 md:col-4">col-6 md:col-4</div>
   </div>
 
   {/* Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop */}
   <div class="row">
-    <div class="col-6 md:col-4">.col-6 .md:col-4</div>
-    <div class="col-6 md:col-4">.col-6 .md:col-4</div>
-    <div class="col-6 md:col-4">.col-6 .md:col-4</div>
+    <div class="col-6 md:col-4">col-6 md:col-4</div>
+    <div class="col-6 md:col-4">col-6 md:col-4</div>
+    <div class="col-6 md:col-4">col-6 md:col-4</div>
   </div>
 
   {/* Columns are always 50% wide, on mobile and desktop */}
   <div class="row">
-    <div class="col-6">.col-6</div>
-    <div class="col-6">.col-6</div>
+    <div class="col-6">col-6</div>
+    <div class="col-6">col-6</div>
   </div>
 </div>
 ```
 
-### No gutters
+### Row columns
+
+[docs](https://getbootstrap.com/docs/5.0/layout/grid/#row-columns)
+
+`TBD`
+
+### Nesting
+
+[docs](https://getbootstrap.com/docs/5.0/layout/grid/#nesting)
 
 ```jsx
 <div class="container">
-  <div class="row no-gutters">
-    <div class="col-12 sm:col-6 md:col-8">.col-12 .sm:col-6 .md:col-8</div>
-    <div class="col-6 md:col-4">.col-6 .md:col-4</div>
-  </div>
   <div class="row">
-    <div class="col-12 sm:col-6 md:col-8">.col-12 .sm:col-6 .md:col-8</div>
-    <div class="col-6 md:col-4">.col-6 .md:col-4</div>
+    <div class="sm:col-3">
+      Level 1: sm:col-3
+    </div>
+    <div class="sm:col-9">
+      <div class="row">
+        <div class="col-8 sm:col-6">
+          Level 2: col-8 sm:col-6
+        </div>
+        <div class="col-4 sm:col-6">
+          Level 2: col-4 sm:col-6
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 ```
+
+---
 
 ### Reordering
 
 #### Order classes
 
+[docs](https://getbootstrap.com/docs/5.0/layout/columns/#order-classes)
+
 ```jsx
 <div class="container">
   <div class="row">
     <div class="col">
-      First, but unordered
+      First in DOM, no order applied
     </div>
-    <div class="col order-12">
-      Second, but last
+    <div class="col order-5">
+      Second in DOM, with a larger order
+    </div>
+    <div class="col order-1">
+      Third in DOM, with an order of 1
+    </div>
+  </div>
+</div>
+```
+
+```jsx
+<div class="container">
+  <div class="row">
+    <div class="col order-last">
+      First in DOM, ordered last
+    </div>
+    <div class="col">
+      Second in DOM, unordered
     </div>
     <div class="col order-first">
-      Third, but first
+      Third in DOM, ordered first
     </div>
   </div>
 </div>
@@ -201,18 +234,20 @@ Based on [Bootstrap docs](https://getbootstrap.com/docs/4.0/layout/grid/#auto-la
 
 #### Offset classes
 
+[docs](https://getbootstrap.com/docs/5.0/layout/columns/#offset-classes)
+
 ```jsx
 <div class="container">
   <div class="row">
-    <div class="md:col-4">.md:col-4</div>
-    <div class="md:col-4 md:offset-4">.md:col-4 .md:offset-4</div>
+    <div class="md:col-4">md:col-4</div>
+    <div class="md:col-4 md:offset-4">md:col-4 md:offset-4</div>
   </div>
   <div class="row">
-    <div class="md:col-3 md:offset-3">.md:col-3 .md:offset-3</div>
-    <div class="md:col-3 md:offset-3">.md:col-3 .md:offset-3</div>
+    <div class="md:col-3 md:offset-3">md:col-3 md:offset-3</div>
+    <div class="md:col-3 md:offset-3">md:col-3 md:offset-3</div>
   </div>
   <div class="row">
-    <div class="md:col-6 md:offset-3">.md:col-6 .md:offset-3</div>
+    <div class="md:col-6 md:offset-3">md:col-6 md:offset-3</div>
   </div>
 </div>
 ```
@@ -220,33 +255,46 @@ Based on [Bootstrap docs](https://getbootstrap.com/docs/4.0/layout/grid/#auto-la
 ```jsx
 <div class="container">
   <div class="row">
-    <div class="sm:col-5 md:col-6">.sm:col-5 .md:col-6</div>
-    <div class="sm:col-5 sm:offset-2 md:col-6 md:offset-0">.sm:col-5 .sm:offset-2 .md:col-6 .md:offset-0</div>
+    <div class="sm:col-5 md:col-6">sm:col-5 md:col-6</div>
+    <div class="sm:col-5 sm:offset-2 md:col-6 md:offset-0">sm:col-5 sm:offset-2 md:col-6 md:offset-0</div>
   </div>
   <div class="row">
-    <div class="sm:col-6 md:col-5 lg:col-6">.sm:col-6 .md:col-5 .lg:col-6</div>
-    <div class="sm:col-6 md:col-5 md:offset-2 lg:col-6 lg:offset-0">.sm:col-6 .md:col-5 .md:offset-2 .lg:col-6 .lg:offset-0</div>
+    <div class="sm:col-6 md:col-5 lg:col-6">sm:col-6 md:col-5 lg:col-6</div>
+    <div class="sm:col-6 md:col-5 md:offset-2 lg:col-6 lg:offset-0">sm:col-6 md:col-5 md:offset-2 lg:col-6 lg:offset-0</div>
   </div>
 </div>
 ```
 
-### Nesting
+---
 
-```jsx
-<div class="container">
-  <div class="row">
-    <div class="sm:col-9">
-      Level 1: .sm:col-9
-      <div class="row">
-        <div class="col-8 sm:col-6">
-          Level 2: .col-8 .sm:col-6
-        </div>
-        <div class="col-4 sm:col-6">
-          Level 2: .col-4 .sm:col-6
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-```
+## Gutters
 
+### Horizontal gutters
+
+[docs](https://getbootstrap.com/docs/5.0/layout/gutters/#horizontal-gutters)
+
+`TBD`
+
+### Vertical gutters
+
+[docs](https://getbootstrap.com/docs/5.0/layout/gutters/#vertical-gutters)
+
+`TBD`
+
+### Horizontal & vertical gutters
+
+[docs](https://getbootstrap.com/docs/5.0/layout/gutters/#horizontal--vertical-gutters)
+
+`TBD`
+
+### Row columns gutters
+
+[docs](https://getbootstrap.com/docs/5.0/layout/gutters/#row-columns-gutters)
+
+`TBD`
+
+### No gutters
+
+[docs](https://getbootstrap.com/docs/5.0/layout/gutters/#no-gutters)
+
+`TBD`
