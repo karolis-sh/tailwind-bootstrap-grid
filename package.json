@@ -53,10 +53,10 @@
     }
   },
   "dependencies": {
-    "chalk": "^4.1.0",
-    "joi": "^17.3.0",
-    "lodash": "^4.17.15",
-    "reduce-css-calc": "^2.1.6"
+    "chalk": "^4.1.1",
+    "joi": "^17.4.0",
+    "lodash": "^4.17.21",
+    "reduce-css-calc": "^2.1.8"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
