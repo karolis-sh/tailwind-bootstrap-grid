@@ -53,6 +53,7 @@
     }
   },
   "dependencies": {
+    "chalk": "^4.1.0",
     "joi": "^17.3.0",
     "lodash": "^4.17.15",
     "reduce-css-calc": "^2.1.6"
@@ -67,7 +68,6 @@
     "autoprefixer": "^10.2.5",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
-    "chalk": "^4.1.0",
     "cross-env": "^7.0.2",
     "css-loader": "^5.2.4",
     "cz-conventional-changelog": "^3.3.0",
