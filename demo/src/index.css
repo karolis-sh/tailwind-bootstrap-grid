@@ -42,25 +42,13 @@ html {
   text-overflow: ellipsis;
 }
 
-.container > .row + .row {
-  margin-top: 1rem;
-}
-
 .react-live {
   margin: 1rem -15px 0;
 }
 
 .react-live__preview {
-  border: 0.2rem solid #212529;
+  border: 0.2rem solid #f7f7f9;
   padding: 15px;
-}
-
-.react-live__editor {
-  font-family: 'SF Mono', 'Roboto Mono', Menlo, monospace;
-  font-size: 13px;
-  margin: 0;
-  padding: 1.5rem !important;
-  overflow-x: auto;
 }
 
 .react-live__error {

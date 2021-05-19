@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractCssChunks = require('extract-css-chunks-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const babelLoader = {
   loader: 'babel-loader',
@@ -11,36 +11,35 @@ const babelLoader = {
 };
 
 module.exports = {
-  mode: process.env.NODE_ENV,
   entry: path.resolve(__dirname, 'src/index.js'),
   output: {
     path: path.resolve(__dirname, '../build'),
   },
-  devtool: process.env.NODE_ENV === 'development' ? 'eval' : 'cheap-module-source-map',
+  devtool: process.env.NODE_ENV === 'development' ? 'eval' : 'source-map',
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.js$/i,
         exclude: /node_modules/,
         use: babelLoader,
       },
       {
-        test: /.mdx?$/,
+        test: /.mdx?$/i,
         use: [babelLoader, '@mdx-js/loader'],
       },
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         exclude: /node_modules/,
         use: [
-          ExtractCssChunks.loader,
+          MiniCssExtractPlugin.loader,
           { loader: 'css-loader', options: { importLoaders: 1 } },
-          { loader: 'postcss-loader', options: { config: { path: __dirname } } },
+          { loader: 'postcss-loader', options: { postcssOptions: { path: __dirname } } },
         ],
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src/index.html') }),
-    new ExtractCssChunks(),
+    new MiniCssExtractPlugin(),
   ],
 };

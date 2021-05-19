@@ -14,10 +14,13 @@ module.exports = {
     require('../lib')({
       gridColumns: 3,
       gridGutterWidth: '1em',
-      gridGutterWidths: {
-        mobile: '2em',
-        tablet: '4em',
-        desktop: '6em',
+      gridGutters: {
+        0: 0,
+        1: '.25rem',
+        2: '.5rem',
+        3: '1rem',
+        4: '1.5rem',
+        5: '3rem',
       },
       containerMaxWidths: {},
     }),

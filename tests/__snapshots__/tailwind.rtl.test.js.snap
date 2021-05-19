@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should handle rtl 1`] = `
-".container {
+".container, .container-fluid {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
+  padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
 }
 
 @media (min-width: 1em) {
@@ -21,106 +21,58 @@ exports[`should handle rtl 1`] = `
   }
 }
 
-.container-fluid {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.row.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.row.no-gutters > .col,
-.row.no-gutters > .mobile\\\\:col,
-.row.no-gutters > .desktop\\\\:col,
-.row.no-gutters > [class*=\\"col-\\"],
-.row.no-gutters > [class*=\\"mobile\\\\:col-\\"],
-.row.no-gutters > [class*=\\"desktop\\\\:col-\\"] {
-  padding-right: 0;
-  padding-left: 0;
-}
-
 .row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: calc(var(--bs-gutter-x) / -2);
 }
 
-.col,
-.mobile\\\\:col,
-.desktop\\\\:col,
-.col-auto,
-.mobile\\\\:col-auto,
-.desktop\\\\:col-auto,
-.col-1,
-.mobile\\\\:col-1,
-.desktop\\\\:col-1,
-.col-2,
-.mobile\\\\:col-2,
-.desktop\\\\:col-2,
-.col-3,
-.mobile\\\\:col-3,
-.desktop\\\\:col-3 {
-  position: relative;
+.row > * {
+  box-sizing: border-box;
+  flex-shrink: 0;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) / 2);
+  padding-left: calc(var(--bs-gutter-x) / 2);
+  margin-top: var(--bs-gutter-y);
 }
 
 .col {
-  flex-basis: 0;
-  flex-grow: 1;
-  max-width: 100%;
+  flex: 1 0 0%;
+}
+
+.row-cols-auto > * {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.row-cols-1 > * {
+  flex: 0 0 auto;
+  width: 100%;
 }
 
 .col-auto {
   flex: 0 0 auto;
   width: auto;
-  max-width: 100%;
 }
 
 .col-1 {
-  flex: 0 0 33.333333333333336%;
-  max-width: 33.333333333333336%;
+  flex: 0 0 auto;
+  width: 33.333333333333336%;
 }
 
 .col-2 {
-  flex: 0 0 66.66666666666667%;
-  max-width: 66.66666666666667%;
+  flex: 0 0 auto;
+  width: 66.66666666666667%;
 }
 
 .col-3 {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
-.order-first {
-  order: -1;
-}
-
-.order-last {
-  order: 4;
-}
-
-.order-0 {
-  order: 0;
-}
-
-.order-1 {
-  order: 1;
-}
-
-.order-2 {
-  order: 2;
-}
-
-.order-3 {
-  order: 3;
+  flex: 0 0 auto;
+  width: 100%;
 }
 
 [dir=\\"ltr\\"] .offset-0 {
@@ -147,56 +99,71 @@ exports[`should handle rtl 1`] = `
   margin-right: 66.66666666666667%;
 }
 
+.g-0, .gx-0 {
+  --bs-gutter-x: 0;
+}
+
+.g-0, .gy-0 {
+  --bs-gutter-y: 0;
+}
+
+.order-first {
+  order: -1;
+}
+
+.order-last {
+  order: 4;
+}
+
+.order-0 {
+  order: 0;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-3 {
+  order: 3;
+}
+
 @media (min-width: 1em) {
   .mobile\\\\:col {
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
+    flex: 1 0 0%;
+  }
+
+  .mobile\\\\:row-cols-auto > * {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  .mobile\\\\:row-cols-1 > * {
+    flex: 0 0 auto;
+    width: 100%;
   }
 
   .mobile\\\\:col-auto {
     flex: 0 0 auto;
     width: auto;
-    max-width: 100%;
   }
 
   .mobile\\\\:col-1 {
-    flex: 0 0 33.333333333333336%;
-    max-width: 33.333333333333336%;
+    flex: 0 0 auto;
+    width: 33.333333333333336%;
   }
 
   .mobile\\\\:col-2 {
-    flex: 0 0 66.66666666666667%;
-    max-width: 66.66666666666667%;
+    flex: 0 0 auto;
+    width: 66.66666666666667%;
   }
 
   .mobile\\\\:col-3 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  .mobile\\\\:order-first {
-    order: -1;
-  }
-
-  .mobile\\\\:order-last {
-    order: 4;
-  }
-
-  .mobile\\\\:order-0 {
-    order: 0;
-  }
-
-  .mobile\\\\:order-1 {
-    order: 1;
-  }
-
-  .mobile\\\\:order-2 {
-    order: 2;
-  }
-
-  .mobile\\\\:order-3 {
-    order: 3;
+    flex: 0 0 auto;
+    width: 100%;
   }
 
   [dir=\\"ltr\\"] .mobile\\\\:offset-0 {
@@ -222,58 +189,73 @@ exports[`should handle rtl 1`] = `
   [dir=\\"rtl\\"] .mobile\\\\:offset-2 {
     margin-right: 66.66666666666667%;
   }
+
+  .mobile\\\\:g-0, .mobile\\\\:gx-0 {
+    --bs-gutter-x: 0;
+  }
+
+  .mobile\\\\:g-0, .mobile\\\\:gy-0 {
+    --bs-gutter-y: 0;
+  }
+
+  .mobile\\\\:order-first {
+    order: -1;
+  }
+
+  .mobile\\\\:order-last {
+    order: 4;
+  }
+
+  .mobile\\\\:order-0 {
+    order: 0;
+  }
+
+  .mobile\\\\:order-1 {
+    order: 1;
+  }
+
+  .mobile\\\\:order-2 {
+    order: 2;
+  }
+
+  .mobile\\\\:order-3 {
+    order: 3;
+  }
 }
 
 @media (min-width: 2em) {
   .desktop\\\\:col {
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
+    flex: 1 0 0%;
+  }
+
+  .desktop\\\\:row-cols-auto > * {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  .desktop\\\\:row-cols-1 > * {
+    flex: 0 0 auto;
+    width: 100%;
   }
 
   .desktop\\\\:col-auto {
     flex: 0 0 auto;
     width: auto;
-    max-width: 100%;
   }
 
   .desktop\\\\:col-1 {
-    flex: 0 0 33.333333333333336%;
-    max-width: 33.333333333333336%;
+    flex: 0 0 auto;
+    width: 33.333333333333336%;
   }
 
   .desktop\\\\:col-2 {
-    flex: 0 0 66.66666666666667%;
-    max-width: 66.66666666666667%;
+    flex: 0 0 auto;
+    width: 66.66666666666667%;
   }
 
   .desktop\\\\:col-3 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  .desktop\\\\:order-first {
-    order: -1;
-  }
-
-  .desktop\\\\:order-last {
-    order: 4;
-  }
-
-  .desktop\\\\:order-0 {
-    order: 0;
-  }
-
-  .desktop\\\\:order-1 {
-    order: 1;
-  }
-
-  .desktop\\\\:order-2 {
-    order: 2;
-  }
-
-  .desktop\\\\:order-3 {
-    order: 3;
+    flex: 0 0 auto;
+    width: 100%;
   }
 
   [dir=\\"ltr\\"] .desktop\\\\:offset-0 {
@@ -298,6 +280,38 @@ exports[`should handle rtl 1`] = `
 
   [dir=\\"rtl\\"] .desktop\\\\:offset-2 {
     margin-right: 66.66666666666667%;
+  }
+
+  .desktop\\\\:g-0, .desktop\\\\:gx-0 {
+    --bs-gutter-x: 0;
+  }
+
+  .desktop\\\\:g-0, .desktop\\\\:gy-0 {
+    --bs-gutter-y: 0;
+  }
+
+  .desktop\\\\:order-first {
+    order: -1;
+  }
+
+  .desktop\\\\:order-last {
+    order: 4;
+  }
+
+  .desktop\\\\:order-0 {
+    order: 0;
+  }
+
+  .desktop\\\\:order-1 {
+    order: 1;
+  }
+
+  .desktop\\\\:order-2 {
+    order: 2;
+  }
+
+  .desktop\\\\:order-3 {
+    order: 3;
   }
 }
 "
