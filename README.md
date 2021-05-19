@@ -3,9 +3,8 @@
 [![npm version][version-badge]][version]
 ![Build Status](https://github.com/karolis-sh/tailwind-bootstrap-grid/workflows/Node.js%20CI/badge.svg)
 [![License: MIT][license-badge]][license]
-[![code style: prettier][code-style-badge]][code-style]
 
-Bootstrap v4 flexbox grid system as a Tailwind CSS plugin.
+Bootstrap **v5** flexbox grid system as a Tailwind CSS plugin.
 
 Check the [demo](https://tailwind-bootstrap-grid.netlify.com/).
 
@@ -54,16 +53,16 @@ expose a `.container` class.
 
 ## Options
 
-- Original Bootstrap grid's [options](https://getbootstrap.com/docs/4.0/layout/grid/#grid-options):
+- Original Bootstrap grid's options:
 
   - `gridColumns` (default - `12`) - grid size
-  - `gridGutterWidth` (default - `"30px"`) - container and rows gutter width
+  - `gridGutterWidth` (default - `"1.5rem"`) - container and rows gutter width
+  - `gridGutters` (default - `{ 0: 0 }`) - gutter variable class steps
+    (`--bs-gutter-x`, `--bs-gutter-y`)
   - `containerMaxWidths` (default - `{}`) - the `max-width` container value for
     each breakpoint
 
 - Extra options:
-  - `gridGutterWidths` (default - `{}`) - container gutter width for each breakpoint
-  - `generateNoGutters` (default - `true`) - whether to generate `.no-gutter` class
   - `generateContainer` (default - `true`) - whether to generate `.container` and
     `.container-fluid` classes
   - `rtl` (default - `false`) - rtl support (`.offset-x` classes will start
@@ -78,6 +77,7 @@ expose a `.container` class.
    plugins expose a `.container` class.
 1. _**How to use rtl css?**_ Set the `ltr` or `rtl` [dir](https://www.w3schools.com/tags/att_global_dir.asp)
    attribute on your container (usually the root `html`).
+1. _**Is there a Bootstrap v4 grid implementation?**_ Yes, use `tailwind-bootstrap-grid@3`.
 
 ## Related
 
@@ -91,5 +91,3 @@ MIT
 [version]: https://www.npmjs.com/package/tailwind-bootstrap-grid
 [license-badge]: https://img.shields.io/badge/License-MIT-yellow.svg
 [license]: https://opensource.org/licenses/MIT
-[code-style-badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg
-[code-style]: https://github.com/prettier/prettier
