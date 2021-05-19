@@ -35,10 +35,10 @@ css file:
 @tailwind utilities;
 ```
 
-This will generate Bootstrap v4 [flexbox grid](https://getbootstrap.com/docs/4.0/layout/grid/).
+This will generate Bootstrap v5 flexbox grid.
 
 \* **NOTE**: When using the `.container` class from this plugin you will need to
-[disable](https://tailwindcss.com/docs/container/#disabling) the core
+[disable](https://tailwindcss.com/docs/container#disabling-entirely) the core
 [container container plugin](https://tailwindcss.com/docs/container/) as both plugins
 expose a `.container` class.
 
@@ -48,7 +48,6 @@ expose a `.container` class.
 - ✅ custom separator
 - ✅ custom prefix
 - ✅ important
-- ✅ responsive gutters
 - ✅ rtl support
 
 ## Options
