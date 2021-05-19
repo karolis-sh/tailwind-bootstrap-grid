@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/karolis-sh/tailwind-bootstrap-grid/compare/v3.3.0...v4.0.0) (2021-05-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* Tailwind CSS v1 will no longer be supported.
+* Gutter class changes and removing gridGutterWidths, generateNoGutters options.
+
+### Features
+
+* migrate to Bootstrap 5 ([ccf8882](https://github.com/karolis-sh/tailwind-bootstrap-grid/commit/ccf88821ccb1d267a3f870775fd0b9958dcc7ce1)), closes [#75](https://github.com/karolis-sh/tailwind-bootstrap-grid/issues/75)
+* remove Tailwind CSS v1 support ([2c03247](https://github.com/karolis-sh/tailwind-bootstrap-grid/commit/2c0324781c508563b9e3d1e4dd6beef842ae73ef))
+
+
+### Bug Fixes
+
+* **deps:** bump chalk, joi, lodash, reduce-css-calc ([e512bd9](https://github.com/karolis-sh/tailwind-bootstrap-grid/commit/e512bd91a193dd0e3b480d6599decadf539d61d9))
+
 ## [3.3.0](https://github.com/karolis-sh/tailwind-bootstrap-grid/compare/v3.2.0...v3.3.0) (2021-03-04)
 
 
