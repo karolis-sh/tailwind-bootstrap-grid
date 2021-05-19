@@ -95,6 +95,6 @@
     "webpack-dev-server": "^3.11.2"
   },
   "peerDependencies": {
-    "tailwindcss": "^2 || ^1 || ^1.0.0-beta"
+    "tailwindcss": "^2"
   }
 }
