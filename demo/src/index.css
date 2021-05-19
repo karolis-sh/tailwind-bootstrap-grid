@@ -42,10 +42,6 @@ html {
   text-overflow: ellipsis;
 }
 
-.container > .row + .row {
-  margin-top: 1rem;
-}
-
 .react-live {
   margin: 1rem -15px 0;
 }

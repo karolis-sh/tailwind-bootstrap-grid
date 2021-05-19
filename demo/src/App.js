@@ -52,9 +52,13 @@ export default function App() {
   return (
     <MDXProvider components={{ code: Editor, a: Link }}>
       <GithubCorner />
-      <About />
-      <hr />
-      <Demo />
+      <div className="container">
+        <About />
+      </div>
+      <hr className="m-1" />
+      <div className="container">
+        <Demo />
+      </div>
       <Direction />
     </MDXProvider>
   );

@@ -18,6 +18,7 @@ export default () => (
           top: 0,
           border: 0,
           right: 0,
+          zIndex: 1,
         }}
         aria-hidden="true"
       >
