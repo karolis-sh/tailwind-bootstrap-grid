@@ -39,7 +39,7 @@ This will generate Bootstrap v5 flexbox grid.
 
 \* **NOTE**: When using the `.container` class from this plugin you will need to
 [disable](https://tailwindcss.com/docs/container#disabling-entirely) the core
-[container container plugin](https://tailwindcss.com/docs/container/) as both plugins
+[container plugin](https://tailwindcss.com/docs/container/) as both plugins
 expose a `.container` class.
 
 ## Features & Tailwind CSS options support
@@ -81,10 +81,6 @@ expose a `.container` class.
 ## Related
 
 [postcss-bootstrap-4-grid](https://github.com/johnwatkins0/postcss-bootstrap-4-grid)
-
-## License
-
-MIT
 
 [version-badge]: https://badge.fury.io/js/tailwind-bootstrap-grid.svg
 [version]: https://www.npmjs.com/package/tailwind-bootstrap-grid
