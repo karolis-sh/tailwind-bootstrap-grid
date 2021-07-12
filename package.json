@@ -25,7 +25,7 @@
   "scripts": {
     "build": "run-p build:*",
     "build:demo": "cross-env NODE_ENV=production webpack --mode production --config demo/webpack.config.js",
-    "build:sample": "tailwind build sample/input.css -c sample/tailwind.js -o sample/output.css --no-autoprefixer",
+    "build:sample": "cd sample && tailwindcss --no-autoprefixer -i input.css -o output.css",
     "clean": "rimraf sample/output.css build",
     "format": "run-p format:*",
     "format:js": "prettier --write '**/*.*'",
@@ -90,7 +90,7 @@
     "serve": "^11.3.2",
     "sort-package-json": "^1.50.0",
     "standard-version": "^9.3.0",
-    "tailwindcss": "^2.0.3",
+    "tailwindcss": "^2.2.4",
     "webpack": "^5.37.0",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2"

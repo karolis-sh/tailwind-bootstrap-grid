@@ -1,7 +1,6 @@
 /* eslint-disable global-require */
 
 module.exports = {
-  presets: [],
   theme: {
     screens: {
       mobile: '60em',
