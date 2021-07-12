@@ -96,5 +96,9 @@
   },
   "peerDependencies": {
     "tailwindcss": "^2"
+  },
+  "volta": {
+    "node": "14.17.3",
+    "yarn": "1.22.10"
   }
 }
