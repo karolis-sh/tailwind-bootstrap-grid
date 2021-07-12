@@ -31,7 +31,7 @@
     "format:js": "prettier --write '**/*.*'",
     "format:package-json": "sort-package-json",
     "lint": "run-p lint:*",
-    "lint:js": "eslint . --cache",
+    "lint:js": "eslint . --cache --ignore-path .gitignore",
     "lint:md": "markdownlint-cli2 '**/*.md' '!node_modules' '!**/node_modules' '!**/CHANGELOG.md'",
     "qa": "run-p test lint",
     "release": "yarn && run-s clean build qa && standard-version --no-verify && git push --follow-tags --no-verify && npm publish",
