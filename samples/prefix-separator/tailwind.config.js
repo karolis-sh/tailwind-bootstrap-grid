@@ -1,5 +1,3 @@
-/* eslint-disable global-require */
-
 module.exports = {
   theme: {
     screens: {
@@ -8,9 +6,11 @@ module.exports = {
       desktop: '120em',
     },
   },
-
+  variants: {
+    extend: {},
+  },
   plugins: [
-    require('../lib')({
+    require('../../lib')({
       gridColumns: 3,
       containerMaxWidths: {
         mobile: '20em',
@@ -19,9 +19,9 @@ module.exports = {
       },
     }),
   ],
-
-  corePlugins: [],
-
+  corePlugins: {
+    container: false,
+  },
   prefix: 'PF-',
   separator: '_SP_',
 };
