@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="output.css" />
+    <style>
+      .container .row > .col,
+      .container .row > .sm\:col,
+      .container .row > .md\:col,
+      .container .row > .lg\:col,
+      .container .row > .xl\:col,
+      .container .row > [class^='col-'],
+      .container .row > [class^='sm:col-'],
+      .container .row > [class^='md:col-'],
+      .container .row > [class^='lg:col-'],
+      .container .row > [class^='xl:col-'] {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        background-color: rgba(86, 61, 124, 0.15);
+        border: 1px solid rgba(86, 61, 124, 0.2);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      body {
+        padding: 50px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col">1 of 2</div>
+          <div class="col">2 of 2</div>
+        </div>
+        <div class="row">
+          <div class="col">1 of 3</div>
+          <div class="col">2 of 3</div>
+          <div class="col">3 of 3</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

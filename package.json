@@ -25,8 +25,10 @@
   "scripts": {
     "build": "run-p build:*",
     "build:demo": "cross-env NODE_ENV=production webpack --mode production --config demo/webpack.config.js",
-    "build:sample": "cd sample && tailwindcss --no-autoprefixer -i input.css -o output.css",
-    "clean": "rimraf sample/output.css build",
+    "build:sample": "run-p build:sample:*",
+    "build:sample:prefix-separator": "cd samples/prefix-separator && NODE_ENV=production tailwindcss --no-autoprefixer -i input.css -o output.css",
+    "build:sample:purge": "cd samples/purge && NODE_ENV=production tailwindcss -i input.css -o output.css",
+    "clean": "rimraf build && rimraf -g samples/*/output.css",
     "format": "run-p format:*",
     "format:js": "prettier --write '**/*.*'",
     "format:package-json": "sort-package-json",
@@ -39,7 +41,6 @@
     "tdd": "npm test -- --watch",
     "test": "jest tests",
     "try-demo": "run-s clean build:demo && serve build",
-    "upgrade-interactive": "npx npm-check --update",
     "prepare": "husky install"
   },
   "lint-staged": {

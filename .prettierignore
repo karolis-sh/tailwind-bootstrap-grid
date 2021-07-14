@@ -5,6 +5,7 @@
 !*.css
 !*.md
 !*.yml
+!*.html
 
 # npm files
 node_modules
@@ -12,5 +13,5 @@ package.json
 
 # project
 /build
-/sample/output.css
+/samples/*/output.css
 CHANGELOG.md
