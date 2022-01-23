@@ -24,6 +24,7 @@
     "build:sample": "run-p build:sample:*",
     "build:sample:prefix-separator": "cd samples/prefix-separator && NODE_ENV=production tailwindcss --no-autoprefixer -i input.css -o output.css",
     "build:sample:purge": "cd samples/purge && NODE_ENV=production tailwindcss -i input.css -o output.css",
+    "build:sample:default": "cd samples/default && NODE_ENV=production tailwindcss -i input.css -o output.css",
     "clean": "rimraf build && rimraf -g samples/*/output.css",
     "format": "run-p format:*",
     "format:js": "prettier --write '**/*.*'",
