@@ -44,7 +44,7 @@
     "package.json": "sort-package-json"
   },
   "dependencies": {
-    "joi": "^17.4.0",
+    "joi": "^17.5.0",
     "picocolors": "^1.0.0"
   },
   "devDependencies": {
