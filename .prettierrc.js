@@ -1,1 +1,1 @@
-module.exports = require('@k.sh/eslint-config/prettier');
+module.exports = require('@k.sh/prettier-config');
