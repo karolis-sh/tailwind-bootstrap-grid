@@ -3,6 +3,12 @@ const config = require('./tailwind.base');
 
 module.exports = {
   ...config,
+  safelist: [
+    {
+      pattern: /./,
+      variants: ['mobile', 'desktop'],
+    },
+  ],
   theme: {
     screens: {
       mobile: '1em',

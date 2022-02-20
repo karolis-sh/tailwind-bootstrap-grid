@@ -2,6 +2,12 @@
 
 module.exports = {
   // https://getbootstrap.com/docs/4.1/layout/grid/#grid-options
+  safelist: [
+    {
+      pattern: /./,
+      variants: ['sm', 'md', 'lg', 'xl', 'xxl'],
+    },
+  ],
   theme: {
     screens: {
       sm: '576px',
@@ -31,8 +37,5 @@ module.exports = {
       },
     }),
   ],
-  purge: false,
   corePlugins: [],
-  // prefix: 'X-',
-  // separator: '_',
 };
