@@ -125,4 +125,4 @@ Use an appropriate commit type. Be especially careful with breaking changes.
 
 ## Releases
 
-The `master` branch is the main release branch, where changes get released periodically.
+The `main` branch is the main release branch, where changes get released periodically.

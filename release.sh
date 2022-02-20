@@ -6,7 +6,7 @@ if [ -z "$(npm whoami)" ]; then
 fi
 
 if [ -z "$(git status --porcelain)" ]; then
-    git checkout master
+    git checkout main
     git pull
     yarn release
 else

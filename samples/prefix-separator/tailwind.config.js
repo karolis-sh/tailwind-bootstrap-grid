@@ -1,4 +1,5 @@
 module.exports = {
+  safelist: [{ pattern: /./ }],
   theme: {
     screens: {
       mobile: '60em',

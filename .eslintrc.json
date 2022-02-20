@@ -1,8 +1,7 @@
 {
-  "extends": ["@k.sh/eslint-config"],
-  "env": { "node": true, "jest": true },
-  "rules": {
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": ["!index.js"] }],
-    "no-lone-blocks": 0
+  "extends": ["@k.sh", "plugin:node/recommended", "plugin:jsdoc/recommended"],
+  "env": {
+    "node": true,
+    "jest": true
   }
 }
