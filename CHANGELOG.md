@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.0.0](https://github.com/karolis-sh/tailwind-bootstrap-grid/compare/v4.0.0...v5.0.0) (2022-02-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop TailwindCSS 2 support
+
+### Features
+
+* add TailwindCSS 3 support ([95b8062](https://github.com/karolis-sh/tailwind-bootstrap-grid/commit/95b8062add721372b7d07b6ecc3f70598446cdcd))
+
+
+### Bug Fixes
+
+* bump joi ([665dda8](https://github.com/karolis-sh/tailwind-bootstrap-grid/commit/665dda89e590c40c7736d92c39bf9b69f2d0221b))
+* swap chalk with picocolors ([d4f9be2](https://github.com/karolis-sh/tailwind-bootstrap-grid/commit/d4f9be2758398e1fd982220c9cd92cc9b14fc637))
+* use tailwindcss/plugin wrapper ([e920c0b](https://github.com/karolis-sh/tailwind-bootstrap-grid/commit/e920c0becccde9020d91a55fc6d500a71f6ea7ea))
+
 ## [4.0.0](https://github.com/karolis-sh/tailwind-bootstrap-grid/compare/v3.3.0...v4.0.0) (2021-05-19)
 
 
