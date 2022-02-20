@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should handle rtl 1`] = `
-".container, .container-fluid {
+".container,
+.container-fluid {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -99,11 +100,13 @@ exports[`should handle rtl 1`] = `
   margin-right: 66.66666666666667%;
 }
 
-.g-0, .gx-0 {
+.g-0,
+.gx-0 {
   --bs-gutter-x: 0;
 }
 
-.g-0, .gy-0 {
+.g-0,
+.gy-0 {
   --bs-gutter-y: 0;
 }
 
@@ -190,11 +193,13 @@ exports[`should handle rtl 1`] = `
     margin-right: 66.66666666666667%;
   }
 
-  .mobile\\\\:g-0, .mobile\\\\:gx-0 {
+  .mobile\\\\:g-0,
+  .mobile\\\\:gx-0 {
     --bs-gutter-x: 0;
   }
 
-  .mobile\\\\:g-0, .mobile\\\\:gy-0 {
+  .mobile\\\\:g-0,
+  .mobile\\\\:gy-0 {
     --bs-gutter-y: 0;
   }
 
@@ -282,11 +287,13 @@ exports[`should handle rtl 1`] = `
     margin-right: 66.66666666666667%;
   }
 
-  .desktop\\\\:g-0, .desktop\\\\:gx-0 {
+  .desktop\\\\:g-0,
+  .desktop\\\\:gx-0 {
     --bs-gutter-x: 0;
   }
 
-  .desktop\\\\:g-0, .desktop\\\\:gy-0 {
+  .desktop\\\\:g-0,
+  .desktop\\\\:gy-0 {
     --bs-gutter-y: 0;
   }
 

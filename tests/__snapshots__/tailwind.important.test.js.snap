@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should handle defaults 1`] = `
-".container, .container-fluid {
+".container,
+.container-fluid {
   width: 100% !important;
   margin-right: auto !important;
   margin-left: auto !important;
@@ -199,11 +200,13 @@ exports[`should handle defaults 1`] = `
   margin-left: 91.66666666666667%;
 }
 
-.g-0, .gx-0 {
+.g-0,
+.gx-0 {
   --bs-gutter-x: 0;
 }
 
-.g-0, .gy-0 {
+.g-0,
+.gy-0 {
   --bs-gutter-y: 0;
 }
 
@@ -420,11 +423,13 @@ exports[`should handle defaults 1`] = `
     margin-left: 91.66666666666667%;
   }
 
-  .mobile\\\\:g-0, .mobile\\\\:gx-0 {
+  .mobile\\\\:g-0,
+  .mobile\\\\:gx-0 {
     --bs-gutter-x: 0;
   }
 
-  .mobile\\\\:g-0, .mobile\\\\:gy-0 {
+  .mobile\\\\:g-0,
+  .mobile\\\\:gy-0 {
     --bs-gutter-y: 0;
   }
 
@@ -642,11 +647,13 @@ exports[`should handle defaults 1`] = `
     margin-left: 91.66666666666667%;
   }
 
-  .tablet\\\\:g-0, .tablet\\\\:gx-0 {
+  .tablet\\\\:g-0,
+  .tablet\\\\:gx-0 {
     --bs-gutter-x: 0;
   }
 
-  .tablet\\\\:g-0, .tablet\\\\:gy-0 {
+  .tablet\\\\:g-0,
+  .tablet\\\\:gy-0 {
     --bs-gutter-y: 0;
   }
 
@@ -864,11 +871,13 @@ exports[`should handle defaults 1`] = `
     margin-left: 91.66666666666667%;
   }
 
-  .desktop\\\\:g-0, .desktop\\\\:gx-0 {
+  .desktop\\\\:g-0,
+  .desktop\\\\:gx-0 {
     --bs-gutter-x: 0;
   }
 
-  .desktop\\\\:g-0, .desktop\\\\:gy-0 {
+  .desktop\\\\:g-0,
+  .desktop\\\\:gy-0 {
     --bs-gutter-y: 0;
   }
 

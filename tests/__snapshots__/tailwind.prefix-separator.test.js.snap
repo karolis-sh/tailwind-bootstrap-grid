@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should handle custom prefix and separator 1`] = `
-".PF-container, .PF-container-fluid {
+".PF-container,
+.PF-container-fluid {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -93,11 +94,13 @@ exports[`should handle custom prefix and separator 1`] = `
   margin-left: 66.66666666666667%;
 }
 
-.PF-g-0, .PF-gx-0 {
+.PF-g-0,
+.PF-gx-0 {
   --bs-gutter-x: 0;
 }
 
-.PF-g-0, .PF-gy-0 {
+.PF-g-0,
+.PF-gy-0 {
   --bs-gutter-y: 0;
 }
 
@@ -172,11 +175,13 @@ exports[`should handle custom prefix and separator 1`] = `
     margin-left: 66.66666666666667%;
   }
 
-  .mobile_SP_PF-g-0, .mobile_SP_PF-gx-0 {
+  .mobile_SP_PF-g-0,
+  .mobile_SP_PF-gx-0 {
     --bs-gutter-x: 0;
   }
 
-  .mobile_SP_PF-g-0, .mobile_SP_PF-gy-0 {
+  .mobile_SP_PF-g-0,
+  .mobile_SP_PF-gy-0 {
     --bs-gutter-y: 0;
   }
 
@@ -252,11 +257,13 @@ exports[`should handle custom prefix and separator 1`] = `
     margin-left: 66.66666666666667%;
   }
 
-  .tablet_SP_PF-g-0, .tablet_SP_PF-gx-0 {
+  .tablet_SP_PF-g-0,
+  .tablet_SP_PF-gx-0 {
     --bs-gutter-x: 0;
   }
 
-  .tablet_SP_PF-g-0, .tablet_SP_PF-gy-0 {
+  .tablet_SP_PF-g-0,
+  .tablet_SP_PF-gy-0 {
     --bs-gutter-y: 0;
   }
 
@@ -332,11 +339,13 @@ exports[`should handle custom prefix and separator 1`] = `
     margin-left: 66.66666666666667%;
   }
 
-  .desktop_SP_PF-g-0, .desktop_SP_PF-gx-0 {
+  .desktop_SP_PF-g-0,
+  .desktop_SP_PF-gx-0 {
     --bs-gutter-x: 0;
   }
 
-  .desktop_SP_PF-g-0, .desktop_SP_PF-gy-0 {
+  .desktop_SP_PF-g-0,
+  .desktop_SP_PF-gy-0 {
     --bs-gutter-y: 0;
   }
 

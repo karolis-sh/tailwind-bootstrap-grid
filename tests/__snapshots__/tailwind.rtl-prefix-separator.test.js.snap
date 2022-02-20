@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should handle rtl option and custom prefix, separator 1`] = `
-".PF-container, .PF-container-fluid {
+".PF-container,
+.PF-container-fluid {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -111,11 +112,13 @@ exports[`should handle rtl option and custom prefix, separator 1`] = `
   margin-right: 66.66666666666667%;
 }
 
-.PF-g-0, .PF-gx-0 {
+.PF-g-0,
+.PF-gx-0 {
   --bs-gutter-x: 0;
 }
 
-.PF-g-0, .PF-gy-0 {
+.PF-g-0,
+.PF-gy-0 {
   --bs-gutter-y: 0;
 }
 
@@ -202,11 +205,13 @@ exports[`should handle rtl option and custom prefix, separator 1`] = `
     margin-right: 66.66666666666667%;
   }
 
-  .sm_SP_PF-g-0, .sm_SP_PF-gx-0 {
+  .sm_SP_PF-g-0,
+  .sm_SP_PF-gx-0 {
     --bs-gutter-x: 0;
   }
 
-  .sm_SP_PF-g-0, .sm_SP_PF-gy-0 {
+  .sm_SP_PF-g-0,
+  .sm_SP_PF-gy-0 {
     --bs-gutter-y: 0;
   }
 
@@ -294,11 +299,13 @@ exports[`should handle rtl option and custom prefix, separator 1`] = `
     margin-right: 66.66666666666667%;
   }
 
-  .md_SP_PF-g-0, .md_SP_PF-gx-0 {
+  .md_SP_PF-g-0,
+  .md_SP_PF-gx-0 {
     --bs-gutter-x: 0;
   }
 
-  .md_SP_PF-g-0, .md_SP_PF-gy-0 {
+  .md_SP_PF-g-0,
+  .md_SP_PF-gy-0 {
     --bs-gutter-y: 0;
   }
 
@@ -386,11 +393,13 @@ exports[`should handle rtl option and custom prefix, separator 1`] = `
     margin-right: 66.66666666666667%;
   }
 
-  .lg_SP_PF-g-0, .lg_SP_PF-gx-0 {
+  .lg_SP_PF-g-0,
+  .lg_SP_PF-gx-0 {
     --bs-gutter-x: 0;
   }
 
-  .lg_SP_PF-g-0, .lg_SP_PF-gy-0 {
+  .lg_SP_PF-g-0,
+  .lg_SP_PF-gy-0 {
     --bs-gutter-y: 0;
   }
 
@@ -478,11 +487,13 @@ exports[`should handle rtl option and custom prefix, separator 1`] = `
     margin-right: 66.66666666666667%;
   }
 
-  .xl_SP_PF-g-0, .xl_SP_PF-gx-0 {
+  .xl_SP_PF-g-0,
+  .xl_SP_PF-gx-0 {
     --bs-gutter-x: 0;
   }
 
-  .xl_SP_PF-g-0, .xl_SP_PF-gy-0 {
+  .xl_SP_PF-g-0,
+  .xl_SP_PF-gy-0 {
     --bs-gutter-y: 0;
   }
 
