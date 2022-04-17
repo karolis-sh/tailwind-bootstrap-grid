@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.0.1](https://github.com/karolis-sh/tailwind-bootstrap-grid/compare/v5.0.0...v5.0.1) (2022-04-17)
+
+
+### Bug Fixes
+
+* disable misleading container warning for some cases ([84033c0](https://github.com/karolis-sh/tailwind-bootstrap-grid/commit/84033c084570bd366dd8530f6506154ebc2e7a76))
+
 ## [5.0.0](https://github.com/karolis-sh/tailwind-bootstrap-grid/compare/v4.0.0...v5.0.0) (2022-02-20)
 
 
