@@ -37,10 +37,18 @@ css file:
 
 This will generate Bootstrap v5 flexbox grid.
 
-\* **NOTE**: When using the `.container` class from this plugin you will need to
-[disable](https://tailwindcss.com/docs/container#disabling-entirely) the core
-[container plugin](https://tailwindcss.com/docs/container/) as both plugins
-expose a `.container` class.
+\* **NOTE**: When using the `.container` class from this plugin 
+you will need to [disable](https://tailwindcss.com/docs/configuration#core-plugins) 
+the core [container plugin](https://tailwindcss.com/docs/container/) from 
+your tailwind config file as both plugins expose a `.container` class. 
+
+```js 
+module.exports = { 
+  corePlugins: { 
+    container: false, 
+  } 
+} 
+```
 
 ## Features & Tailwind CSS options support
 
