@@ -9,6 +9,30 @@ exports[`should handle custom prefix and separator 1`] = `
   padding-right: var(--bs-gutter-x, calc(1em / 2));
   padding-left: var(--bs-gutter-x, calc(1em / 2));
 }
+.PF-container-mobile {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--bs-gutter-x, calc(1em / 2));
+  padding-left: var(--bs-gutter-x, calc(1em / 2));
+  max-width: 20em;
+}
+.PF-container-tablet {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--bs-gutter-x, calc(1em / 2));
+  padding-left: var(--bs-gutter-x, calc(1em / 2));
+  max-width: 40em;
+}
+.PF-container-desktop {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--bs-gutter-x, calc(1em / 2));
+  padding-left: var(--bs-gutter-x, calc(1em / 2));
+  max-width: 60em;
+}
 @media (min-width: 60em) {
   .PF-container {
     max-width: 20em;
@@ -120,6 +144,30 @@ exports[`should handle custom prefix and separator 1`] = `
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1em / 2));
     padding-left: var(--bs-gutter-x, calc(1em / 2));
+  }
+  .mobile_SP_PF-container-mobile {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1em / 2));
+    padding-left: var(--bs-gutter-x, calc(1em / 2));
+    max-width: 20em;
+  }
+  .mobile_SP_PF-container-tablet {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1em / 2));
+    padding-left: var(--bs-gutter-x, calc(1em / 2));
+    max-width: 40em;
+  }
+  .mobile_SP_PF-container-desktop {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1em / 2));
+    padding-left: var(--bs-gutter-x, calc(1em / 2));
+    max-width: 60em;
   }
   @media (min-width: 60em) {
     .mobile_SP_PF-container {
@@ -242,6 +290,30 @@ exports[`should handle custom prefix and separator 1`] = `
     padding-right: var(--bs-gutter-x, calc(1em / 2));
     padding-left: var(--bs-gutter-x, calc(1em / 2));
   }
+  .tablet_SP_PF-container-mobile {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1em / 2));
+    padding-left: var(--bs-gutter-x, calc(1em / 2));
+    max-width: 20em;
+  }
+  .tablet_SP_PF-container-tablet {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1em / 2));
+    padding-left: var(--bs-gutter-x, calc(1em / 2));
+    max-width: 40em;
+  }
+  .tablet_SP_PF-container-desktop {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1em / 2));
+    padding-left: var(--bs-gutter-x, calc(1em / 2));
+    max-width: 60em;
+  }
   @media (min-width: 60em) {
     .tablet_SP_PF-container {
       max-width: 20em;
@@ -362,6 +434,30 @@ exports[`should handle custom prefix and separator 1`] = `
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1em / 2));
     padding-left: var(--bs-gutter-x, calc(1em / 2));
+  }
+  .desktop_SP_PF-container-mobile {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1em / 2));
+    padding-left: var(--bs-gutter-x, calc(1em / 2));
+    max-width: 20em;
+  }
+  .desktop_SP_PF-container-tablet {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1em / 2));
+    padding-left: var(--bs-gutter-x, calc(1em / 2));
+    max-width: 40em;
+  }
+  .desktop_SP_PF-container-desktop {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1em / 2));
+    padding-left: var(--bs-gutter-x, calc(1em / 2));
+    max-width: 60em;
   }
   @media (min-width: 60em) {
     .desktop_SP_PF-container {

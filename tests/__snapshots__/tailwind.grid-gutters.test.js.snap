@@ -9,6 +9,30 @@ exports[`should handle grid gutters 1`] = `
   padding-right: var(--bs-gutter-x, calc(1em / 2));
   padding-left: var(--bs-gutter-x, calc(1em / 2));
 }
+.container-mobile {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--bs-gutter-x, calc(1em / 2));
+  padding-left: var(--bs-gutter-x, calc(1em / 2));
+  max-width: 60em;
+}
+.container-tablet {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--bs-gutter-x, calc(1em / 2));
+  padding-left: var(--bs-gutter-x, calc(1em / 2));
+  max-width: 80em;
+}
+.container-desktop {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--bs-gutter-x, calc(1em / 2));
+  padding-left: var(--bs-gutter-x, calc(1em / 2));
+  max-width: 120em;
+}
 @media (min-width: 60em) {
   .container {
     max-width: 60em;
@@ -160,6 +184,30 @@ exports[`should handle grid gutters 1`] = `
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1em / 2));
     padding-left: var(--bs-gutter-x, calc(1em / 2));
+  }
+  .mobile\\\\:container-mobile {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1em / 2));
+    padding-left: var(--bs-gutter-x, calc(1em / 2));
+    max-width: 60em;
+  }
+  .mobile\\\\:container-tablet {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1em / 2));
+    padding-left: var(--bs-gutter-x, calc(1em / 2));
+    max-width: 80em;
+  }
+  .mobile\\\\:container-desktop {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1em / 2));
+    padding-left: var(--bs-gutter-x, calc(1em / 2));
+    max-width: 120em;
   }
   @media (min-width: 60em) {
     .mobile\\\\:container {
@@ -362,6 +410,30 @@ exports[`should handle grid gutters 1`] = `
     padding-right: var(--bs-gutter-x, calc(1em / 2));
     padding-left: var(--bs-gutter-x, calc(1em / 2));
   }
+  .tablet\\\\:container-mobile {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1em / 2));
+    padding-left: var(--bs-gutter-x, calc(1em / 2));
+    max-width: 60em;
+  }
+  .tablet\\\\:container-tablet {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1em / 2));
+    padding-left: var(--bs-gutter-x, calc(1em / 2));
+    max-width: 80em;
+  }
+  .tablet\\\\:container-desktop {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1em / 2));
+    padding-left: var(--bs-gutter-x, calc(1em / 2));
+    max-width: 120em;
+  }
   @media (min-width: 60em) {
     .tablet\\\\:container {
       max-width: 60em;
@@ -562,6 +634,30 @@ exports[`should handle grid gutters 1`] = `
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1em / 2));
     padding-left: var(--bs-gutter-x, calc(1em / 2));
+  }
+  .desktop\\\\:container-mobile {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1em / 2));
+    padding-left: var(--bs-gutter-x, calc(1em / 2));
+    max-width: 60em;
+  }
+  .desktop\\\\:container-tablet {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1em / 2));
+    padding-left: var(--bs-gutter-x, calc(1em / 2));
+    max-width: 80em;
+  }
+  .desktop\\\\:container-desktop {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1em / 2));
+    padding-left: var(--bs-gutter-x, calc(1em / 2));
+    max-width: 120em;
   }
   @media (min-width: 60em) {
     .desktop\\\\:container {

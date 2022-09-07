@@ -9,6 +9,30 @@ exports[`should handle responsive max widths 1`] = `
   padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
   padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
 }
+.container-mobile {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
+  padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
+  max-width: 20em;
+}
+.container-tablet {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
+  padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
+  max-width: 40em;
+}
+.container-desktop {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
+  padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
+  max-width: 60em;
+}
 @media (min-width: 60em) {
   .container {
     max-width: 20em;
@@ -120,6 +144,30 @@ exports[`should handle responsive max widths 1`] = `
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
     padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
+  }
+  .mobile\\\\:container-mobile {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
+    padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
+    max-width: 20em;
+  }
+  .mobile\\\\:container-tablet {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
+    padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
+    max-width: 40em;
+  }
+  .mobile\\\\:container-desktop {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
+    padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
+    max-width: 60em;
   }
   @media (min-width: 60em) {
     .mobile\\\\:container {
@@ -242,6 +290,30 @@ exports[`should handle responsive max widths 1`] = `
     padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
     padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
   }
+  .tablet\\\\:container-mobile {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
+    padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
+    max-width: 20em;
+  }
+  .tablet\\\\:container-tablet {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
+    padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
+    max-width: 40em;
+  }
+  .tablet\\\\:container-desktop {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
+    padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
+    max-width: 60em;
+  }
   @media (min-width: 60em) {
     .tablet\\\\:container {
       max-width: 20em;
@@ -362,6 +434,30 @@ exports[`should handle responsive max widths 1`] = `
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
     padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
+  }
+  .desktop\\\\:container-mobile {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
+    padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
+    max-width: 20em;
+  }
+  .desktop\\\\:container-tablet {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
+    padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
+    max-width: 40em;
+  }
+  .desktop\\\\:container-desktop {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
+    padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
+    max-width: 60em;
   }
   @media (min-width: 60em) {
     .desktop\\\\:container {

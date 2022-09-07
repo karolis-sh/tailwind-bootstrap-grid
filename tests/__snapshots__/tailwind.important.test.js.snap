@@ -9,6 +9,30 @@ exports[`should handle defaults 1`] = `
   padding-right: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
   padding-left: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
 }
+.container-mobile {
+  width: 100% !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  padding-right: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+  padding-left: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+  max-width: 1em !important;
+}
+.container-tablet {
+  width: 100% !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  padding-right: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+  padding-left: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+  max-width: 2em !important;
+}
+.container-desktop {
+  width: 100% !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  padding-right: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+  padding-left: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+  max-width: 3em !important;
+}
 @media (min-width: 1em) {
   .container {
     max-width: 1em !important;
@@ -230,6 +254,30 @@ exports[`should handle defaults 1`] = `
     margin-left: auto !important;
     padding-right: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
     padding-left: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+  }
+  .mobile\\\\:container-mobile {
+    width: 100% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding-right: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+    padding-left: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+    max-width: 1em !important;
+  }
+  .mobile\\\\:container-tablet {
+    width: 100% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding-right: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+    padding-left: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+    max-width: 2em !important;
+  }
+  .mobile\\\\:container-desktop {
+    width: 100% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding-right: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+    padding-left: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+    max-width: 3em !important;
   }
   @media (min-width: 1em) {
     .mobile\\\\:container {
@@ -462,6 +510,30 @@ exports[`should handle defaults 1`] = `
     padding-right: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
     padding-left: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
   }
+  .tablet\\\\:container-mobile {
+    width: 100% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding-right: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+    padding-left: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+    max-width: 1em !important;
+  }
+  .tablet\\\\:container-tablet {
+    width: 100% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding-right: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+    padding-left: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+    max-width: 2em !important;
+  }
+  .tablet\\\\:container-desktop {
+    width: 100% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding-right: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+    padding-left: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+    max-width: 3em !important;
+  }
   @media (min-width: 1em) {
     .tablet\\\\:container {
       max-width: 1em !important;
@@ -692,6 +764,30 @@ exports[`should handle defaults 1`] = `
     margin-left: auto !important;
     padding-right: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
     padding-left: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+  }
+  .desktop\\\\:container-mobile {
+    width: 100% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding-right: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+    padding-left: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+    max-width: 1em !important;
+  }
+  .desktop\\\\:container-tablet {
+    width: 100% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding-right: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+    padding-left: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+    max-width: 2em !important;
+  }
+  .desktop\\\\:container-desktop {
+    width: 100% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding-right: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+    padding-left: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
+    max-width: 3em !important;
   }
   @media (min-width: 1em) {
     .desktop\\\\:container {

@@ -9,6 +9,22 @@ exports[`should handle rtl 1`] = `
   padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
   padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
 }
+.container-mobile {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
+  padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
+  max-width: 1em;
+}
+.container-desktop {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
+  padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
+  max-width: 2em;
+}
 @media (min-width: 1em) {
   .container {
     max-width: 1em;
@@ -124,6 +140,22 @@ exports[`should handle rtl 1`] = `
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
     padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
+  }
+  .mobile\\\\:container-mobile {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
+    padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
+    max-width: 1em;
+  }
+  .mobile\\\\:container-desktop {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
+    padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
+    max-width: 2em;
   }
   @media (min-width: 1em) {
     .mobile\\\\:container {
@@ -249,6 +281,22 @@ exports[`should handle rtl 1`] = `
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
     padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
+  }
+  .desktop\\\\:container-mobile {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
+    padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
+    max-width: 1em;
+  }
+  .desktop\\\\:container-desktop {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
+    padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
+    max-width: 2em;
   }
   @media (min-width: 1em) {
     .desktop\\\\:container {
