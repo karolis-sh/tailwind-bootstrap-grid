@@ -1,7 +1,6 @@
 {
-  "extends": ["@k.sh", "plugin:node/recommended", "plugin:jsdoc/recommended"],
+  "extends": ["plugin:@k.sh/esnext", "plugin:@k.sh/node", "plugin:jsdoc/recommended"],
   "env": {
-    "node": true,
     "jest": true
   }
 }
