@@ -34,13 +34,18 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           { loader: 'css-loader', options: { importLoaders: 1 } },
-          { loader: 'postcss-loader', options: { postcssOptions: { path: __dirname } } },
+          {
+            loader: 'postcss-loader',
+            options: { postcssOptions: { path: __dirname } },
+          },
         ],
       },
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src/index.html') }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'src/index.html'),
+    }),
     new MiniCssExtractPlugin(),
   ],
 };

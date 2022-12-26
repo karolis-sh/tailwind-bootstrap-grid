@@ -16,7 +16,12 @@ module.exports = {
     require('../lib')({
       gridColumns: 3,
       rtl: true,
-      containerMaxWidths: { sm: '540px', md: '720px', lg: '960px', xl: '1140px' },
+      containerMaxWidths: {
+        sm: '540px',
+        md: '720px',
+        lg: '960px',
+        xl: '1140px',
+      },
     }),
   ],
   prefix: 'PF-',

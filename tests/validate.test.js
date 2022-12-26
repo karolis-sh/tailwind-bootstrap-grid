@@ -38,6 +38,12 @@ it('should throw', () => {
   invalid({ ...input, containerMaxWidths: { desktop: '38px' } });
   invalid({
     ...input,
-    containerMaxWidths: { sm: '32px', md: '34px', lg: '36px', xl: '38px', xxl: '40px' },
+    containerMaxWidths: {
+      sm: '32px',
+      md: '34px',
+      lg: '36px',
+      xl: '38px',
+      xxl: '40px',
+    },
   });
 });

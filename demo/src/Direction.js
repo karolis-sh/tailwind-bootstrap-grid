@@ -12,7 +12,9 @@ export default () => {
       <button
         type="button"
         id="dir-selector"
-        onClick={() => setDirection((value) => (value === 'ltr' ? 'rtl' : 'ltr'))}
+        onClick={() =>
+          setDirection((value) => (value === 'ltr' ? 'rtl' : 'ltr'))
+        }
       >
         {direction}
       </button>
