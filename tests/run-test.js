@@ -1,6 +1,6 @@
 const postcss = require('postcss');
-const tailwindcss = require('tailwindcss');
 const prettier = require('prettier');
+const tailwindcss = require('tailwindcss');
 
 const CSS_INPUT = `
 @tailwind components;
@@ -14,6 +14,6 @@ module.exports = async (testFile) => {
     .use(tailwindcss(configFile))
     .process(CSS_INPUT, { from: undefined });
 
-  expect(result.warnings().length).toBe(0);
+  expect(result.warnings()).toHaveLength(0);
   expect(prettier.format(result.css, { parser: 'css' })).toMatchSnapshot();
 };
