@@ -50,9 +50,9 @@
     "picocolors": "^1.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.3",
-    "@babel/preset-env": "^7.14.2",
-    "@babel/preset-react": "^7.13.13",
+    "@babel/core": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
     "@k.sh/eslint-plugin": "^0.6.0",
@@ -60,7 +60,7 @@
     "@mdx-js/loader": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "autoprefixer": "^10.2.5",
-    "babel-loader": "^8.2.2",
+    "babel-loader": "^9.1.0",
     "cross-env": "^7.0.3",
     "css-loader": "^5.2.4",
     "cz-conventional-changelog": "^3.3.0",
