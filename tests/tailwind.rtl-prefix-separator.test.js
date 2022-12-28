@@ -1,3 +1,5 @@
 const run = require('./run-test');
 
-it('should handle rtl option and custom prefix, separator', () => run(__filename));
+// eslint-disable-next-line jest/expect-expect
+it('should handle rtl option and custom prefix, separator', () =>
+  run(__filename));

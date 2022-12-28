@@ -6,6 +6,10 @@
 !*.md
 !*.yml
 !*.html
+!*.sh
+!*.gitignore
+!*.env
+!*.env.*
 
 # npm files
 node_modules
@@ -15,3 +19,4 @@ package.json
 /build
 /samples/*/output.css
 CHANGELOG.md
+.husky/_/

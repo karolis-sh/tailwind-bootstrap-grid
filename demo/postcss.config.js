@@ -1,4 +1,5 @@
 const path = require('path');
+
 const tailwindcss = require('tailwindcss');
 
 module.exports = {
