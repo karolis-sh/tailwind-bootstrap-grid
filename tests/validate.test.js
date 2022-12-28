@@ -1,4 +1,3 @@
-/* eslint-disable jest/expect-expect */
 const validate = require('../lib/validate');
 
 const screens = { sm: '540px', md: '720px', lg: '960px', xl: '1140px' };

@@ -1,4 +1,3 @@
-/* eslint-disable global-require */
 const config = require('./tailwind.base');
 
 module.exports = {
