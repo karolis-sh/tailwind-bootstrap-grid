@@ -20,8 +20,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn --frozen-lockfile
-      - run: yarn build
-      - run: yarn qa
+      - run: npm ci
+      - run: npm run build
+      - run: npm run qa
         env:
           CI: true
