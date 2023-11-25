@@ -105,15 +105,13 @@ exports[`should handle custom prefix and separator 1`] = `
   order: 3;
 }
 @media (min-width: 60em) {
-  .mobile_SP_PF-container,
-  .PF-container-fluid {
+  .mobile_SP_PF-container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1em / 2));
     padding-left: var(--bs-gutter-x, calc(1em / 2));
   }
-  .PF-container,
   .mobile_SP_PF-container-fluid {
     width: 100%;
     margin-right: auto;
@@ -190,19 +188,15 @@ exports[`should handle custom prefix and separator 1`] = `
   .mobile_SP_PF-offset-2 {
     margin-left: 66.66666666666667%;
   }
-  .mobile_SP_PF-g-0,
-  .PF-gx-0 {
+  .mobile_SP_PF-g-0 {
     --bs-gutter-x: 0;
   }
-  .PF-g-0,
   .mobile_SP_PF-gx-0 {
     --bs-gutter-x: 0;
   }
-  .mobile_SP_PF-g-0,
-  .PF-gy-0 {
+  .mobile_SP_PF-g-0 {
     --bs-gutter-y: 0;
   }
-  .PF-g-0,
   .mobile_SP_PF-gy-0 {
     --bs-gutter-y: 0;
   }
@@ -226,15 +220,13 @@ exports[`should handle custom prefix and separator 1`] = `
   }
 }
 @media (min-width: 80em) {
-  .tablet_SP_PF-container,
-  .PF-container-fluid {
+  .tablet_SP_PF-container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1em / 2));
     padding-left: var(--bs-gutter-x, calc(1em / 2));
   }
-  .PF-container,
   .tablet_SP_PF-container-fluid {
     width: 100%;
     margin-right: auto;
@@ -311,19 +303,15 @@ exports[`should handle custom prefix and separator 1`] = `
   .tablet_SP_PF-offset-2 {
     margin-left: 66.66666666666667%;
   }
-  .tablet_SP_PF-g-0,
-  .PF-gx-0 {
+  .tablet_SP_PF-g-0 {
     --bs-gutter-x: 0;
   }
-  .PF-g-0,
   .tablet_SP_PF-gx-0 {
     --bs-gutter-x: 0;
   }
-  .tablet_SP_PF-g-0,
-  .PF-gy-0 {
+  .tablet_SP_PF-g-0 {
     --bs-gutter-y: 0;
   }
-  .PF-g-0,
   .tablet_SP_PF-gy-0 {
     --bs-gutter-y: 0;
   }
@@ -347,15 +335,13 @@ exports[`should handle custom prefix and separator 1`] = `
   }
 }
 @media (min-width: 120em) {
-  .desktop_SP_PF-container,
-  .PF-container-fluid {
+  .desktop_SP_PF-container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1em / 2));
     padding-left: var(--bs-gutter-x, calc(1em / 2));
   }
-  .PF-container,
   .desktop_SP_PF-container-fluid {
     width: 100%;
     margin-right: auto;
@@ -432,19 +418,15 @@ exports[`should handle custom prefix and separator 1`] = `
   .desktop_SP_PF-offset-2 {
     margin-left: 66.66666666666667%;
   }
-  .desktop_SP_PF-g-0,
-  .PF-gx-0 {
+  .desktop_SP_PF-g-0 {
     --bs-gutter-x: 0;
   }
-  .PF-g-0,
   .desktop_SP_PF-gx-0 {
     --bs-gutter-x: 0;
   }
-  .desktop_SP_PF-g-0,
-  .PF-gy-0 {
+  .desktop_SP_PF-g-0 {
     --bs-gutter-y: 0;
   }
-  .PF-g-0,
   .desktop_SP_PF-gy-0 {
     --bs-gutter-y: 0;
   }

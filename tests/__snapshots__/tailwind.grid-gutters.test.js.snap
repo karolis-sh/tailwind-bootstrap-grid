@@ -145,15 +145,13 @@ exports[`should handle grid gutters 1`] = `
   order: 3;
 }
 @media (min-width: 60em) {
-  .mobile\\\\:container,
-  .container-fluid {
+  .mobile\\\\:container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1em / 2));
     padding-left: var(--bs-gutter-x, calc(1em / 2));
   }
-  .container,
   .mobile\\\\:container-fluid {
     width: 100%;
     margin-right: auto;
@@ -230,99 +228,75 @@ exports[`should handle grid gutters 1`] = `
   .mobile\\\\:offset-2 {
     margin-left: 66.66666666666667%;
   }
-  .mobile\\\\:g-0,
-  .gx-0 {
+  .mobile\\\\:g-0 {
     --bs-gutter-x: 0;
   }
-  .g-0,
   .mobile\\\\:gx-0 {
     --bs-gutter-x: 0;
   }
-  .mobile\\\\:g-0,
-  .gy-0 {
+  .mobile\\\\:g-0 {
     --bs-gutter-y: 0;
   }
-  .g-0,
   .mobile\\\\:gy-0 {
     --bs-gutter-y: 0;
   }
-  .mobile\\\\:g-1,
-  .gx-1 {
+  .mobile\\\\:g-1 {
     --bs-gutter-x: 0.25rem;
   }
-  .g-1,
   .mobile\\\\:gx-1 {
     --bs-gutter-x: 0.25rem;
   }
-  .mobile\\\\:g-1,
-  .gy-1 {
+  .mobile\\\\:g-1 {
     --bs-gutter-y: 0.25rem;
   }
-  .g-1,
   .mobile\\\\:gy-1 {
     --bs-gutter-y: 0.25rem;
   }
-  .mobile\\\\:g-2,
-  .gx-2 {
+  .mobile\\\\:g-2 {
     --bs-gutter-x: 0.5rem;
   }
-  .g-2,
   .mobile\\\\:gx-2 {
     --bs-gutter-x: 0.5rem;
   }
-  .mobile\\\\:g-2,
-  .gy-2 {
+  .mobile\\\\:g-2 {
     --bs-gutter-y: 0.5rem;
   }
-  .g-2,
   .mobile\\\\:gy-2 {
     --bs-gutter-y: 0.5rem;
   }
-  .mobile\\\\:g-3,
-  .gx-3 {
+  .mobile\\\\:g-3 {
     --bs-gutter-x: 1rem;
   }
-  .g-3,
   .mobile\\\\:gx-3 {
     --bs-gutter-x: 1rem;
   }
-  .mobile\\\\:g-3,
-  .gy-3 {
+  .mobile\\\\:g-3 {
     --bs-gutter-y: 1rem;
   }
-  .g-3,
   .mobile\\\\:gy-3 {
     --bs-gutter-y: 1rem;
   }
-  .mobile\\\\:g-4,
-  .gx-4 {
+  .mobile\\\\:g-4 {
     --bs-gutter-x: 1.5rem;
   }
-  .g-4,
   .mobile\\\\:gx-4 {
     --bs-gutter-x: 1.5rem;
   }
-  .mobile\\\\:g-4,
-  .gy-4 {
+  .mobile\\\\:g-4 {
     --bs-gutter-y: 1.5rem;
   }
-  .g-4,
   .mobile\\\\:gy-4 {
     --bs-gutter-y: 1.5rem;
   }
-  .mobile\\\\:g-5,
-  .gx-5 {
+  .mobile\\\\:g-5 {
     --bs-gutter-x: 3rem;
   }
-  .g-5,
   .mobile\\\\:gx-5 {
     --bs-gutter-x: 3rem;
   }
-  .mobile\\\\:g-5,
-  .gy-5 {
+  .mobile\\\\:g-5 {
     --bs-gutter-y: 3rem;
   }
-  .g-5,
   .mobile\\\\:gy-5 {
     --bs-gutter-y: 3rem;
   }
@@ -346,15 +320,13 @@ exports[`should handle grid gutters 1`] = `
   }
 }
 @media (min-width: 80em) {
-  .tablet\\\\:container,
-  .container-fluid {
+  .tablet\\\\:container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1em / 2));
     padding-left: var(--bs-gutter-x, calc(1em / 2));
   }
-  .container,
   .tablet\\\\:container-fluid {
     width: 100%;
     margin-right: auto;
@@ -431,99 +403,75 @@ exports[`should handle grid gutters 1`] = `
   .tablet\\\\:offset-2 {
     margin-left: 66.66666666666667%;
   }
-  .tablet\\\\:g-0,
-  .gx-0 {
+  .tablet\\\\:g-0 {
     --bs-gutter-x: 0;
   }
-  .g-0,
   .tablet\\\\:gx-0 {
     --bs-gutter-x: 0;
   }
-  .tablet\\\\:g-0,
-  .gy-0 {
+  .tablet\\\\:g-0 {
     --bs-gutter-y: 0;
   }
-  .g-0,
   .tablet\\\\:gy-0 {
     --bs-gutter-y: 0;
   }
-  .tablet\\\\:g-1,
-  .gx-1 {
+  .tablet\\\\:g-1 {
     --bs-gutter-x: 0.25rem;
   }
-  .g-1,
   .tablet\\\\:gx-1 {
     --bs-gutter-x: 0.25rem;
   }
-  .tablet\\\\:g-1,
-  .gy-1 {
+  .tablet\\\\:g-1 {
     --bs-gutter-y: 0.25rem;
   }
-  .g-1,
   .tablet\\\\:gy-1 {
     --bs-gutter-y: 0.25rem;
   }
-  .tablet\\\\:g-2,
-  .gx-2 {
+  .tablet\\\\:g-2 {
     --bs-gutter-x: 0.5rem;
   }
-  .g-2,
   .tablet\\\\:gx-2 {
     --bs-gutter-x: 0.5rem;
   }
-  .tablet\\\\:g-2,
-  .gy-2 {
+  .tablet\\\\:g-2 {
     --bs-gutter-y: 0.5rem;
   }
-  .g-2,
   .tablet\\\\:gy-2 {
     --bs-gutter-y: 0.5rem;
   }
-  .tablet\\\\:g-3,
-  .gx-3 {
+  .tablet\\\\:g-3 {
     --bs-gutter-x: 1rem;
   }
-  .g-3,
   .tablet\\\\:gx-3 {
     --bs-gutter-x: 1rem;
   }
-  .tablet\\\\:g-3,
-  .gy-3 {
+  .tablet\\\\:g-3 {
     --bs-gutter-y: 1rem;
   }
-  .g-3,
   .tablet\\\\:gy-3 {
     --bs-gutter-y: 1rem;
   }
-  .tablet\\\\:g-4,
-  .gx-4 {
+  .tablet\\\\:g-4 {
     --bs-gutter-x: 1.5rem;
   }
-  .g-4,
   .tablet\\\\:gx-4 {
     --bs-gutter-x: 1.5rem;
   }
-  .tablet\\\\:g-4,
-  .gy-4 {
+  .tablet\\\\:g-4 {
     --bs-gutter-y: 1.5rem;
   }
-  .g-4,
   .tablet\\\\:gy-4 {
     --bs-gutter-y: 1.5rem;
   }
-  .tablet\\\\:g-5,
-  .gx-5 {
+  .tablet\\\\:g-5 {
     --bs-gutter-x: 3rem;
   }
-  .g-5,
   .tablet\\\\:gx-5 {
     --bs-gutter-x: 3rem;
   }
-  .tablet\\\\:g-5,
-  .gy-5 {
+  .tablet\\\\:g-5 {
     --bs-gutter-y: 3rem;
   }
-  .g-5,
   .tablet\\\\:gy-5 {
     --bs-gutter-y: 3rem;
   }
@@ -547,15 +495,13 @@ exports[`should handle grid gutters 1`] = `
   }
 }
 @media (min-width: 120em) {
-  .desktop\\\\:container,
-  .container-fluid {
+  .desktop\\\\:container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1em / 2));
     padding-left: var(--bs-gutter-x, calc(1em / 2));
   }
-  .container,
   .desktop\\\\:container-fluid {
     width: 100%;
     margin-right: auto;
@@ -632,99 +578,75 @@ exports[`should handle grid gutters 1`] = `
   .desktop\\\\:offset-2 {
     margin-left: 66.66666666666667%;
   }
-  .desktop\\\\:g-0,
-  .gx-0 {
+  .desktop\\\\:g-0 {
     --bs-gutter-x: 0;
   }
-  .g-0,
   .desktop\\\\:gx-0 {
     --bs-gutter-x: 0;
   }
-  .desktop\\\\:g-0,
-  .gy-0 {
+  .desktop\\\\:g-0 {
     --bs-gutter-y: 0;
   }
-  .g-0,
   .desktop\\\\:gy-0 {
     --bs-gutter-y: 0;
   }
-  .desktop\\\\:g-1,
-  .gx-1 {
+  .desktop\\\\:g-1 {
     --bs-gutter-x: 0.25rem;
   }
-  .g-1,
   .desktop\\\\:gx-1 {
     --bs-gutter-x: 0.25rem;
   }
-  .desktop\\\\:g-1,
-  .gy-1 {
+  .desktop\\\\:g-1 {
     --bs-gutter-y: 0.25rem;
   }
-  .g-1,
   .desktop\\\\:gy-1 {
     --bs-gutter-y: 0.25rem;
   }
-  .desktop\\\\:g-2,
-  .gx-2 {
+  .desktop\\\\:g-2 {
     --bs-gutter-x: 0.5rem;
   }
-  .g-2,
   .desktop\\\\:gx-2 {
     --bs-gutter-x: 0.5rem;
   }
-  .desktop\\\\:g-2,
-  .gy-2 {
+  .desktop\\\\:g-2 {
     --bs-gutter-y: 0.5rem;
   }
-  .g-2,
   .desktop\\\\:gy-2 {
     --bs-gutter-y: 0.5rem;
   }
-  .desktop\\\\:g-3,
-  .gx-3 {
+  .desktop\\\\:g-3 {
     --bs-gutter-x: 1rem;
   }
-  .g-3,
   .desktop\\\\:gx-3 {
     --bs-gutter-x: 1rem;
   }
-  .desktop\\\\:g-3,
-  .gy-3 {
+  .desktop\\\\:g-3 {
     --bs-gutter-y: 1rem;
   }
-  .g-3,
   .desktop\\\\:gy-3 {
     --bs-gutter-y: 1rem;
   }
-  .desktop\\\\:g-4,
-  .gx-4 {
+  .desktop\\\\:g-4 {
     --bs-gutter-x: 1.5rem;
   }
-  .g-4,
   .desktop\\\\:gx-4 {
     --bs-gutter-x: 1.5rem;
   }
-  .desktop\\\\:g-4,
-  .gy-4 {
+  .desktop\\\\:g-4 {
     --bs-gutter-y: 1.5rem;
   }
-  .g-4,
   .desktop\\\\:gy-4 {
     --bs-gutter-y: 1.5rem;
   }
-  .desktop\\\\:g-5,
-  .gx-5 {
+  .desktop\\\\:g-5 {
     --bs-gutter-x: 3rem;
   }
-  .g-5,
   .desktop\\\\:gx-5 {
     --bs-gutter-x: 3rem;
   }
-  .desktop\\\\:g-5,
-  .gy-5 {
+  .desktop\\\\:g-5 {
     --bs-gutter-y: 3rem;
   }
-  .g-5,
   .desktop\\\\:gy-5 {
     --bs-gutter-y: 3rem;
   }
