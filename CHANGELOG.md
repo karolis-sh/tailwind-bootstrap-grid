@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.1.0](https://github.com/karolis-sh/tailwind-bootstrap-grid/compare/v5.0.1...v5.1.0) (2023-11-25)
+
+
+### Features
+
+* add TypeScript types ([dc82b58](https://github.com/karolis-sh/tailwind-bootstrap-grid/commit/dc82b581f823ed8c553ed0c22747ac97f033c09e))
+
 ### [5.0.1](https://github.com/karolis-sh/tailwind-bootstrap-grid/compare/v5.0.0...v5.0.1) (2022-04-17)
 
 
