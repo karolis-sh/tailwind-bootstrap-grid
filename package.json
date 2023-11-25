@@ -15,8 +15,10 @@
   "license": "MIT",
   "author": "Karolis Šarapnickis <hi@karolis.sh>",
   "main": "lib/index.js",
+  "types": "types/index.d.ts",
   "files": [
-    "lib"
+    "lib",
+    "types"
   ],
   "scripts": {
     "build": "run-p build:*",
