@@ -215,15 +215,13 @@ exports[`should handle defaults 1`] = `
   order: 12 !important;
 }
 @media (min-width: 1em) {
-  .mobile\\\\:container,
-  .container-fluid {
+  .mobile\\\\:container {
     width: 100% !important;
     margin-right: auto !important;
     margin-left: auto !important;
     padding-right: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
     padding-left: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
   }
-  .container,
   .mobile\\\\:container-fluid {
     width: 100% !important;
     margin-right: auto !important;
@@ -383,19 +381,15 @@ exports[`should handle defaults 1`] = `
   .mobile\\\\:offset-11 {
     margin-left: 91.66666666666667% !important;
   }
-  .mobile\\\\:g-0,
-  .gx-0 {
+  .mobile\\\\:g-0 {
     --bs-gutter-x: 0 !important;
   }
-  .g-0,
   .mobile\\\\:gx-0 {
     --bs-gutter-x: 0 !important;
   }
-  .mobile\\\\:g-0,
-  .gy-0 {
+  .mobile\\\\:g-0 {
     --bs-gutter-y: 0 !important;
   }
-  .g-0,
   .mobile\\\\:gy-0 {
     --bs-gutter-y: 0 !important;
   }
@@ -446,15 +440,13 @@ exports[`should handle defaults 1`] = `
   }
 }
 @media (min-width: 2em) {
-  .tablet\\\\:container,
-  .container-fluid {
+  .tablet\\\\:container {
     width: 100% !important;
     margin-right: auto !important;
     margin-left: auto !important;
     padding-right: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
     padding-left: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
   }
-  .container,
   .tablet\\\\:container-fluid {
     width: 100% !important;
     margin-right: auto !important;
@@ -614,19 +606,15 @@ exports[`should handle defaults 1`] = `
   .tablet\\\\:offset-11 {
     margin-left: 91.66666666666667% !important;
   }
-  .tablet\\\\:g-0,
-  .gx-0 {
+  .tablet\\\\:g-0 {
     --bs-gutter-x: 0 !important;
   }
-  .g-0,
   .tablet\\\\:gx-0 {
     --bs-gutter-x: 0 !important;
   }
-  .tablet\\\\:g-0,
-  .gy-0 {
+  .tablet\\\\:g-0 {
     --bs-gutter-y: 0 !important;
   }
-  .g-0,
   .tablet\\\\:gy-0 {
     --bs-gutter-y: 0 !important;
   }
@@ -677,15 +665,13 @@ exports[`should handle defaults 1`] = `
   }
 }
 @media (min-width: 3em) {
-  .desktop\\\\:container,
-  .container-fluid {
+  .desktop\\\\:container {
     width: 100% !important;
     margin-right: auto !important;
     margin-left: auto !important;
     padding-right: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
     padding-left: var(--bs-gutter-x, calc(1.5rem / 2)) !important;
   }
-  .container,
   .desktop\\\\:container-fluid {
     width: 100% !important;
     margin-right: auto !important;
@@ -845,19 +831,15 @@ exports[`should handle defaults 1`] = `
   .desktop\\\\:offset-11 {
     margin-left: 91.66666666666667% !important;
   }
-  .desktop\\\\:g-0,
-  .gx-0 {
+  .desktop\\\\:g-0 {
     --bs-gutter-x: 0 !important;
   }
-  .g-0,
   .desktop\\\\:gx-0 {
     --bs-gutter-x: 0 !important;
   }
-  .desktop\\\\:g-0,
-  .gy-0 {
+  .desktop\\\\:g-0 {
     --bs-gutter-y: 0 !important;
   }
-  .g-0,
   .desktop\\\\:gy-0 {
     --bs-gutter-y: 0 !important;
   }

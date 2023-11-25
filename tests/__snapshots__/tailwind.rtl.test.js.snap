@@ -109,15 +109,13 @@ exports[`should handle rtl 1`] = `
   order: 3;
 }
 @media (min-width: 1em) {
-  .mobile\\\\:container,
-  .container-fluid {
+  .mobile\\\\:container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
     padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
   }
-  .container,
   .mobile\\\\:container-fluid {
     width: 100%;
     margin-right: auto;
@@ -198,19 +196,15 @@ exports[`should handle rtl 1`] = `
   [dir=\\"rtl\\"] .mobile\\\\:offset-2 {
     margin-right: 66.66666666666667%;
   }
-  .mobile\\\\:g-0,
-  .gx-0 {
+  .mobile\\\\:g-0 {
     --bs-gutter-x: 0;
   }
-  .g-0,
   .mobile\\\\:gx-0 {
     --bs-gutter-x: 0;
   }
-  .mobile\\\\:g-0,
-  .gy-0 {
+  .mobile\\\\:g-0 {
     --bs-gutter-y: 0;
   }
-  .g-0,
   .mobile\\\\:gy-0 {
     --bs-gutter-y: 0;
   }
@@ -234,15 +228,13 @@ exports[`should handle rtl 1`] = `
   }
 }
 @media (min-width: 2em) {
-  .desktop\\\\:container,
-  .container-fluid {
+  .desktop\\\\:container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
     padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
   }
-  .container,
   .desktop\\\\:container-fluid {
     width: 100%;
     margin-right: auto;
@@ -323,19 +315,15 @@ exports[`should handle rtl 1`] = `
   [dir=\\"rtl\\"] .desktop\\\\:offset-2 {
     margin-right: 66.66666666666667%;
   }
-  .desktop\\\\:g-0,
-  .gx-0 {
+  .desktop\\\\:g-0 {
     --bs-gutter-x: 0;
   }
-  .g-0,
   .desktop\\\\:gx-0 {
     --bs-gutter-x: 0;
   }
-  .desktop\\\\:g-0,
-  .gy-0 {
+  .desktop\\\\:g-0 {
     --bs-gutter-y: 0;
   }
-  .g-0,
   .desktop\\\\:gy-0 {
     --bs-gutter-y: 0;
   }

@@ -15,8 +15,10 @@
   "license": "MIT",
   "author": "Karolis Šarapnickis <hi@karolis.sh>",
   "main": "lib/index.js",
+  "types": "types/index.d.ts",
   "files": [
-    "lib"
+    "lib",
+    "types"
   ],
   "scripts": {
     "build": "run-p build:*",
@@ -26,7 +28,8 @@
     "build:sample:purge": "cd samples/purge && NODE_ENV=production tailwindcss -i input.css -o output.css",
     "build:sample:default": "cd samples/default && NODE_ENV=production tailwindcss -i input.css -o output.css",
     "build:sample:tw-default": "cd samples/tw-default && NODE_ENV=production tailwindcss -i input.css -o output.css",
-    "clean": "rimraf build && rimraf -g samples/*/output.css",
+    "clean": "rm -rf build && rm -rf samples/*/output.css",
+    "commit": "cz",
     "format": "run-p format:*",
     "format:js": "prettier --write '**/*.*'",
     "format:package-json": "sort-package-json",
@@ -34,7 +37,7 @@
     "lint:js": "eslint . --cache",
     "lint:md": "markdownlint-cli2 '**/*.md' '!node_modules' '!**/node_modules' '!**/CHANGELOG.md'",
     "qa": "run-p test lint",
-    "release": "yarn && run-s clean build qa && standard-version --no-verify && git push --follow-tags --no-verify && npm publish",
+    "release": "npm i && run-s clean build qa && standard-version --no-verify && git push --follow-tags --no-verify && npm publish",
     "dev": "webpack serve --mode development --config demo/webpack.config.js",
     "tdd": "npm test -- --watch",
     "test": "jest tests",
@@ -61,11 +64,12 @@
     "@mdx-js/react": "^1.6.22",
     "autoprefixer": "^10.4.13",
     "babel-loader": "^9.1.0",
+    "commitizen": "^4.3.0",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.3",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.30.0",
-    "eslint-plugin-jsdoc": "^39.6.4",
+    "eslint-plugin-jsdoc": "^46.9.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^7.0.4",
     "jest": "^27.5.1",
@@ -81,14 +85,13 @@
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0",
+    "react-helmet-async": "^2.0.1",
     "react-hot-loader": "^4.13.0",
     "react-live": "^2.2.3",
-    "rimraf": "^3.0.0",
     "serve": "^11.3.2",
     "sort-package-json": "^2.1.0",
     "standard-version": "^9.3.2",
-    "tailwindcss": "^3.0.23",
+    "tailwindcss": "^3.3.5",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
@@ -98,5 +101,8 @@
   },
   "engines": {
     "node": ">= 12.0.0"
+  },
+  "volta": {
+    "node": "20.9.0"
   }
 }

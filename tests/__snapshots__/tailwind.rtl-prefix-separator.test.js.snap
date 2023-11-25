@@ -119,15 +119,13 @@ exports[`should handle rtl option and custom prefix, separator 1`] = `
   order: 3;
 }
 @media (min-width: 640px) {
-  .sm_SP_PF-container,
-  .PF-container-fluid {
+  .sm_SP_PF-container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
     padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
   }
-  .PF-container,
   .sm_SP_PF-container-fluid {
     width: 100%;
     margin-right: auto;
@@ -218,19 +216,15 @@ exports[`should handle rtl option and custom prefix, separator 1`] = `
   [dir=\\"rtl\\"] .sm_SP_PF-offset-2 {
     margin-right: 66.66666666666667%;
   }
-  .sm_SP_PF-g-0,
-  .PF-gx-0 {
+  .sm_SP_PF-g-0 {
     --bs-gutter-x: 0;
   }
-  .PF-g-0,
   .sm_SP_PF-gx-0 {
     --bs-gutter-x: 0;
   }
-  .sm_SP_PF-g-0,
-  .PF-gy-0 {
+  .sm_SP_PF-g-0 {
     --bs-gutter-y: 0;
   }
-  .PF-g-0,
   .sm_SP_PF-gy-0 {
     --bs-gutter-y: 0;
   }
@@ -254,15 +248,13 @@ exports[`should handle rtl option and custom prefix, separator 1`] = `
   }
 }
 @media (min-width: 768px) {
-  .md_SP_PF-container,
-  .PF-container-fluid {
+  .md_SP_PF-container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
     padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
   }
-  .PF-container,
   .md_SP_PF-container-fluid {
     width: 100%;
     margin-right: auto;
@@ -353,19 +345,15 @@ exports[`should handle rtl option and custom prefix, separator 1`] = `
   [dir=\\"rtl\\"] .md_SP_PF-offset-2 {
     margin-right: 66.66666666666667%;
   }
-  .md_SP_PF-g-0,
-  .PF-gx-0 {
+  .md_SP_PF-g-0 {
     --bs-gutter-x: 0;
   }
-  .PF-g-0,
   .md_SP_PF-gx-0 {
     --bs-gutter-x: 0;
   }
-  .md_SP_PF-g-0,
-  .PF-gy-0 {
+  .md_SP_PF-g-0 {
     --bs-gutter-y: 0;
   }
-  .PF-g-0,
   .md_SP_PF-gy-0 {
     --bs-gutter-y: 0;
   }
@@ -389,15 +377,13 @@ exports[`should handle rtl option and custom prefix, separator 1`] = `
   }
 }
 @media (min-width: 1024px) {
-  .lg_SP_PF-container,
-  .PF-container-fluid {
+  .lg_SP_PF-container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
     padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
   }
-  .PF-container,
   .lg_SP_PF-container-fluid {
     width: 100%;
     margin-right: auto;
@@ -488,19 +474,15 @@ exports[`should handle rtl option and custom prefix, separator 1`] = `
   [dir=\\"rtl\\"] .lg_SP_PF-offset-2 {
     margin-right: 66.66666666666667%;
   }
-  .lg_SP_PF-g-0,
-  .PF-gx-0 {
+  .lg_SP_PF-g-0 {
     --bs-gutter-x: 0;
   }
-  .PF-g-0,
   .lg_SP_PF-gx-0 {
     --bs-gutter-x: 0;
   }
-  .lg_SP_PF-g-0,
-  .PF-gy-0 {
+  .lg_SP_PF-g-0 {
     --bs-gutter-y: 0;
   }
-  .PF-g-0,
   .lg_SP_PF-gy-0 {
     --bs-gutter-y: 0;
   }
@@ -524,15 +506,13 @@ exports[`should handle rtl option and custom prefix, separator 1`] = `
   }
 }
 @media (min-width: 1280px) {
-  .xl_SP_PF-container,
-  .PF-container-fluid {
+  .xl_SP_PF-container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
     padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
   }
-  .PF-container,
   .xl_SP_PF-container-fluid {
     width: 100%;
     margin-right: auto;
@@ -623,19 +603,15 @@ exports[`should handle rtl option and custom prefix, separator 1`] = `
   [dir=\\"rtl\\"] .xl_SP_PF-offset-2 {
     margin-right: 66.66666666666667%;
   }
-  .xl_SP_PF-g-0,
-  .PF-gx-0 {
+  .xl_SP_PF-g-0 {
     --bs-gutter-x: 0;
   }
-  .PF-g-0,
   .xl_SP_PF-gx-0 {
     --bs-gutter-x: 0;
   }
-  .xl_SP_PF-g-0,
-  .PF-gy-0 {
+  .xl_SP_PF-g-0 {
     --bs-gutter-y: 0;
   }
-  .PF-g-0,
   .xl_SP_PF-gy-0 {
     --bs-gutter-y: 0;
   }

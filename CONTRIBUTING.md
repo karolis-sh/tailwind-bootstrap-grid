@@ -16,10 +16,10 @@ If you have been assigned to fix an issue or develop a new feature, please
 follow these steps to get started:
 
 - Fork this repository
-- Install dependencies by running `yarn`
+- Install dependencies by running `npm i`
 - Implement your changes
-- Format all files `yarn format`
-- Make sure the tests are passing `yarn qa`
+- Format all files `npm run format`
+- Make sure the tests are passing `npm run qa`
 - Git stage your required changes and commit (see below commit guidelines)
 - Submit PR for review
 
@@ -33,7 +33,8 @@ through the **project history**.
 
 ### Commit Message Format
 
-> Use `yarn commit` to launch interactive CLI interface
+> Use [commitizen](https://github.com/commitizen/cz-cli) for interactive command
+> line utility
 
 Each commit message consists of a **header**, a **body** and a **footer**. The
 header has a special format that includes a **type**, a **scope** and a **subject**:

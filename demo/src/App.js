@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { MDXProvider } from '@mdx-js/react';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
+import { HelmetProvider } from 'react-helmet-async';
 import GithubCorner from './GithubCorner';
 import Direction from './Direction';
 import About from './About.mdx';
@@ -50,16 +51,18 @@ Link.propTypes = {
 
 export default function App() {
   return (
-    <MDXProvider components={{ code: Editor, a: Link }}>
-      <GithubCorner />
-      <div className="container">
-        <About />
-      </div>
-      <hr className="m-1" />
-      <div className="container">
-        <Demo />
-      </div>
-      <Direction />
-    </MDXProvider>
+    <HelmetProvider>
+      <MDXProvider components={{ code: Editor, a: Link }}>
+        <GithubCorner />
+        <div className="container">
+          <About />
+        </div>
+        <hr className="m-1" />
+        <div className="container">
+          <Demo />
+        </div>
+        <Direction />
+      </MDXProvider>
+    </HelmetProvider>
   );
 }
