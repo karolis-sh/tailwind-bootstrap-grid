@@ -31,6 +31,26 @@ module.exports = {
 };
 ```
 
+Usage with TypeScript:
+
+```ts
+import tailwindBootstrapGrid from 'tailwind-bootstrap-grid';
+import type { Config } from 'tailwindcss';
+
+export default <Partial<Config>>{
+  plugins: [
+    tailwindBootstrapGrid({
+      containerMaxWidths: {
+        sm: '540px',
+        md: '720px',
+        lg: '960px',
+        xl: '1140px',
+      },
+    }),
+  ],
+};
+```
+
 And don't forget to include `components` and `utilities` in your tailwind base
 css file:
 
