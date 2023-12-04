@@ -1,5 +1,5 @@
 declare module 'tailwind-bootstrap-grid' {
-  import { PluginCreator } from "tailwindcss/types/config";
+  import { PluginCreator } from 'tailwindcss/types/config';
 
   interface GridGutters {
     [key: string]: string | number;
@@ -19,6 +19,8 @@ declare module 'tailwind-bootstrap-grid' {
     respectImportant?: boolean;
   }
 
-  function tailwindBootstrapGrid(options?: TailwindBootstrapGridOptions): PluginCreator;
+  function tailwindBootstrapGrid(
+    options?: TailwindBootstrapGridOptions,
+  ): PluginCreator;
   export = tailwindBootstrapGrid;
 }

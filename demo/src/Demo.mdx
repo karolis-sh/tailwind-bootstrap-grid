@@ -11,23 +11,13 @@ Based on [Bootstrap docs](https://getbootstrap.com/docs/5.0/layout/) + live code
 ```jsx
 <div class="container">
   <div class="row">
-    <div class="col">
-      1 of 2
-    </div>
-    <div class="col">
-      2 of 2
-    </div>
+    <div class="col">1 of 2</div>
+    <div class="col">2 of 2</div>
   </div>
   <div class="row">
-    <div class="col">
-      1 of 3
-    </div>
-    <div class="col">
-      2 of 3
-    </div>
-    <div class="col">
-      3 of 3
-    </div>
+    <div class="col">1 of 3</div>
+    <div class="col">2 of 3</div>
+    <div class="col">3 of 3</div>
   </div>
 </div>
 ```
@@ -39,26 +29,14 @@ Based on [Bootstrap docs](https://getbootstrap.com/docs/5.0/layout/) + live code
 ```jsx
 <div class="container">
   <div class="row">
-    <div class="col">
-      1 of 3
-    </div>
-    <div class="col-6">
-      2 of 3 (wider)
-    </div>
-    <div class="col">
-      3 of 3
-    </div>
+    <div class="col">1 of 3</div>
+    <div class="col-6">2 of 3 (wider)</div>
+    <div class="col">3 of 3</div>
   </div>
   <div class="row">
-    <div class="col">
-      1 of 3
-    </div>
-    <div class="col-5">
-      2 of 3 (wider)
-    </div>
-    <div class="col">
-      3 of 3
-    </div>
+    <div class="col">1 of 3</div>
+    <div class="col-5">2 of 3 (wider)</div>
+    <div class="col">3 of 3</div>
   </div>
 </div>
 ```
@@ -69,27 +47,15 @@ Based on [Bootstrap docs](https://getbootstrap.com/docs/5.0/layout/) + live code
 
 ```jsx
 <div class="container">
-  <div class="row" style={{ justifyContent: "center" }}>
-    <div class="col lg:col-2">
-      1 of 3
-    </div>
-    <div class="md:col-auto">
-      Variable width content
-    </div>
-    <div class="col lg:col-2">
-      3 of 3
-    </div>
+  <div class="row" style={{ justifyContent: 'center' }}>
+    <div class="col lg:col-2">1 of 3</div>
+    <div class="md:col-auto">Variable width content</div>
+    <div class="col lg:col-2">3 of 3</div>
   </div>
   <div class="row">
-    <div class="col">
-      1 of 3
-    </div>
-    <div class="md:col-auto">
-      Variable width content
-    </div>
-    <div class="col lg:col-2">
-      3 of 3
-    </div>
+    <div class="col">1 of 3</div>
+    <div class="md:col-auto">Variable width content</div>
+    <div class="col lg:col-2">3 of 3</div>
   </div>
 </div>
 ```
@@ -237,17 +203,11 @@ Based on [Bootstrap docs](https://getbootstrap.com/docs/5.0/layout/) + live code
 ```jsx
 <div class="container">
   <div class="row">
-    <div class="sm:col-3">
-      Level 1: sm:col-3
-    </div>
+    <div class="sm:col-3">Level 1: sm:col-3</div>
     <div class="sm:col-9">
       <div class="row">
-        <div class="col-8 sm:col-6">
-          Level 2: col-8 sm:col-6
-        </div>
-        <div class="col-4 sm:col-6">
-          Level 2: col-4 sm:col-6
-        </div>
+        <div class="col-8 sm:col-6">Level 2: col-8 sm:col-6</div>
+        <div class="col-4 sm:col-6">Level 2: col-4 sm:col-6</div>
       </div>
     </div>
   </div>
@@ -265,15 +225,9 @@ Based on [Bootstrap docs](https://getbootstrap.com/docs/5.0/layout/) + live code
 ```jsx
 <div class="container">
   <div class="row">
-    <div class="col">
-      First in DOM, no order applied
-    </div>
-    <div class="col order-5">
-      Second in DOM, with a larger order
-    </div>
-    <div class="col order-1">
-      Third in DOM, with an order of 1
-    </div>
+    <div class="col">First in DOM, no order applied</div>
+    <div class="col order-5">Second in DOM, with a larger order</div>
+    <div class="col order-1">Third in DOM, with an order of 1</div>
   </div>
 </div>
 ```
@@ -281,15 +235,9 @@ Based on [Bootstrap docs](https://getbootstrap.com/docs/5.0/layout/) + live code
 ```jsx
 <div class="container">
   <div class="row">
-    <div class="col order-last">
-      First in DOM, ordered last
-    </div>
-    <div class="col">
-      Second in DOM, unordered
-    </div>
-    <div class="col order-first">
-      Third in DOM, ordered first
-    </div>
+    <div class="col order-last">First in DOM, ordered last</div>
+    <div class="col">Second in DOM, unordered</div>
+    <div class="col order-first">Third in DOM, ordered first</div>
   </div>
 </div>
 ```
@@ -320,11 +268,15 @@ Based on [Bootstrap docs](https://getbootstrap.com/docs/5.0/layout/) + live code
 <div class="container">
   <div class="row">
     <div class="sm:col-5 md:col-6">sm:col-5 md:col-6</div>
-    <div class="sm:col-5 sm:offset-2 md:col-6 md:offset-0">sm:col-5 sm:offset-2 md:col-6 md:offset-0</div>
+    <div class="sm:col-5 sm:offset-2 md:col-6 md:offset-0">
+      sm:col-5 sm:offset-2 md:col-6 md:offset-0
+    </div>
   </div>
   <div class="row">
     <div class="sm:col-6 md:col-5 lg:col-6">sm:col-6 md:col-5 lg:col-6</div>
-    <div class="sm:col-6 md:col-5 md:offset-2 lg:col-6 lg:offset-0">sm:col-6 md:col-5 md:offset-2 lg:col-6 lg:offset-0</div>
+    <div class="sm:col-6 md:col-5 md:offset-2 lg:col-6 lg:offset-0">
+      sm:col-6 md:col-5 md:offset-2 lg:col-6 lg:offset-0
+    </div>
   </div>
 </div>
 ```
@@ -340,12 +292,8 @@ Based on [Bootstrap docs](https://getbootstrap.com/docs/5.0/layout/) + live code
 ```jsx
 <div class="container">
   <div class="row gx-5">
-    <div class="col">
-      Custom column padding
-    </div>
-    <div class="col">
-      Custom column padding
-    </div>
+    <div class="col">Custom column padding</div>
+    <div class="col">Custom column padding</div>
   </div>
 </div>
 ```
@@ -357,18 +305,10 @@ Based on [Bootstrap docs](https://getbootstrap.com/docs/5.0/layout/) + live code
 ```jsx
 <div class="container">
   <div class="row gy-5">
-    <div class="col-6">
-      Custom column padding
-    </div>
-    <div class="col-6">
-      Custom column padding
-    </div>
-    <div class="col-6">
-      Custom column padding
-    </div>
-    <div class="col-6">
-      Custom column padding
-    </div>
+    <div class="col-6">Custom column padding</div>
+    <div class="col-6">Custom column padding</div>
+    <div class="col-6">Custom column padding</div>
+    <div class="col-6">Custom column padding</div>
   </div>
 </div>
 ```
@@ -380,18 +320,10 @@ Based on [Bootstrap docs](https://getbootstrap.com/docs/5.0/layout/) + live code
 ```jsx
 <div class="container">
   <div class="row g-2">
-    <div class="col-6">
-      Custom column padding
-    </div>
-    <div class="col-6">
-      Custom column padding
-    </div>
-    <div class="col-6">
-      Custom column padding
-    </div>
-    <div class="col-6">
-      Custom column padding
-    </div>
+    <div class="col-6">Custom column padding</div>
+    <div class="col-6">Custom column padding</div>
+    <div class="col-6">Custom column padding</div>
+    <div class="col-6">Custom column padding</div>
   </div>
 </div>
 ```
@@ -403,36 +335,16 @@ Based on [Bootstrap docs](https://getbootstrap.com/docs/5.0/layout/) + live code
 ```jsx
 <div class="container">
   <div class="row row-cols-2 lg:row-cols-5 g-2 lg:g-3">
-    <div class="col">
-      Row column
-    </div>
-    <div class="col">
-      Row column
-    </div>
-    <div class="col">
-      Row column
-    </div>
-    <div class="col">
-      Row column
-    </div>
-    <div class="col">
-      Row column
-    </div>
-    <div class="col">
-      Row column
-    </div>
-    <div class="col">
-      Row column
-    </div>
-    <div class="col">
-      Row column
-    </div>
-    <div class="col">
-      Row column
-    </div>
-    <div class="col">
-      Row column
-    </div>
+    <div class="col">Row column</div>
+    <div class="col">Row column</div>
+    <div class="col">Row column</div>
+    <div class="col">Row column</div>
+    <div class="col">Row column</div>
+    <div class="col">Row column</div>
+    <div class="col">Row column</div>
+    <div class="col">Row column</div>
+    <div class="col">Row column</div>
+    <div class="col">Row column</div>
   </div>
 </div>
 ```

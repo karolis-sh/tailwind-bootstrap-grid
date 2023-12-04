@@ -2,8 +2,12 @@
   "extends": [
     "plugin:@k.sh/esnext",
     "plugin:@k.sh/node",
-    "plugin:@k.sh/jest",
+    "plugin:vitest/recommended",
     "plugin:jsdoc/recommended",
     "plugin:@k.sh/prettier"
-  ]
+  ],
+  "plugins": ["vitest"],
+  "env": {
+    "vitest/env": true
+  }
 }

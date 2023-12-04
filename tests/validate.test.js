@@ -19,12 +19,14 @@ const invalid = (options) => {
   expect(() => validate({ screens })(options)).toThrow();
 };
 
+// eslint-disable-next-line vitest/expect-expect
 it('should not throw', () => {
   valid(input);
   valid({ ...input, containerMaxWidths: { xl: '1140px' } });
   valid({ ...input, gridGutters: {} });
 });
 
+// eslint-disable-next-line vitest/expect-expect
 it('should throw', () => {
   invalid();
   invalid({});

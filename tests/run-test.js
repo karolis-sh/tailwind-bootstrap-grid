@@ -15,5 +15,8 @@ module.exports = async (testFile) => {
     .process(CSS_INPUT, { from: undefined });
 
   expect(result.warnings()).toHaveLength(0);
-  expect(prettier.format(result.css, { parser: 'css' })).toMatchSnapshot();
+
+  const css = await prettier.format(result.css, { parser: 'css' });
+
+  expect(css).toMatchSnapshot();
 };
