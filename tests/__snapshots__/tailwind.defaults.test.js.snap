@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`should handle grid gutters 1`] = `
+exports[`should generate default style 1`] = `
 ".container,
 .container-fluid {
   width: 100%;
