@@ -6,7 +6,7 @@
 
 Bootstrap **v5** flexbox grid system as a Tailwind CSS plugin.
 
-Check the [demo](https://tailwind-bootstrap-grid.netlify.com/).
+Check the [demo](https://tailwind-bootstrap-grid.netlify.app/).
 
 ## Installation
 
