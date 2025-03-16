@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
-import { Helmet } from 'react-helmet-async';
+import React, { useState, useEffect } from 'react';
 
 export default () => {
   const [direction, setDirection] = useState('ltr');
 
+  useEffect(() => {
+    document.documentElement.lang = 'en';
+    document.documentElement.dir = direction;
+  }, [direction]);
+
   return (
     <>
-      <Helmet>
-        <html lang="en" dir={direction} />
-      </Helmet>
       <button
         type="button"
         id="dir-selector"
