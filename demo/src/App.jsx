@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
-import { HelmetProvider } from 'react-helmet-async';
 import GithubCorner from './GithubCorner';
 import Direction from './Direction';
 import About from './About.mdx';
@@ -52,7 +51,7 @@ const components = { code: Editor, a: Link };
 
 export default function App() {
   return (
-    <HelmetProvider>
+    <>
       <GithubCorner />
       <div className="container">
         <About components={components} />
@@ -62,6 +61,6 @@ export default function App() {
         <Demo components={components} />
       </div>
       <Direction />
-    </HelmetProvider>
+    </>
   );
 }
