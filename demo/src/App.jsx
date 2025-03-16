@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { MDXProvider } from '@mdx-js/react';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import { HelmetProvider } from 'react-helmet-async';
 import GithubCorner from './GithubCorner';
@@ -34,7 +33,7 @@ function Editor(props) {
 
 Editor.propTypes = {
   children: PropTypes.string,
-  className: PropTypes.string.isRequired,
+  className: PropTypes.string,
 };
 
 function Link({ children, ...props }) {
@@ -46,23 +45,23 @@ function Link({ children, ...props }) {
 }
 
 Link.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.string,
 };
+
+const components = { code: Editor, a: Link };
 
 export default function App() {
   return (
     <HelmetProvider>
-      <MDXProvider components={{ code: Editor, a: Link }}>
-        <GithubCorner />
-        <div className="container">
-          <About />
-        </div>
-        <hr className="m-1" />
-        <div className="container">
-          <Demo />
-        </div>
-        <Direction />
-      </MDXProvider>
+      <GithubCorner />
+      <div className="container">
+        <About components={components} />
+      </div>
+      <hr className="m-1" />
+      <div className="container">
+        <Demo components={components} />
+      </div>
+      <Direction />
     </HelmetProvider>
   );
 }
