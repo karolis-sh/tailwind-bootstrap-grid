@@ -145,14 +145,14 @@ exports[`should handle grid gutters 1`] = `
   order: 3;
 }
 @media (min-width: 60em) {
-  .mobile\\\\:container {
+  .mobile\\:container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1em / 2));
     padding-left: var(--bs-gutter-x, calc(1em / 2));
   }
-  .mobile\\\\:container-fluid {
+  .mobile\\:container-fluid {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -160,21 +160,21 @@ exports[`should handle grid gutters 1`] = `
     padding-left: var(--bs-gutter-x, calc(1em / 2));
   }
   @media (min-width: 60em) {
-    .mobile\\\\:container {
+    .mobile\\:container {
       max-width: 60em;
     }
   }
   @media (min-width: 80em) {
-    .mobile\\\\:container {
+    .mobile\\:container {
       max-width: 80em;
     }
   }
   @media (min-width: 120em) {
-    .mobile\\\\:container {
+    .mobile\\:container {
       max-width: 120em;
     }
   }
-  .mobile\\\\:row {
+  .mobile\\:row {
     --bs-gutter-x: 1em;
     --bs-gutter-y: 0;
     display: flex;
@@ -183,7 +183,7 @@ exports[`should handle grid gutters 1`] = `
     margin-right: calc(var(--bs-gutter-x) / -2);
     margin-left: calc(var(--bs-gutter-x) / -2);
   }
-  .mobile\\\\:row > * {
+  .mobile\\:row > * {
     box-sizing: border-box;
     flex-shrink: 0;
     width: 100%;
@@ -192,142 +192,142 @@ exports[`should handle grid gutters 1`] = `
     padding-left: calc(var(--bs-gutter-x) / 2);
     margin-top: var(--bs-gutter-y);
   }
-  .mobile\\\\:col {
+  .mobile\\:col {
     flex: 1 0 0%;
   }
-  .mobile\\\\:row-cols-auto > * {
+  .mobile\\:row-cols-auto > * {
     flex: 0 0 auto;
     width: auto;
   }
-  .mobile\\\\:row-cols-1 > * {
+  .mobile\\:row-cols-1 > * {
     flex: 0 0 auto;
     width: 100%;
   }
-  .mobile\\\\:col-auto {
+  .mobile\\:col-auto {
     flex: 0 0 auto;
     width: auto;
   }
-  .mobile\\\\:col-1 {
+  .mobile\\:col-1 {
     flex: 0 0 auto;
     width: 33.333333333333336%;
   }
-  .mobile\\\\:col-2 {
+  .mobile\\:col-2 {
     flex: 0 0 auto;
     width: 66.66666666666667%;
   }
-  .mobile\\\\:col-3 {
+  .mobile\\:col-3 {
     flex: 0 0 auto;
     width: 100%;
   }
-  .mobile\\\\:offset-0 {
+  .mobile\\:offset-0 {
     margin-left: 0%;
   }
-  .mobile\\\\:offset-1 {
+  .mobile\\:offset-1 {
     margin-left: 33.333333333333336%;
   }
-  .mobile\\\\:offset-2 {
+  .mobile\\:offset-2 {
     margin-left: 66.66666666666667%;
   }
-  .mobile\\\\:g-0 {
+  .mobile\\:g-0 {
     --bs-gutter-x: 0;
   }
-  .mobile\\\\:gx-0 {
+  .mobile\\:gx-0 {
     --bs-gutter-x: 0;
   }
-  .mobile\\\\:g-0 {
+  .mobile\\:g-0 {
     --bs-gutter-y: 0;
   }
-  .mobile\\\\:gy-0 {
+  .mobile\\:gy-0 {
     --bs-gutter-y: 0;
   }
-  .mobile\\\\:g-1 {
+  .mobile\\:g-1 {
     --bs-gutter-x: 0.25rem;
   }
-  .mobile\\\\:gx-1 {
+  .mobile\\:gx-1 {
     --bs-gutter-x: 0.25rem;
   }
-  .mobile\\\\:g-1 {
+  .mobile\\:g-1 {
     --bs-gutter-y: 0.25rem;
   }
-  .mobile\\\\:gy-1 {
+  .mobile\\:gy-1 {
     --bs-gutter-y: 0.25rem;
   }
-  .mobile\\\\:g-2 {
+  .mobile\\:g-2 {
     --bs-gutter-x: 0.5rem;
   }
-  .mobile\\\\:gx-2 {
+  .mobile\\:gx-2 {
     --bs-gutter-x: 0.5rem;
   }
-  .mobile\\\\:g-2 {
+  .mobile\\:g-2 {
     --bs-gutter-y: 0.5rem;
   }
-  .mobile\\\\:gy-2 {
+  .mobile\\:gy-2 {
     --bs-gutter-y: 0.5rem;
   }
-  .mobile\\\\:g-3 {
+  .mobile\\:g-3 {
     --bs-gutter-x: 1rem;
   }
-  .mobile\\\\:gx-3 {
+  .mobile\\:gx-3 {
     --bs-gutter-x: 1rem;
   }
-  .mobile\\\\:g-3 {
+  .mobile\\:g-3 {
     --bs-gutter-y: 1rem;
   }
-  .mobile\\\\:gy-3 {
+  .mobile\\:gy-3 {
     --bs-gutter-y: 1rem;
   }
-  .mobile\\\\:g-4 {
+  .mobile\\:g-4 {
     --bs-gutter-x: 1.5rem;
   }
-  .mobile\\\\:gx-4 {
+  .mobile\\:gx-4 {
     --bs-gutter-x: 1.5rem;
   }
-  .mobile\\\\:g-4 {
+  .mobile\\:g-4 {
     --bs-gutter-y: 1.5rem;
   }
-  .mobile\\\\:gy-4 {
+  .mobile\\:gy-4 {
     --bs-gutter-y: 1.5rem;
   }
-  .mobile\\\\:g-5 {
+  .mobile\\:g-5 {
     --bs-gutter-x: 3rem;
   }
-  .mobile\\\\:gx-5 {
+  .mobile\\:gx-5 {
     --bs-gutter-x: 3rem;
   }
-  .mobile\\\\:g-5 {
+  .mobile\\:g-5 {
     --bs-gutter-y: 3rem;
   }
-  .mobile\\\\:gy-5 {
+  .mobile\\:gy-5 {
     --bs-gutter-y: 3rem;
   }
-  .mobile\\\\:order-first {
+  .mobile\\:order-first {
     order: -1;
   }
-  .mobile\\\\:order-last {
+  .mobile\\:order-last {
     order: 4;
   }
-  .mobile\\\\:order-0 {
+  .mobile\\:order-0 {
     order: 0;
   }
-  .mobile\\\\:order-1 {
+  .mobile\\:order-1 {
     order: 1;
   }
-  .mobile\\\\:order-2 {
+  .mobile\\:order-2 {
     order: 2;
   }
-  .mobile\\\\:order-3 {
+  .mobile\\:order-3 {
     order: 3;
   }
 }
 @media (min-width: 80em) {
-  .tablet\\\\:container {
+  .tablet\\:container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1em / 2));
     padding-left: var(--bs-gutter-x, calc(1em / 2));
   }
-  .tablet\\\\:container-fluid {
+  .tablet\\:container-fluid {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -335,21 +335,21 @@ exports[`should handle grid gutters 1`] = `
     padding-left: var(--bs-gutter-x, calc(1em / 2));
   }
   @media (min-width: 60em) {
-    .tablet\\\\:container {
+    .tablet\\:container {
       max-width: 60em;
     }
   }
   @media (min-width: 80em) {
-    .tablet\\\\:container {
+    .tablet\\:container {
       max-width: 80em;
     }
   }
   @media (min-width: 120em) {
-    .tablet\\\\:container {
+    .tablet\\:container {
       max-width: 120em;
     }
   }
-  .tablet\\\\:row {
+  .tablet\\:row {
     --bs-gutter-x: 1em;
     --bs-gutter-y: 0;
     display: flex;
@@ -358,7 +358,7 @@ exports[`should handle grid gutters 1`] = `
     margin-right: calc(var(--bs-gutter-x) / -2);
     margin-left: calc(var(--bs-gutter-x) / -2);
   }
-  .tablet\\\\:row > * {
+  .tablet\\:row > * {
     box-sizing: border-box;
     flex-shrink: 0;
     width: 100%;
@@ -367,142 +367,142 @@ exports[`should handle grid gutters 1`] = `
     padding-left: calc(var(--bs-gutter-x) / 2);
     margin-top: var(--bs-gutter-y);
   }
-  .tablet\\\\:col {
+  .tablet\\:col {
     flex: 1 0 0%;
   }
-  .tablet\\\\:row-cols-auto > * {
+  .tablet\\:row-cols-auto > * {
     flex: 0 0 auto;
     width: auto;
   }
-  .tablet\\\\:row-cols-1 > * {
+  .tablet\\:row-cols-1 > * {
     flex: 0 0 auto;
     width: 100%;
   }
-  .tablet\\\\:col-auto {
+  .tablet\\:col-auto {
     flex: 0 0 auto;
     width: auto;
   }
-  .tablet\\\\:col-1 {
+  .tablet\\:col-1 {
     flex: 0 0 auto;
     width: 33.333333333333336%;
   }
-  .tablet\\\\:col-2 {
+  .tablet\\:col-2 {
     flex: 0 0 auto;
     width: 66.66666666666667%;
   }
-  .tablet\\\\:col-3 {
+  .tablet\\:col-3 {
     flex: 0 0 auto;
     width: 100%;
   }
-  .tablet\\\\:offset-0 {
+  .tablet\\:offset-0 {
     margin-left: 0%;
   }
-  .tablet\\\\:offset-1 {
+  .tablet\\:offset-1 {
     margin-left: 33.333333333333336%;
   }
-  .tablet\\\\:offset-2 {
+  .tablet\\:offset-2 {
     margin-left: 66.66666666666667%;
   }
-  .tablet\\\\:g-0 {
+  .tablet\\:g-0 {
     --bs-gutter-x: 0;
   }
-  .tablet\\\\:gx-0 {
+  .tablet\\:gx-0 {
     --bs-gutter-x: 0;
   }
-  .tablet\\\\:g-0 {
+  .tablet\\:g-0 {
     --bs-gutter-y: 0;
   }
-  .tablet\\\\:gy-0 {
+  .tablet\\:gy-0 {
     --bs-gutter-y: 0;
   }
-  .tablet\\\\:g-1 {
+  .tablet\\:g-1 {
     --bs-gutter-x: 0.25rem;
   }
-  .tablet\\\\:gx-1 {
+  .tablet\\:gx-1 {
     --bs-gutter-x: 0.25rem;
   }
-  .tablet\\\\:g-1 {
+  .tablet\\:g-1 {
     --bs-gutter-y: 0.25rem;
   }
-  .tablet\\\\:gy-1 {
+  .tablet\\:gy-1 {
     --bs-gutter-y: 0.25rem;
   }
-  .tablet\\\\:g-2 {
+  .tablet\\:g-2 {
     --bs-gutter-x: 0.5rem;
   }
-  .tablet\\\\:gx-2 {
+  .tablet\\:gx-2 {
     --bs-gutter-x: 0.5rem;
   }
-  .tablet\\\\:g-2 {
+  .tablet\\:g-2 {
     --bs-gutter-y: 0.5rem;
   }
-  .tablet\\\\:gy-2 {
+  .tablet\\:gy-2 {
     --bs-gutter-y: 0.5rem;
   }
-  .tablet\\\\:g-3 {
+  .tablet\\:g-3 {
     --bs-gutter-x: 1rem;
   }
-  .tablet\\\\:gx-3 {
+  .tablet\\:gx-3 {
     --bs-gutter-x: 1rem;
   }
-  .tablet\\\\:g-3 {
+  .tablet\\:g-3 {
     --bs-gutter-y: 1rem;
   }
-  .tablet\\\\:gy-3 {
+  .tablet\\:gy-3 {
     --bs-gutter-y: 1rem;
   }
-  .tablet\\\\:g-4 {
+  .tablet\\:g-4 {
     --bs-gutter-x: 1.5rem;
   }
-  .tablet\\\\:gx-4 {
+  .tablet\\:gx-4 {
     --bs-gutter-x: 1.5rem;
   }
-  .tablet\\\\:g-4 {
+  .tablet\\:g-4 {
     --bs-gutter-y: 1.5rem;
   }
-  .tablet\\\\:gy-4 {
+  .tablet\\:gy-4 {
     --bs-gutter-y: 1.5rem;
   }
-  .tablet\\\\:g-5 {
+  .tablet\\:g-5 {
     --bs-gutter-x: 3rem;
   }
-  .tablet\\\\:gx-5 {
+  .tablet\\:gx-5 {
     --bs-gutter-x: 3rem;
   }
-  .tablet\\\\:g-5 {
+  .tablet\\:g-5 {
     --bs-gutter-y: 3rem;
   }
-  .tablet\\\\:gy-5 {
+  .tablet\\:gy-5 {
     --bs-gutter-y: 3rem;
   }
-  .tablet\\\\:order-first {
+  .tablet\\:order-first {
     order: -1;
   }
-  .tablet\\\\:order-last {
+  .tablet\\:order-last {
     order: 4;
   }
-  .tablet\\\\:order-0 {
+  .tablet\\:order-0 {
     order: 0;
   }
-  .tablet\\\\:order-1 {
+  .tablet\\:order-1 {
     order: 1;
   }
-  .tablet\\\\:order-2 {
+  .tablet\\:order-2 {
     order: 2;
   }
-  .tablet\\\\:order-3 {
+  .tablet\\:order-3 {
     order: 3;
   }
 }
 @media (min-width: 120em) {
-  .desktop\\\\:container {
+  .desktop\\:container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1em / 2));
     padding-left: var(--bs-gutter-x, calc(1em / 2));
   }
-  .desktop\\\\:container-fluid {
+  .desktop\\:container-fluid {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -510,21 +510,21 @@ exports[`should handle grid gutters 1`] = `
     padding-left: var(--bs-gutter-x, calc(1em / 2));
   }
   @media (min-width: 60em) {
-    .desktop\\\\:container {
+    .desktop\\:container {
       max-width: 60em;
     }
   }
   @media (min-width: 80em) {
-    .desktop\\\\:container {
+    .desktop\\:container {
       max-width: 80em;
     }
   }
   @media (min-width: 120em) {
-    .desktop\\\\:container {
+    .desktop\\:container {
       max-width: 120em;
     }
   }
-  .desktop\\\\:row {
+  .desktop\\:row {
     --bs-gutter-x: 1em;
     --bs-gutter-y: 0;
     display: flex;
@@ -533,7 +533,7 @@ exports[`should handle grid gutters 1`] = `
     margin-right: calc(var(--bs-gutter-x) / -2);
     margin-left: calc(var(--bs-gutter-x) / -2);
   }
-  .desktop\\\\:row > * {
+  .desktop\\:row > * {
     box-sizing: border-box;
     flex-shrink: 0;
     width: 100%;
@@ -542,130 +542,130 @@ exports[`should handle grid gutters 1`] = `
     padding-left: calc(var(--bs-gutter-x) / 2);
     margin-top: var(--bs-gutter-y);
   }
-  .desktop\\\\:col {
+  .desktop\\:col {
     flex: 1 0 0%;
   }
-  .desktop\\\\:row-cols-auto > * {
+  .desktop\\:row-cols-auto > * {
     flex: 0 0 auto;
     width: auto;
   }
-  .desktop\\\\:row-cols-1 > * {
+  .desktop\\:row-cols-1 > * {
     flex: 0 0 auto;
     width: 100%;
   }
-  .desktop\\\\:col-auto {
+  .desktop\\:col-auto {
     flex: 0 0 auto;
     width: auto;
   }
-  .desktop\\\\:col-1 {
+  .desktop\\:col-1 {
     flex: 0 0 auto;
     width: 33.333333333333336%;
   }
-  .desktop\\\\:col-2 {
+  .desktop\\:col-2 {
     flex: 0 0 auto;
     width: 66.66666666666667%;
   }
-  .desktop\\\\:col-3 {
+  .desktop\\:col-3 {
     flex: 0 0 auto;
     width: 100%;
   }
-  .desktop\\\\:offset-0 {
+  .desktop\\:offset-0 {
     margin-left: 0%;
   }
-  .desktop\\\\:offset-1 {
+  .desktop\\:offset-1 {
     margin-left: 33.333333333333336%;
   }
-  .desktop\\\\:offset-2 {
+  .desktop\\:offset-2 {
     margin-left: 66.66666666666667%;
   }
-  .desktop\\\\:g-0 {
+  .desktop\\:g-0 {
     --bs-gutter-x: 0;
   }
-  .desktop\\\\:gx-0 {
+  .desktop\\:gx-0 {
     --bs-gutter-x: 0;
   }
-  .desktop\\\\:g-0 {
+  .desktop\\:g-0 {
     --bs-gutter-y: 0;
   }
-  .desktop\\\\:gy-0 {
+  .desktop\\:gy-0 {
     --bs-gutter-y: 0;
   }
-  .desktop\\\\:g-1 {
+  .desktop\\:g-1 {
     --bs-gutter-x: 0.25rem;
   }
-  .desktop\\\\:gx-1 {
+  .desktop\\:gx-1 {
     --bs-gutter-x: 0.25rem;
   }
-  .desktop\\\\:g-1 {
+  .desktop\\:g-1 {
     --bs-gutter-y: 0.25rem;
   }
-  .desktop\\\\:gy-1 {
+  .desktop\\:gy-1 {
     --bs-gutter-y: 0.25rem;
   }
-  .desktop\\\\:g-2 {
+  .desktop\\:g-2 {
     --bs-gutter-x: 0.5rem;
   }
-  .desktop\\\\:gx-2 {
+  .desktop\\:gx-2 {
     --bs-gutter-x: 0.5rem;
   }
-  .desktop\\\\:g-2 {
+  .desktop\\:g-2 {
     --bs-gutter-y: 0.5rem;
   }
-  .desktop\\\\:gy-2 {
+  .desktop\\:gy-2 {
     --bs-gutter-y: 0.5rem;
   }
-  .desktop\\\\:g-3 {
+  .desktop\\:g-3 {
     --bs-gutter-x: 1rem;
   }
-  .desktop\\\\:gx-3 {
+  .desktop\\:gx-3 {
     --bs-gutter-x: 1rem;
   }
-  .desktop\\\\:g-3 {
+  .desktop\\:g-3 {
     --bs-gutter-y: 1rem;
   }
-  .desktop\\\\:gy-3 {
+  .desktop\\:gy-3 {
     --bs-gutter-y: 1rem;
   }
-  .desktop\\\\:g-4 {
+  .desktop\\:g-4 {
     --bs-gutter-x: 1.5rem;
   }
-  .desktop\\\\:gx-4 {
+  .desktop\\:gx-4 {
     --bs-gutter-x: 1.5rem;
   }
-  .desktop\\\\:g-4 {
+  .desktop\\:g-4 {
     --bs-gutter-y: 1.5rem;
   }
-  .desktop\\\\:gy-4 {
+  .desktop\\:gy-4 {
     --bs-gutter-y: 1.5rem;
   }
-  .desktop\\\\:g-5 {
+  .desktop\\:g-5 {
     --bs-gutter-x: 3rem;
   }
-  .desktop\\\\:gx-5 {
+  .desktop\\:gx-5 {
     --bs-gutter-x: 3rem;
   }
-  .desktop\\\\:g-5 {
+  .desktop\\:g-5 {
     --bs-gutter-y: 3rem;
   }
-  .desktop\\\\:gy-5 {
+  .desktop\\:gy-5 {
     --bs-gutter-y: 3rem;
   }
-  .desktop\\\\:order-first {
+  .desktop\\:order-first {
     order: -1;
   }
-  .desktop\\\\:order-last {
+  .desktop\\:order-last {
     order: 4;
   }
-  .desktop\\\\:order-0 {
+  .desktop\\:order-0 {
     order: 0;
   }
-  .desktop\\\\:order-1 {
+  .desktop\\:order-1 {
     order: 1;
   }
-  .desktop\\\\:order-2 {
+  .desktop\\:order-2 {
     order: 2;
   }
-  .desktop\\\\:order-3 {
+  .desktop\\:order-3 {
     order: 3;
   }
 }
