@@ -215,14 +215,14 @@ exports[`should handle defaults 1`] = `
   order: 12;
 }
 @media (min-width: 1em) {
-  .mobile\\\\:container {
+  .mobile\\:container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
     padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
   }
-  .mobile\\\\:container-fluid {
+  .mobile\\:container-fluid {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -230,21 +230,21 @@ exports[`should handle defaults 1`] = `
     padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
   }
   @media (min-width: 1em) {
-    .mobile\\\\:container {
+    .mobile\\:container {
       max-width: 1em;
     }
   }
   @media (min-width: 2em) {
-    .mobile\\\\:container {
+    .mobile\\:container {
       max-width: 2em;
     }
   }
   @media (min-width: 3em) {
-    .mobile\\\\:container {
+    .mobile\\:container {
       max-width: 3em;
     }
   }
-  .mobile\\\\:row {
+  .mobile\\:row {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: flex;
@@ -253,7 +253,7 @@ exports[`should handle defaults 1`] = `
     margin-right: calc(var(--bs-gutter-x) / -2);
     margin-left: calc(var(--bs-gutter-x) / -2);
   }
-  .mobile\\\\:row > * {
+  .mobile\\:row > * {
     box-sizing: border-box;
     flex-shrink: 0;
     width: 100%;
@@ -262,192 +262,192 @@ exports[`should handle defaults 1`] = `
     padding-left: calc(var(--bs-gutter-x) / 2);
     margin-top: var(--bs-gutter-y);
   }
-  .mobile\\\\:col {
+  .mobile\\:col {
     flex: 1 0 0%;
   }
-  .mobile\\\\:row-cols-auto > * {
+  .mobile\\:row-cols-auto > * {
     flex: 0 0 auto;
     width: auto;
   }
-  .mobile\\\\:row-cols-1 > * {
+  .mobile\\:row-cols-1 > * {
     flex: 0 0 auto;
     width: 100%;
   }
-  .mobile\\\\:row-cols-2 > * {
+  .mobile\\:row-cols-2 > * {
     flex: 0 0 auto;
     width: 50%;
   }
-  .mobile\\\\:row-cols-3 > * {
+  .mobile\\:row-cols-3 > * {
     flex: 0 0 auto;
     width: 33.333333333333336%;
   }
-  .mobile\\\\:row-cols-4 > * {
+  .mobile\\:row-cols-4 > * {
     flex: 0 0 auto;
     width: 25%;
   }
-  .mobile\\\\:row-cols-5 > * {
+  .mobile\\:row-cols-5 > * {
     flex: 0 0 auto;
     width: 20%;
   }
-  .mobile\\\\:row-cols-6 > * {
+  .mobile\\:row-cols-6 > * {
     flex: 0 0 auto;
     width: 16.666666666666668%;
   }
-  .mobile\\\\:col-auto {
+  .mobile\\:col-auto {
     flex: 0 0 auto;
     width: auto;
   }
-  .mobile\\\\:col-1 {
+  .mobile\\:col-1 {
     flex: 0 0 auto;
     width: 8.333333333333334%;
   }
-  .mobile\\\\:col-2 {
+  .mobile\\:col-2 {
     flex: 0 0 auto;
     width: 16.666666666666668%;
   }
-  .mobile\\\\:col-3 {
+  .mobile\\:col-3 {
     flex: 0 0 auto;
     width: 25%;
   }
-  .mobile\\\\:col-4 {
+  .mobile\\:col-4 {
     flex: 0 0 auto;
     width: 33.333333333333336%;
   }
-  .mobile\\\\:col-5 {
+  .mobile\\:col-5 {
     flex: 0 0 auto;
     width: 41.66666666666667%;
   }
-  .mobile\\\\:col-6 {
+  .mobile\\:col-6 {
     flex: 0 0 auto;
     width: 50%;
   }
-  .mobile\\\\:col-7 {
+  .mobile\\:col-7 {
     flex: 0 0 auto;
     width: 58.333333333333336%;
   }
-  .mobile\\\\:col-8 {
+  .mobile\\:col-8 {
     flex: 0 0 auto;
     width: 66.66666666666667%;
   }
-  .mobile\\\\:col-9 {
+  .mobile\\:col-9 {
     flex: 0 0 auto;
     width: 75%;
   }
-  .mobile\\\\:col-10 {
+  .mobile\\:col-10 {
     flex: 0 0 auto;
     width: 83.33333333333334%;
   }
-  .mobile\\\\:col-11 {
+  .mobile\\:col-11 {
     flex: 0 0 auto;
     width: 91.66666666666667%;
   }
-  .mobile\\\\:col-12 {
+  .mobile\\:col-12 {
     flex: 0 0 auto;
     width: 100%;
   }
-  .mobile\\\\:offset-0 {
+  .mobile\\:offset-0 {
     margin-left: 0%;
   }
-  .mobile\\\\:offset-1 {
+  .mobile\\:offset-1 {
     margin-left: 8.333333333333334%;
   }
-  .mobile\\\\:offset-2 {
+  .mobile\\:offset-2 {
     margin-left: 16.666666666666668%;
   }
-  .mobile\\\\:offset-3 {
+  .mobile\\:offset-3 {
     margin-left: 25%;
   }
-  .mobile\\\\:offset-4 {
+  .mobile\\:offset-4 {
     margin-left: 33.333333333333336%;
   }
-  .mobile\\\\:offset-5 {
+  .mobile\\:offset-5 {
     margin-left: 41.66666666666667%;
   }
-  .mobile\\\\:offset-6 {
+  .mobile\\:offset-6 {
     margin-left: 50%;
   }
-  .mobile\\\\:offset-7 {
+  .mobile\\:offset-7 {
     margin-left: 58.333333333333336%;
   }
-  .mobile\\\\:offset-8 {
+  .mobile\\:offset-8 {
     margin-left: 66.66666666666667%;
   }
-  .mobile\\\\:offset-9 {
+  .mobile\\:offset-9 {
     margin-left: 75%;
   }
-  .mobile\\\\:offset-10 {
+  .mobile\\:offset-10 {
     margin-left: 83.33333333333334%;
   }
-  .mobile\\\\:offset-11 {
+  .mobile\\:offset-11 {
     margin-left: 91.66666666666667%;
   }
-  .mobile\\\\:g-0 {
+  .mobile\\:g-0 {
     --bs-gutter-x: 0;
   }
-  .mobile\\\\:gx-0 {
+  .mobile\\:gx-0 {
     --bs-gutter-x: 0;
   }
-  .mobile\\\\:g-0 {
+  .mobile\\:g-0 {
     --bs-gutter-y: 0;
   }
-  .mobile\\\\:gy-0 {
+  .mobile\\:gy-0 {
     --bs-gutter-y: 0;
   }
-  .mobile\\\\:order-first {
+  .mobile\\:order-first {
     order: -1;
   }
-  .mobile\\\\:order-last {
+  .mobile\\:order-last {
     order: 13;
   }
-  .mobile\\\\:order-0 {
+  .mobile\\:order-0 {
     order: 0;
   }
-  .mobile\\\\:order-1 {
+  .mobile\\:order-1 {
     order: 1;
   }
-  .mobile\\\\:order-2 {
+  .mobile\\:order-2 {
     order: 2;
   }
-  .mobile\\\\:order-3 {
+  .mobile\\:order-3 {
     order: 3;
   }
-  .mobile\\\\:order-4 {
+  .mobile\\:order-4 {
     order: 4;
   }
-  .mobile\\\\:order-5 {
+  .mobile\\:order-5 {
     order: 5;
   }
-  .mobile\\\\:order-6 {
+  .mobile\\:order-6 {
     order: 6;
   }
-  .mobile\\\\:order-7 {
+  .mobile\\:order-7 {
     order: 7;
   }
-  .mobile\\\\:order-8 {
+  .mobile\\:order-8 {
     order: 8;
   }
-  .mobile\\\\:order-9 {
+  .mobile\\:order-9 {
     order: 9;
   }
-  .mobile\\\\:order-10 {
+  .mobile\\:order-10 {
     order: 10;
   }
-  .mobile\\\\:order-11 {
+  .mobile\\:order-11 {
     order: 11;
   }
-  .mobile\\\\:order-12 {
+  .mobile\\:order-12 {
     order: 12;
   }
 }
 @media (min-width: 2em) {
-  .tablet\\\\:container {
+  .tablet\\:container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
     padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
   }
-  .tablet\\\\:container-fluid {
+  .tablet\\:container-fluid {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -455,21 +455,21 @@ exports[`should handle defaults 1`] = `
     padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
   }
   @media (min-width: 1em) {
-    .tablet\\\\:container {
+    .tablet\\:container {
       max-width: 1em;
     }
   }
   @media (min-width: 2em) {
-    .tablet\\\\:container {
+    .tablet\\:container {
       max-width: 2em;
     }
   }
   @media (min-width: 3em) {
-    .tablet\\\\:container {
+    .tablet\\:container {
       max-width: 3em;
     }
   }
-  .tablet\\\\:row {
+  .tablet\\:row {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: flex;
@@ -478,7 +478,7 @@ exports[`should handle defaults 1`] = `
     margin-right: calc(var(--bs-gutter-x) / -2);
     margin-left: calc(var(--bs-gutter-x) / -2);
   }
-  .tablet\\\\:row > * {
+  .tablet\\:row > * {
     box-sizing: border-box;
     flex-shrink: 0;
     width: 100%;
@@ -487,192 +487,192 @@ exports[`should handle defaults 1`] = `
     padding-left: calc(var(--bs-gutter-x) / 2);
     margin-top: var(--bs-gutter-y);
   }
-  .tablet\\\\:col {
+  .tablet\\:col {
     flex: 1 0 0%;
   }
-  .tablet\\\\:row-cols-auto > * {
+  .tablet\\:row-cols-auto > * {
     flex: 0 0 auto;
     width: auto;
   }
-  .tablet\\\\:row-cols-1 > * {
+  .tablet\\:row-cols-1 > * {
     flex: 0 0 auto;
     width: 100%;
   }
-  .tablet\\\\:row-cols-2 > * {
+  .tablet\\:row-cols-2 > * {
     flex: 0 0 auto;
     width: 50%;
   }
-  .tablet\\\\:row-cols-3 > * {
+  .tablet\\:row-cols-3 > * {
     flex: 0 0 auto;
     width: 33.333333333333336%;
   }
-  .tablet\\\\:row-cols-4 > * {
+  .tablet\\:row-cols-4 > * {
     flex: 0 0 auto;
     width: 25%;
   }
-  .tablet\\\\:row-cols-5 > * {
+  .tablet\\:row-cols-5 > * {
     flex: 0 0 auto;
     width: 20%;
   }
-  .tablet\\\\:row-cols-6 > * {
+  .tablet\\:row-cols-6 > * {
     flex: 0 0 auto;
     width: 16.666666666666668%;
   }
-  .tablet\\\\:col-auto {
+  .tablet\\:col-auto {
     flex: 0 0 auto;
     width: auto;
   }
-  .tablet\\\\:col-1 {
+  .tablet\\:col-1 {
     flex: 0 0 auto;
     width: 8.333333333333334%;
   }
-  .tablet\\\\:col-2 {
+  .tablet\\:col-2 {
     flex: 0 0 auto;
     width: 16.666666666666668%;
   }
-  .tablet\\\\:col-3 {
+  .tablet\\:col-3 {
     flex: 0 0 auto;
     width: 25%;
   }
-  .tablet\\\\:col-4 {
+  .tablet\\:col-4 {
     flex: 0 0 auto;
     width: 33.333333333333336%;
   }
-  .tablet\\\\:col-5 {
+  .tablet\\:col-5 {
     flex: 0 0 auto;
     width: 41.66666666666667%;
   }
-  .tablet\\\\:col-6 {
+  .tablet\\:col-6 {
     flex: 0 0 auto;
     width: 50%;
   }
-  .tablet\\\\:col-7 {
+  .tablet\\:col-7 {
     flex: 0 0 auto;
     width: 58.333333333333336%;
   }
-  .tablet\\\\:col-8 {
+  .tablet\\:col-8 {
     flex: 0 0 auto;
     width: 66.66666666666667%;
   }
-  .tablet\\\\:col-9 {
+  .tablet\\:col-9 {
     flex: 0 0 auto;
     width: 75%;
   }
-  .tablet\\\\:col-10 {
+  .tablet\\:col-10 {
     flex: 0 0 auto;
     width: 83.33333333333334%;
   }
-  .tablet\\\\:col-11 {
+  .tablet\\:col-11 {
     flex: 0 0 auto;
     width: 91.66666666666667%;
   }
-  .tablet\\\\:col-12 {
+  .tablet\\:col-12 {
     flex: 0 0 auto;
     width: 100%;
   }
-  .tablet\\\\:offset-0 {
+  .tablet\\:offset-0 {
     margin-left: 0%;
   }
-  .tablet\\\\:offset-1 {
+  .tablet\\:offset-1 {
     margin-left: 8.333333333333334%;
   }
-  .tablet\\\\:offset-2 {
+  .tablet\\:offset-2 {
     margin-left: 16.666666666666668%;
   }
-  .tablet\\\\:offset-3 {
+  .tablet\\:offset-3 {
     margin-left: 25%;
   }
-  .tablet\\\\:offset-4 {
+  .tablet\\:offset-4 {
     margin-left: 33.333333333333336%;
   }
-  .tablet\\\\:offset-5 {
+  .tablet\\:offset-5 {
     margin-left: 41.66666666666667%;
   }
-  .tablet\\\\:offset-6 {
+  .tablet\\:offset-6 {
     margin-left: 50%;
   }
-  .tablet\\\\:offset-7 {
+  .tablet\\:offset-7 {
     margin-left: 58.333333333333336%;
   }
-  .tablet\\\\:offset-8 {
+  .tablet\\:offset-8 {
     margin-left: 66.66666666666667%;
   }
-  .tablet\\\\:offset-9 {
+  .tablet\\:offset-9 {
     margin-left: 75%;
   }
-  .tablet\\\\:offset-10 {
+  .tablet\\:offset-10 {
     margin-left: 83.33333333333334%;
   }
-  .tablet\\\\:offset-11 {
+  .tablet\\:offset-11 {
     margin-left: 91.66666666666667%;
   }
-  .tablet\\\\:g-0 {
+  .tablet\\:g-0 {
     --bs-gutter-x: 0;
   }
-  .tablet\\\\:gx-0 {
+  .tablet\\:gx-0 {
     --bs-gutter-x: 0;
   }
-  .tablet\\\\:g-0 {
+  .tablet\\:g-0 {
     --bs-gutter-y: 0;
   }
-  .tablet\\\\:gy-0 {
+  .tablet\\:gy-0 {
     --bs-gutter-y: 0;
   }
-  .tablet\\\\:order-first {
+  .tablet\\:order-first {
     order: -1;
   }
-  .tablet\\\\:order-last {
+  .tablet\\:order-last {
     order: 13;
   }
-  .tablet\\\\:order-0 {
+  .tablet\\:order-0 {
     order: 0;
   }
-  .tablet\\\\:order-1 {
+  .tablet\\:order-1 {
     order: 1;
   }
-  .tablet\\\\:order-2 {
+  .tablet\\:order-2 {
     order: 2;
   }
-  .tablet\\\\:order-3 {
+  .tablet\\:order-3 {
     order: 3;
   }
-  .tablet\\\\:order-4 {
+  .tablet\\:order-4 {
     order: 4;
   }
-  .tablet\\\\:order-5 {
+  .tablet\\:order-5 {
     order: 5;
   }
-  .tablet\\\\:order-6 {
+  .tablet\\:order-6 {
     order: 6;
   }
-  .tablet\\\\:order-7 {
+  .tablet\\:order-7 {
     order: 7;
   }
-  .tablet\\\\:order-8 {
+  .tablet\\:order-8 {
     order: 8;
   }
-  .tablet\\\\:order-9 {
+  .tablet\\:order-9 {
     order: 9;
   }
-  .tablet\\\\:order-10 {
+  .tablet\\:order-10 {
     order: 10;
   }
-  .tablet\\\\:order-11 {
+  .tablet\\:order-11 {
     order: 11;
   }
-  .tablet\\\\:order-12 {
+  .tablet\\:order-12 {
     order: 12;
   }
 }
 @media (min-width: 3em) {
-  .desktop\\\\:container {
+  .desktop\\:container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: var(--bs-gutter-x, calc(1.5rem / 2));
     padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
   }
-  .desktop\\\\:container-fluid {
+  .desktop\\:container-fluid {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -680,21 +680,21 @@ exports[`should handle defaults 1`] = `
     padding-left: var(--bs-gutter-x, calc(1.5rem / 2));
   }
   @media (min-width: 1em) {
-    .desktop\\\\:container {
+    .desktop\\:container {
       max-width: 1em;
     }
   }
   @media (min-width: 2em) {
-    .desktop\\\\:container {
+    .desktop\\:container {
       max-width: 2em;
     }
   }
   @media (min-width: 3em) {
-    .desktop\\\\:container {
+    .desktop\\:container {
       max-width: 3em;
     }
   }
-  .desktop\\\\:row {
+  .desktop\\:row {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: flex;
@@ -703,7 +703,7 @@ exports[`should handle defaults 1`] = `
     margin-right: calc(var(--bs-gutter-x) / -2);
     margin-left: calc(var(--bs-gutter-x) / -2);
   }
-  .desktop\\\\:row > * {
+  .desktop\\:row > * {
     box-sizing: border-box;
     flex-shrink: 0;
     width: 100%;
@@ -712,180 +712,180 @@ exports[`should handle defaults 1`] = `
     padding-left: calc(var(--bs-gutter-x) / 2);
     margin-top: var(--bs-gutter-y);
   }
-  .desktop\\\\:col {
+  .desktop\\:col {
     flex: 1 0 0%;
   }
-  .desktop\\\\:row-cols-auto > * {
+  .desktop\\:row-cols-auto > * {
     flex: 0 0 auto;
     width: auto;
   }
-  .desktop\\\\:row-cols-1 > * {
+  .desktop\\:row-cols-1 > * {
     flex: 0 0 auto;
     width: 100%;
   }
-  .desktop\\\\:row-cols-2 > * {
+  .desktop\\:row-cols-2 > * {
     flex: 0 0 auto;
     width: 50%;
   }
-  .desktop\\\\:row-cols-3 > * {
+  .desktop\\:row-cols-3 > * {
     flex: 0 0 auto;
     width: 33.333333333333336%;
   }
-  .desktop\\\\:row-cols-4 > * {
+  .desktop\\:row-cols-4 > * {
     flex: 0 0 auto;
     width: 25%;
   }
-  .desktop\\\\:row-cols-5 > * {
+  .desktop\\:row-cols-5 > * {
     flex: 0 0 auto;
     width: 20%;
   }
-  .desktop\\\\:row-cols-6 > * {
+  .desktop\\:row-cols-6 > * {
     flex: 0 0 auto;
     width: 16.666666666666668%;
   }
-  .desktop\\\\:col-auto {
+  .desktop\\:col-auto {
     flex: 0 0 auto;
     width: auto;
   }
-  .desktop\\\\:col-1 {
+  .desktop\\:col-1 {
     flex: 0 0 auto;
     width: 8.333333333333334%;
   }
-  .desktop\\\\:col-2 {
+  .desktop\\:col-2 {
     flex: 0 0 auto;
     width: 16.666666666666668%;
   }
-  .desktop\\\\:col-3 {
+  .desktop\\:col-3 {
     flex: 0 0 auto;
     width: 25%;
   }
-  .desktop\\\\:col-4 {
+  .desktop\\:col-4 {
     flex: 0 0 auto;
     width: 33.333333333333336%;
   }
-  .desktop\\\\:col-5 {
+  .desktop\\:col-5 {
     flex: 0 0 auto;
     width: 41.66666666666667%;
   }
-  .desktop\\\\:col-6 {
+  .desktop\\:col-6 {
     flex: 0 0 auto;
     width: 50%;
   }
-  .desktop\\\\:col-7 {
+  .desktop\\:col-7 {
     flex: 0 0 auto;
     width: 58.333333333333336%;
   }
-  .desktop\\\\:col-8 {
+  .desktop\\:col-8 {
     flex: 0 0 auto;
     width: 66.66666666666667%;
   }
-  .desktop\\\\:col-9 {
+  .desktop\\:col-9 {
     flex: 0 0 auto;
     width: 75%;
   }
-  .desktop\\\\:col-10 {
+  .desktop\\:col-10 {
     flex: 0 0 auto;
     width: 83.33333333333334%;
   }
-  .desktop\\\\:col-11 {
+  .desktop\\:col-11 {
     flex: 0 0 auto;
     width: 91.66666666666667%;
   }
-  .desktop\\\\:col-12 {
+  .desktop\\:col-12 {
     flex: 0 0 auto;
     width: 100%;
   }
-  .desktop\\\\:offset-0 {
+  .desktop\\:offset-0 {
     margin-left: 0%;
   }
-  .desktop\\\\:offset-1 {
+  .desktop\\:offset-1 {
     margin-left: 8.333333333333334%;
   }
-  .desktop\\\\:offset-2 {
+  .desktop\\:offset-2 {
     margin-left: 16.666666666666668%;
   }
-  .desktop\\\\:offset-3 {
+  .desktop\\:offset-3 {
     margin-left: 25%;
   }
-  .desktop\\\\:offset-4 {
+  .desktop\\:offset-4 {
     margin-left: 33.333333333333336%;
   }
-  .desktop\\\\:offset-5 {
+  .desktop\\:offset-5 {
     margin-left: 41.66666666666667%;
   }
-  .desktop\\\\:offset-6 {
+  .desktop\\:offset-6 {
     margin-left: 50%;
   }
-  .desktop\\\\:offset-7 {
+  .desktop\\:offset-7 {
     margin-left: 58.333333333333336%;
   }
-  .desktop\\\\:offset-8 {
+  .desktop\\:offset-8 {
     margin-left: 66.66666666666667%;
   }
-  .desktop\\\\:offset-9 {
+  .desktop\\:offset-9 {
     margin-left: 75%;
   }
-  .desktop\\\\:offset-10 {
+  .desktop\\:offset-10 {
     margin-left: 83.33333333333334%;
   }
-  .desktop\\\\:offset-11 {
+  .desktop\\:offset-11 {
     margin-left: 91.66666666666667%;
   }
-  .desktop\\\\:g-0 {
+  .desktop\\:g-0 {
     --bs-gutter-x: 0;
   }
-  .desktop\\\\:gx-0 {
+  .desktop\\:gx-0 {
     --bs-gutter-x: 0;
   }
-  .desktop\\\\:g-0 {
+  .desktop\\:g-0 {
     --bs-gutter-y: 0;
   }
-  .desktop\\\\:gy-0 {
+  .desktop\\:gy-0 {
     --bs-gutter-y: 0;
   }
-  .desktop\\\\:order-first {
+  .desktop\\:order-first {
     order: -1;
   }
-  .desktop\\\\:order-last {
+  .desktop\\:order-last {
     order: 13;
   }
-  .desktop\\\\:order-0 {
+  .desktop\\:order-0 {
     order: 0;
   }
-  .desktop\\\\:order-1 {
+  .desktop\\:order-1 {
     order: 1;
   }
-  .desktop\\\\:order-2 {
+  .desktop\\:order-2 {
     order: 2;
   }
-  .desktop\\\\:order-3 {
+  .desktop\\:order-3 {
     order: 3;
   }
-  .desktop\\\\:order-4 {
+  .desktop\\:order-4 {
     order: 4;
   }
-  .desktop\\\\:order-5 {
+  .desktop\\:order-5 {
     order: 5;
   }
-  .desktop\\\\:order-6 {
+  .desktop\\:order-6 {
     order: 6;
   }
-  .desktop\\\\:order-7 {
+  .desktop\\:order-7 {
     order: 7;
   }
-  .desktop\\\\:order-8 {
+  .desktop\\:order-8 {
     order: 8;
   }
-  .desktop\\\\:order-9 {
+  .desktop\\:order-9 {
     order: 9;
   }
-  .desktop\\\\:order-10 {
+  .desktop\\:order-10 {
     order: 10;
   }
-  .desktop\\\\:order-11 {
+  .desktop\\:order-11 {
     order: 11;
   }
-  .desktop\\\\:order-12 {
+  .desktop\\:order-12 {
     order: 12;
   }
 }
