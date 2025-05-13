@@ -1,9 +1,19 @@
-const Joi = require('joi');
+import Joi from 'joi';
 
-module.exports =
-  ({ screens }) =>
-  (input) => {
-    const makeScreenSubUnit = (schema) =>
+type PluginOptions = {
+  gridColumns: number;
+  gridGutterWidth: string;
+  gridGutters: Record<string, string>;
+  generateContainer: boolean;
+  containerMaxWidths: Record<string, string>;
+  rtl: boolean;
+  respectImportant: boolean;
+};
+
+export const validate =
+  ({ screens }: { screens: Record<string, string> }) =>
+  (input: unknown): PluginOptions => {
+    const makeScreenSubUnit = (schema: Joi.Schema) =>
       Object.keys(screens).reduce(
         (obj, screen) => ({ [screen]: schema, ...obj }),
         {},
@@ -31,5 +41,6 @@ module.exports =
         )}\nare invalid: ${error} `,
       );
     }
-    return input;
+
+    return input as PluginOptions;
   };

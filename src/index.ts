@@ -1,7 +1,8 @@
-const pc = require('picocolors');
-const plugin = require('tailwindcss/plugin');
+import pc from 'picocolors';
+import plugin from 'tailwindcss/plugin';
 
-const validate = require('./validate');
+import { validate } from './validate';
+import { CSSRuleObject } from 'tailwindcss/types/config';
 
 /**
  * Setup tailwind-bootstrap-grid plugin
@@ -36,7 +37,7 @@ module.exports = plugin.withOptions((pluginOptions) => (options) => {
     containerMaxWidths: {},
     rtl: false,
     respectImportant: true,
-    ...pluginOptions,
+    ...(pluginOptions ?? {}),
   });
 
   if (generateContainer && corePlugins('container')) {
@@ -55,7 +56,7 @@ module.exports = plugin.withOptions((pluginOptions) => (options) => {
   const columns = Array.from(Array(gridColumns), (value, index) => index + 1);
   const rowColsSteps = columns.slice(0, Math.floor(gridColumns / 2));
 
-  const setImportant = (value) =>
+  const setImportant = (value: string) =>
     respectImportant && important && value != null
       ? `${value} !important`
       : value;
@@ -103,7 +104,7 @@ module.exports = plugin.withOptions((pluginOptions) => (options) => {
       {
         '.row': {
           '--bs-gutter-x': gridGutterWidth,
-          '--bs-gutter-y': 0,
+          '--bs-gutter-y': '0',
           display: 'flex',
           flexWrap: 'wrap',
           marginTop: 'calc(var(--bs-gutter-y) * -1)',
@@ -111,7 +112,7 @@ module.exports = plugin.withOptions((pluginOptions) => (options) => {
           marginLeft: 'calc(var(--bs-gutter-x) / -2)',
           '& > *': {
             boxSizing: 'border-box',
-            flexShrink: 0,
+            flexShrink: '0',
             width: '100%',
             maxWidth: '100%',
             paddingRight: 'calc(var(--bs-gutter-x) / 2)',
@@ -172,7 +173,7 @@ module.exports = plugin.withOptions((pluginOptions) => (options) => {
     // =============================================================================================
     addComponents(
       [
-        ...[0, ...columns.slice(0, -1)].map((size) => {
+        ...[0, ...columns.slice(0, -1)].map((size): CSSRuleObject => {
           const margin = `${(100 / gridColumns) * size}%`;
           return rtl
             ? {
@@ -194,14 +195,16 @@ module.exports = plugin.withOptions((pluginOptions) => (options) => {
     // =============================================================================================
     if (Object.keys(gridGutters).length) {
       addComponents(
-        Object.entries(gridGutters).map(([key, value]) => ({
-          [`.g-${key}, .gx-${key}`]: {
-            '--bs-gutter-x': value,
-          },
-          [`.g-${key}, .gy-${key}`]: {
-            '--bs-gutter-y': value,
-          },
-        })),
+        Object.entries(gridGutters).map(
+          ([key, value]): CSSRuleObject => ({
+            [`.g-${key}, .gx-${key}`]: {
+              '--bs-gutter-x': value,
+            },
+            [`.g-${key}, .gy-${key}`]: {
+              '--bs-gutter-y': value,
+            },
+          }),
+        ),
         { respectImportant },
       );
     }
@@ -215,7 +218,7 @@ module.exports = plugin.withOptions((pluginOptions) => (options) => {
       [
         {
           '.order-first': { order: '-1' },
-          '.order-last': { order: gridColumns + 1 },
+          '.order-last': { order: `${gridColumns + 1}` },
         },
         ...[0, ...columns].map((size) => ({
           [`.order-${size}`]: { order: `${size}` },

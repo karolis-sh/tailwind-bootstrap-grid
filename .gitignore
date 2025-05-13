@@ -4,5 +4,6 @@ node_modules
 
 # project
 /build
+/lib
 /samples/*/output.css
 .eslintcache
