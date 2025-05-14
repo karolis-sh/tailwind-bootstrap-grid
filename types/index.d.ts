@@ -1,22 +1,13 @@
 declare module 'tailwind-bootstrap-grid' {
   import { PluginCreator } from 'tailwindcss/types/config';
 
-  interface GridGutters {
-    [key: string]: string | number;
-  }
-
-  interface ContainerMaxWidths {
-    [breakpoint: string]: string;
-  }
-
   interface TailwindBootstrapGridOptions {
-    gridColumns?: number;
-    gridGutterWidth?: string;
-    gridGutters?: GridGutters;
-    generateContainer?: boolean;
-    containerMaxWidths?: ContainerMaxWidths;
+    grid_columns?: number;
+    grid_gutter_width?: string;
+    grid_gutters?: string[];
+    generate_container?: boolean;
+    container_max_widths?: string[];
     rtl?: boolean;
-    respectImportant?: boolean;
   }
 
   function tailwindBootstrapGrid(

@@ -21,15 +21,10 @@
     "types"
   ],
   "scripts": {
-    "build": "run-s build:lib build:demo build:sample",
+    "build": "run-s build:lib build:demo",
     "build:lib": "tsc",
     "build:demo": "cd demo && vite build",
-    "build:sample": "run-p build:sample:*",
-    "build:sample:prefix-separator": "cd samples/prefix-separator && NODE_ENV=production tailwindcss --no-autoprefixer -i input.css -o output.css",
-    "build:sample:purge": "cd samples/purge && NODE_ENV=production tailwindcss -i input.css -o output.css",
-    "build:sample:default": "cd samples/default && NODE_ENV=production tailwindcss -i input.css -o output.css",
-    "build:sample:tw-default": "cd samples/tw-default && NODE_ENV=production tailwindcss -i input.css -o output.css",
-    "clean": "rm -rf build && rm -rf lib && rm -rf samples/*/output.css",
+    "clean": "rm -rf build lib",
     "commit": "cz",
     "format": "run-p format:*",
     "format:js": "prettier --write .",
@@ -38,11 +33,9 @@
     "lint:types": "tsc --noEmit",
     "lint:js": "eslint . --cache",
     "lint:md": "markdownlint-cli2 '**/*.md' '!node_modules' '!**/node_modules' '!**/CHANGELOG.md'",
-    "qa": "run-p test lint",
+    "qa": "npm run lint",
     "release": "npm i && run-s clean build qa && standard-version --no-verify && git push --follow-tags --no-verify && npm publish",
     "dev": "cd demo && vite",
-    "tdd": "vitest --globals",
-    "test": "vitest --globals --watch=false",
     "try-demo": "run-s clean build:demo && serve build",
     "prepare": "husky"
   },
@@ -51,8 +44,7 @@
     "package.json": "sort-package-json"
   },
   "dependencies": {
-    "joi": "^17.5.0",
-    "picocolors": "^1.0.0"
+    "zod": "^3.24.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.0",
@@ -60,13 +52,13 @@
     "@k.sh/eslint-plugin": "^0.9.1",
     "@k.sh/prettier-config": "^0.5.0",
     "@mdx-js/rollup": "^3.1.0",
+    "@tailwindcss/postcss": "^4.1.6",
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^4.3.4",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.55.0",
     "eslint-plugin-jsdoc": "^46.9.0",
-    "eslint-plugin-vitest": "^0.3.10",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.0",
     "markdownlint-cli2": "^0.17.2",
@@ -80,13 +72,12 @@
     "serve": "^14.2.4",
     "sort-package-json": "^3.0.0",
     "standard-version": "^9.5.0",
-    "tailwindcss": "^3.3.5",
+    "tailwindcss": "^4.1.6",
     "typescript": "^5.8.2",
-    "vite": "^6.2.2",
-    "vitest": "^3.0.9"
+    "vite": "^6.2.2"
   },
   "peerDependencies": {
-    "tailwindcss": "^3"
+    "tailwindcss": "^4"
   },
   "engines": {
     "node": ">= 12.0.0"

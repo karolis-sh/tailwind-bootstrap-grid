@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "target": "ES2018",
@@ -12,7 +14,6 @@
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
 
-    "module": "CommonJS",
     "outDir": "lib",
     "sourceMap": true,
     "declaration": true,
