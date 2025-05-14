@@ -1,5 +1,55 @@
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/utilities';
+/* @config '../tailwind.config.js'; */
+
+@plugin '../../lib' {
+  rtl: true;
+  grid_columns: 12;
+  grid_gutter_width: '1.5rem';
+  generate_container: true;
+  container_max_widths:
+    'sm', '540px', 'md', '720px', 'lg', '960px', 'xl', '1140px', '2xl', '1320px';
+  grid_gutters:
+    0, 0, 1, '.25rem', 2, '.5rem', 3, '1rem', 4, '1.5rem', 5, '3rem';
+}
+
+@theme {
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1400px;
+}
+
+/* 1. Base column layout */
+@source inline('col');
+@source inline('col-auto');
+@source inline('col-{1..12..1}');
+@source inline('{sm,md,lg,xl,2xl}:col');
+@source inline('{sm,md,lg,xl,2xl}:col-auto');
+@source inline('{sm,md,lg,xl,2xl}:col-{1..12..1}');
+
+/* 2. Row column layout modifiers */
+@source inline('row-cols-auto');
+@source inline('row-cols-{1..6..1}');
+@source inline('{sm,md,lg,xl,2xl}:row-cols-auto');
+@source inline('{sm,md,lg,xl,2xl}:row-cols-{1..6..1}');
+
+/* 3. Order utilities */
+@source inline('order-first');
+@source inline('order-last');
+@source inline('order-{0..12..1}');
+@source inline('{sm,md,lg,xl,2xl}:order-first');
+@source inline('{sm,md,lg,xl,2xl}:order-last');
+@source inline('{sm,md,lg,xl,2xl}:order-{0..12..1}');
+
+/* 4. Offset utilities */
+@source inline('offset-{0..11..1}');
+@source inline('{sm,md,lg,xl,2xl}:offset-{0..11..1}');
+
+/* 5. Gutter utilities */
+@source inline('g-{0..5..1}');
+@source inline('gx-{0..5..1}');
+@source inline('gy-{0..5..1}');
 
 html {
   font-family:
@@ -39,11 +89,13 @@ html {
 .container .row > .md\:col,
 .container .row > .lg\:col,
 .container .row > .xl\:col,
+.container .row > .\2xl\:col,
 .container .row > [class^='col-'],
 .container .row > [class^='sm:col-'],
 .container .row > [class^='md:col-'],
 .container .row > [class^='lg:col-'],
-.container .row > [class^='xl:col-'] {
+.container .row > [class^='xl:col-'],
+.container .row > [class^='2xl:col-'] {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: rgba(86, 61, 124, 0.15);

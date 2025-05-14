@@ -6,7 +6,7 @@
 
 Bootstrap **v5** flexbox grid system as a Tailwind CSS plugin.
 
-Check the [demo](https://tailwind-bootstrap-grid.netlify.app/).
+Check the [demo playground](https://tailwind-bootstrap-grid.netlify.app/).
 
 ## Installation
 
@@ -14,74 +14,65 @@ Check the [demo](https://tailwind-bootstrap-grid.netlify.app/).
 npm i -D tailwind-bootstrap-grid
 ```
 
-In `tailwind.js` file:
+In your `index.css` file:
+
+```css
+@import 'tailwindcss';
+
+@plugin 'tailwind-bootstrap-grid' {
+  container_max_widths:
+    'sm', '540px', 'md', '720px', 'lg', '960px', 'xl', '1140px', '2xl', '1320px';
+}
+```
+
+Or via `tailwind.config.js` file:
 
 ```js
 module.exports = {
   plugins: [
     require('tailwind-bootstrap-grid')({
-      containerMaxWidths: {
-        sm: '540px',
-        md: '720px',
-        lg: '960px',
-        xl: '1140px',
-      },
+      container_max_widths: [
+        'sm',
+        '540px',
+        'md',
+        '720px',
+        'lg',
+        '960px',
+        'xl',
+        '1140px',
+        '2xl',
+        '1320px',
+      ],
     }),
   ],
 };
 ```
 
-And don't forget to include `components` and `utilities` in your tailwind base
-css file:
-
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-
-This will generate Bootstrap v5 flexbox grid.
-
-\* **NOTE**: When using the `.container` class from this plugin you will need to
-[disable](https://tailwindcss.com/docs/container#disabling-entirely) the core
-[container plugin](https://tailwindcss.com/docs/container/) as both plugins
-expose a `.container` class.
-
-## Features & Tailwind CSS options support
-
-- ✅ custom screens
-- ✅ custom separator
-- ✅ custom prefix
-- ✅ important
-- ✅ rtl support
+This will generate the Bootstrap v5 flexbox grid.
 
 ## Options
 
 - Original Bootstrap grid's options:
 
-  - `gridColumns` (default - `12`) - grid size
-  - `gridGutterWidth` (default - `"1.5rem"`) - container and rows gutter width
-  - `gridGutters` (default - `{ 0: 0 }`) - gutter variable class steps
+  - `grid_columns` (default - `12`) - grid size
+  - `grid_gutter_width` (default - `"1.5rem"`) - container and rows gutter width
+  - `grid_gutters` (default - `[0, 0]`) - gutter variable class steps
     (`--bs-gutter-x`, `--bs-gutter-y`)
-  - `containerMaxWidths` (default - `{}`) - the `max-width` container value for
+  - `container_max_widths` (default - `[]`) - the `max-width` container value for
     each breakpoint
 
 - Extra options:
-  - `generateContainer` (default - `true`) - whether to generate `.container` and
+  - `generate_container` (default - `true`) - whether to generate `.container` and
     `.container-fluid` classes
   - `rtl` (default - `false`) - rtl support (`.offset-x` classes will start
     responding to `[dir=ltr]` / `[dir=rtl]`)
-  - `respectImportant` (default - `true`) - whether it should respect the `important`
-    root config option
+  - `debug` (default - `false`) - enable debug mode
 
 ## FAQ
 
-1. _**Why my `.container` doesn't have padding?**_ This plugin will not work properly
-   with [core container plugin](https://tailwindcss.com/docs/container/) as both
-   plugins expose a `.container` class.
 1. _**How to use rtl css?**_ Set the `ltr` or `rtl` [dir](https://www.w3schools.com/tags/att_global_dir.asp)
    attribute on your container (usually the root `html`).
-1. _**Is there a Bootstrap v4 grid implementation?**_ Yes, use `tailwind-bootstrap-grid@3`.
+2. _**Is there a Bootstrap v4 grid implementation?**_ Yes, use `tailwind-bootstrap-grid@3`.
 
 ## Related
 

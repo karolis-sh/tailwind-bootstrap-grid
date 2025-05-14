@@ -1,98 +1,107 @@
-import pc from 'picocolors';
 import plugin from 'tailwindcss/plugin';
+import { z } from 'zod';
 
-import { validate } from './validate';
-import { CSSRuleObject } from 'tailwindcss/types/config';
+type CssInJs = {
+  [key: string]: string | string[] | CssInJs | CssInJs[];
+};
 
-/**
- * Setup tailwind-bootstrap-grid plugin
- * @param {object} pluginOptions - plugin options
- * @param {number} [pluginOptions.gridColumns=12] - number of columns
- * @param {string} [pluginOptions.gridGutterWidth="1.5rem"] - spacing value
- * @param {object} [pluginOptions.gridGutters={ 0: 0 }] - gutter spacing variable classes
- * @param {boolean} [pluginOptions.generateContainer=true] - whether the plugin should generate .container class
- * @param {object} [pluginOptions.containerMaxWidths={}] - the `max-width` container value for each breakpoint
- * @param {boolean} [pluginOptions.rtl=false] - whether to enable rtl support
- * @param {boolean} [pluginOptions.respectImportant=true] - whether to respect important config option
- * @returns {*} - Tailwind CSS plugin
- */
 module.exports = plugin.withOptions((pluginOptions) => (options) => {
-  const { addComponents, config, corePlugins } = options;
-  const screens = config('theme.screens');
-  const important = config('important');
+  const { config, addBase, addComponents } = options;
 
-  const {
-    gridColumns,
-    gridGutterWidth,
-    gridGutters,
-    generateContainer,
-    containerMaxWidths,
-    rtl,
-    respectImportant,
-  } = validate({ screens })({
-    gridColumns: 12,
-    gridGutterWidth: '1.5rem',
-    gridGutters: { 0: 0 },
-    generateContainer: true,
-    containerMaxWidths: {},
-    rtl: false,
-    respectImportant: true,
-    ...(pluginOptions ?? {}),
-  });
+  const screens: Record<string, string> = config('theme.screens');
+  const screenKeys = Object.keys(screens).filter(
+    (key) => key !== '__CSS_VALUES__',
+  );
 
-  if (generateContainer && corePlugins('container')) {
-    console.warn(
-      `⚠️  The ${pc.yellow(
-        'container',
-      )} core plugin is enabled and you're also generating ${pc.green(
-        '.container',
-      )} class with the ${pc.bold(
-        'tailwind-bootstrap-grid',
-      )} plugin. This might lead to unexpected styling issues, disable either of one.`,
+  const pluginOptionsSchema = z
+    .object({
+      debug: z.coerce.boolean().default(false),
+      grid_columns: z.coerce.number().int().min(3).default(12),
+      grid_gutter_width: z.coerce.string().default('1.5rem'),
+      grid_gutters: z
+        .array(z.coerce.string())
+        .default(['0', '0'])
+        .refine((value) => value.length % 2 === 0, {
+          message: 'grid_gutters array length must be an even number',
+        })
+        .transform((value) => {
+          const result: Record<string, string> = {};
+          for (let i = 0; i < value.length; i += 2) {
+            result[value[i]!] = value[i + 1]!;
+          }
+          return result;
+        }),
+      generate_container: z.coerce.boolean().default(true),
+      container_max_widths: z
+        .array(z.coerce.string())
+        .default([])
+        .refine((value) => value.length % 2 === 0, {
+          message: 'container_max_widths array length must be an even number',
+        })
+        .transform((value) => {
+          const result: Record<string, string> = {};
+          for (let i = 0; i < value.length; i += 2) {
+            result[value[i]!] = value[i + 1]!;
+          }
+          return result;
+        }),
+      rtl: z.coerce.boolean().default(false),
+    })
+    .default({});
+
+  const parsedPluginOptions = pluginOptionsSchema.safeParse(pluginOptions);
+  if (!parsedPluginOptions.success) {
+    throw new Error(
+      `tailwind-bootstrap-grid options are invalid: ${parsedPluginOptions.error.message}`,
     );
   }
 
-  const screenKeys = Object.keys(screens);
-  const columns = Array.from(Array(gridColumns), (value, index) => index + 1);
-  const rowColsSteps = columns.slice(0, Math.floor(gridColumns / 2));
+  const {
+    debug: _debug,
+    grid_columns,
+    grid_gutter_width,
+    grid_gutters,
+    generate_container,
+    container_max_widths,
+    rtl,
+  } = parsedPluginOptions.data;
 
-  const setImportant = (value: string) =>
-    respectImportant && important && value != null
-      ? `${value} !important`
-      : value;
+  if (_debug) {
+    console.group('tailwind-bootstrap-grid options');
+    console.debug('raw input', pluginOptions);
+    console.debug('final output', parsedPluginOptions.data);
+    console.groupEnd();
+  }
+
+  const columns = Array.from(Array(grid_columns), (_, index) => index + 1);
+  const rowColsSteps = columns.slice(0, Math.floor(grid_columns / 2));
 
   {
     // =============================================================================================
     // Container
     // =============================================================================================
-    if (generateContainer) {
-      addComponents(
-        [
-          {
-            '.container, .container-fluid': {
-              width: setImportant('100%'),
-              marginRight: setImportant('auto'),
-              marginLeft: setImportant('auto'),
-              paddingRight: setImportant(
-                `var(--bs-gutter-x, calc(${gridGutterWidth} / 2))`,
-              ),
-              paddingLeft: setImportant(
-                `var(--bs-gutter-x, calc(${gridGutterWidth} / 2))`,
-              ),
+    if (generate_container) {
+      addBase({
+        ':root': Object.fromEntries(
+          screenKeys.map((name) => [
+            `@media (min-width: ${screens[name]})`,
+            {
+              '--container-max-width':
+                container_max_widths[name] || screens[name]!,
             },
-          },
-          ...screenKeys.map((name) => ({
-            [`@screen ${name}`]: {
-              '.container': {
-                maxWidth: setImportant(
-                  containerMaxWidths[name] || screens[name],
-                ),
-              },
-            },
-          })),
-        ],
-        { respectImportant },
-      );
+          ]),
+        ),
+      });
+      addComponents({
+        '.container, .container-fluid': {
+          maxWidth: 'var(--container-max-width)',
+          width: '100%',
+          marginRight: 'auto',
+          marginLeft: 'auto',
+          paddingRight: `var(--bs-gutter-x, calc(${grid_gutter_width} / 2))`,
+          paddingLeft: `var(--bs-gutter-x, calc(${grid_gutter_width} / 2))`,
+        },
+      });
     }
   }
 
@@ -100,103 +109,97 @@ module.exports = plugin.withOptions((pluginOptions) => (options) => {
     // =============================================================================================
     // Row
     // =============================================================================================
-    addComponents(
-      {
-        '.row': {
-          '--bs-gutter-x': gridGutterWidth,
-          '--bs-gutter-y': '0',
-          display: 'flex',
-          flexWrap: 'wrap',
-          marginTop: 'calc(var(--bs-gutter-y) * -1)',
-          marginRight: 'calc(var(--bs-gutter-x) / -2)',
-          marginLeft: 'calc(var(--bs-gutter-x) / -2)',
-          '& > *': {
-            boxSizing: 'border-box',
-            flexShrink: '0',
-            width: '100%',
-            maxWidth: '100%',
-            paddingRight: 'calc(var(--bs-gutter-x) / 2)',
-            paddingLeft: 'calc(var(--bs-gutter-x) / 2)',
-            marginTop: 'var(--bs-gutter-y)',
-          },
+    addComponents({
+      '.row': {
+        '--bs-gutter-x': grid_gutter_width,
+        '--bs-gutter-y': '0',
+        display: 'flex',
+        flexWrap: 'wrap',
+        marginTop: 'calc(var(--bs-gutter-y) * -1)',
+        marginRight: 'calc(var(--bs-gutter-x) / -2)',
+        marginLeft: 'calc(var(--bs-gutter-x) / -2)',
+        '> *': {
+          boxSizing: 'border-box',
+          flexShrink: '0',
+          width: '100%',
+          maxWidth: '100%',
+          paddingRight: 'calc(var(--bs-gutter-x) / 2)',
+          paddingLeft: 'calc(var(--bs-gutter-x) / 2)',
+          marginTop: 'var(--bs-gutter-y)',
         },
       },
-      { respectImportant },
-    );
+    });
   }
 
   {
     // =============================================================================================
     // Columns
     // =============================================================================================
-    addComponents(
-      [
-        {
-          '.col': {
-            flex: '1 0 0%',
-          },
-          '.row-cols-auto': {
-            '& > *': {
-              flex: '0 0 auto',
-              width: 'auto',
-            },
-          },
+    addComponents([
+      {
+        '.col': {
+          flex: '1 0 0%',
+          width: 'initial', // "hack" to enforce specific css import order, https://github.com/tailwindlabs/tailwindcss/issues/15045#issuecomment-2488114451
+          display: 'initial', // "hack" to enforce specific css import order
         },
-        ...rowColsSteps.map((rowCol) => ({
-          [`.row-cols-${rowCol}`]: {
-            '& > *': {
-              flex: '0 0 auto',
-              width: `${100 / rowCol}%`,
-            },
-          },
-        })),
-        {
-          '.col-auto': {
+        '.row-cols-auto': {
+          '> *': {
             flex: '0 0 auto',
             width: 'auto',
           },
         },
-        ...columns.map((size) => ({
-          [`.col-${size}`]: {
+      },
+      ...rowColsSteps.map((rowCol) => ({
+        [`.row-cols-${rowCol}`]: {
+          '> *': {
             flex: '0 0 auto',
-            width: `${(100 / gridColumns) * size}%`,
+            width: `${100 / rowCol}%`,
+            display: 'initial', // "hack" to enforce specific css import order
           },
-        })),
-      ],
-      { respectImportant },
-    );
+        },
+      })),
+      {
+        '.col-auto': {
+          flex: '0 0 auto',
+          width: 'auto',
+        },
+      },
+      ...columns.map((size) => ({
+        [`.col-${size}`]: {
+          flex: '0 0 auto',
+          width: `${(100 / grid_columns) * size}%`,
+        },
+      })),
+    ]);
   }
 
   {
     // =============================================================================================
     // Offsets
     // =============================================================================================
-    addComponents(
-      [
-        ...[0, ...columns.slice(0, -1)].map((size): CSSRuleObject => {
-          const margin = `${(100 / gridColumns) * size}%`;
-          return rtl
-            ? {
-                [`[dir="ltr"] .offset-${size}`]: { marginLeft: margin },
-                [`[dir="rtl"] .offset-${size}`]: { marginRight: margin },
-              }
-            : {
-                [`.offset-${size}`]: { marginLeft: margin },
-              };
-        }),
-      ],
-      { respectImportant },
-    );
+    addComponents([
+      ...[0, ...columns.slice(0, -1)].map((size): Record<string, CssInJs> => {
+        const margin = `${(100 / grid_columns) * size}%`;
+        return rtl
+          ? {
+              [`[dir="ltr"] .offset-${size}`]: { marginLeft: margin },
+              [`[dir="rtl"] .offset-${size}`]: { marginRight: margin },
+            }
+          : {
+              [`.offset-${size}`]: { marginLeft: margin },
+            };
+      }),
+    ]);
   }
 
   {
     // =============================================================================================
     // Gutters
     // =============================================================================================
-    if (Object.keys(gridGutters).length) {
+    if (Object.keys(grid_gutters).length) {
       addComponents(
-        Object.entries(gridGutters).map(
-          ([key, value]): CSSRuleObject => ({
+        Object.entries(grid_gutters).map(
+          ([key, value]): Record<string, CssInJs> => ({
             [`.g-${key}, .gx-${key}`]: {
               '--bs-gutter-x': value,
             },
@@ -205,7 +208,6 @@ module.exports = plugin.withOptions((pluginOptions) => (options) => {
             },
           }),
         ),
-        { respectImportant },
       );
     }
   }
@@ -214,17 +216,14 @@ module.exports = plugin.withOptions((pluginOptions) => (options) => {
     // =============================================================================================
     // Ordering
     // =============================================================================================
-    addComponents(
-      [
-        {
-          '.order-first': { order: '-1' },
-          '.order-last': { order: `${gridColumns + 1}` },
-        },
-        ...[0, ...columns].map((size) => ({
-          [`.order-${size}`]: { order: `${size}` },
-        })),
-      ],
-      { respectImportant },
-    );
+    addComponents([
+      {
+        '.order-first': { order: '-1' },
+        '.order-last': { order: `${grid_columns + 1}` },
+      },
+      ...[0, ...columns].map((size) => ({
+        [`.order-${size}`]: { order: `${size}` },
+      })),
+    ]);
   }
 });
