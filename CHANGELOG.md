@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.0.0](https://github.com/karolis-sh/tailwind-bootstrap-grid/compare/v5.1.0...v6.0.0) (2025-05-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* **tailwind:** drop tailwind v3 support, change plugin options structure
+
+### Features
+
+* **tailwind:** migrate to tailwind v4 ([d7ad4b7](https://github.com/karolis-sh/tailwind-bootstrap-grid/commit/d7ad4b7bedc03309725a10398ca5bd8fb13c2ebf)), closes [#157](https://github.com/karolis-sh/tailwind-bootstrap-grid/issues/157)
+
 ## [5.1.0](https://github.com/karolis-sh/tailwind-bootstrap-grid/compare/v5.0.1...v5.1.0) (2023-11-25)
 
 
