@@ -1,8 +1,7 @@
 # tailwind-bootstrap-grid
 
-[![npm version][version-badge]][version]
-![Build Status](https://github.com/karolis-sh/tailwind-bootstrap-grid/workflows/Node.js%20CI/badge.svg)
-[![License: MIT][license-badge]][license]
+[![npm version](https://img.shields.io/npm/v/tailwind-bootstrap-grid)](https://www.npmjs.com/package/tailwind-bootstrap-grid)
+![license](https://img.shields.io/npm/l/tailwind-bootstrap-grid)
 
 Bootstrap **v5** flexbox grid system as a Tailwind CSS plugin.
 
@@ -65,20 +64,18 @@ This will generate the Bootstrap v5 flexbox grid.
   - `generate_container` (default - `true`) - whether to generate `.container` and
     `.container-fluid` classes
   - `rtl` (default - `false`) - rtl support (`.offset-x` classes will start
-    responding to `[dir=ltr]` / `[dir=rtl]`)
+    responding to [dir](https://www.w3schools.com/tags/att_global_dir.asp)
+    `[dir=ltr]` / `[dir=rtl]`)
   - `debug` (default - `false`) - enable debug mode
 
-## FAQ
+## Version Compatibility
 
-1. _**How to use rtl css?**_ Set the `ltr` or `rtl` [dir](https://www.w3schools.com/tags/att_global_dir.asp)
-   attribute on your container (usually the root `html`).
-2. _**Is there a Bootstrap v4 grid implementation?**_ Yes, use `tailwind-bootstrap-grid@3`.
+| TailwindCSS | Bootstrap | tailwind-bootstrap-grid |
+| ----------- | --------- | ----------------------- |
+| 3           | 4         | 3                       |
+| 3           | 5         | 5                       |
+| 4           | 5         | 6+                      |
 
 ## Related
 
 [postcss-bootstrap-4-grid](https://github.com/johnwatkins0/postcss-bootstrap-4-grid)
-
-[version-badge]: https://badge.fury.io/js/tailwind-bootstrap-grid.svg
-[version]: https://www.npmjs.com/package/tailwind-bootstrap-grid
-[license-badge]: https://img.shields.io/badge/License-MIT-yellow.svg
-[license]: https://opensource.org/licenses/MIT
