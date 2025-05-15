@@ -2,7 +2,6 @@
   "extends": [
     "plugin:@k.sh/esnext",
     "plugin:@k.sh/node",
-    "plugin:jsdoc/recommended",
     "plugin:@k.sh/prettier"
   ],
   "plugins": [],
