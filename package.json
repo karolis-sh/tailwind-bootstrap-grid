@@ -40,7 +40,8 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.js": "eslint --fix",
+    "*.{ts,js,jsx,mjs}": "eslint --fix",
+    "*.{md,css,json,yml,toml}": "prettier --write",
     "package.json": "sort-package-json"
   },
   "dependencies": {
@@ -60,7 +61,7 @@
     "eslint": "^8.55.0",
     "eslint-plugin-jsdoc": "^46.9.0",
     "husky": "^9.1.7",
-    "lint-staged": "^15.5.0",
+    "lint-staged": "^16.0.0",
     "markdownlint-cli2": "^0.17.2",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.5.3",
