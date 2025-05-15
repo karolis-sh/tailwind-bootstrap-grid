@@ -53,8 +53,8 @@
     "@k.sh/eslint-plugin": "^0.9.1",
     "@k.sh/prettier-config": "^0.5.0",
     "@mdx-js/rollup": "^3.1.0",
-    "@tailwindcss/postcss": "^4.1.6",
-    "@types/node": "^22.14.0",
+    "@tailwindcss/postcss": "^4.1.7",
+    "@types/node": "^22.15.18",
     "@vitejs/plugin-react": "^4.4.1",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
@@ -72,8 +72,8 @@
     "serve": "^14.2.4",
     "sort-package-json": "^3.0.0",
     "standard-version": "^9.5.0",
-    "tailwindcss": "^4.1.6",
-    "typescript": "^5.8.2",
+    "tailwindcss": "^4.1.7",
+    "typescript": "^5.8.3",
     "vite": "^6.3.5"
   },
   "peerDependencies": {
