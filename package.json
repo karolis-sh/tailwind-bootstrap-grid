@@ -36,7 +36,7 @@
     "qa": "npm run lint",
     "release": "npm i && run-s clean build qa && standard-version --no-verify && git push --follow-tags --no-verify && npm publish",
     "dev": "cd demo && vite",
-    "try-demo": "run-s clean build:demo && serve build",
+    "try-demo": "run-s clean build && serve build",
     "prepare": "husky"
   },
   "lint-staged": {
@@ -84,6 +84,6 @@
     "node": ">= 12.0.0"
   },
   "volta": {
-    "node": "20.9.0"
+    "node": "24.0.2"
   }
 }
