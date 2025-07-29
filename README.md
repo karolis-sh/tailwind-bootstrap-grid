@@ -1,3 +1,35 @@
+
+<div align="right">
+  <details>
+    <summary >🌐 Language</summary>
+    <div>
+      <div align="center">
+        <a href="https://openaitx.github.io/view.html?user=karolis-sh&project=tailwind-bootstrap-grid&lang=en">English</a>
+        | <a href="https://openaitx.github.io/view.html?user=karolis-sh&project=tailwind-bootstrap-grid&lang=zh-CN">简体中文</a>
+        | <a href="https://openaitx.github.io/view.html?user=karolis-sh&project=tailwind-bootstrap-grid&lang=zh-TW">繁體中文</a>
+        | <a href="https://openaitx.github.io/view.html?user=karolis-sh&project=tailwind-bootstrap-grid&lang=ja">日本語</a>
+        | <a href="https://openaitx.github.io/view.html?user=karolis-sh&project=tailwind-bootstrap-grid&lang=ko">한국어</a>
+        | <a href="https://openaitx.github.io/view.html?user=karolis-sh&project=tailwind-bootstrap-grid&lang=hi">हिन्दी</a>
+        | <a href="https://openaitx.github.io/view.html?user=karolis-sh&project=tailwind-bootstrap-grid&lang=th">ไทย</a>
+        | <a href="https://openaitx.github.io/view.html?user=karolis-sh&project=tailwind-bootstrap-grid&lang=fr">Français</a>
+        | <a href="https://openaitx.github.io/view.html?user=karolis-sh&project=tailwind-bootstrap-grid&lang=de">Deutsch</a>
+        | <a href="https://openaitx.github.io/view.html?user=karolis-sh&project=tailwind-bootstrap-grid&lang=es">Español</a>
+        | <a href="https://openaitx.github.io/view.html?user=karolis-sh&project=tailwind-bootstrap-grid&lang=it">Italiano</a>
+        | <a href="https://openaitx.github.io/view.html?user=karolis-sh&project=tailwind-bootstrap-grid&lang=ru">Русский</a>
+        | <a href="https://openaitx.github.io/view.html?user=karolis-sh&project=tailwind-bootstrap-grid&lang=pt">Português</a>
+        | <a href="https://openaitx.github.io/view.html?user=karolis-sh&project=tailwind-bootstrap-grid&lang=nl">Nederlands</a>
+        | <a href="https://openaitx.github.io/view.html?user=karolis-sh&project=tailwind-bootstrap-grid&lang=pl">Polski</a>
+        | <a href="https://openaitx.github.io/view.html?user=karolis-sh&project=tailwind-bootstrap-grid&lang=ar">العربية</a>
+        | <a href="https://openaitx.github.io/view.html?user=karolis-sh&project=tailwind-bootstrap-grid&lang=fa">فارسی</a>
+        | <a href="https://openaitx.github.io/view.html?user=karolis-sh&project=tailwind-bootstrap-grid&lang=tr">Türkçe</a>
+        | <a href="https://openaitx.github.io/view.html?user=karolis-sh&project=tailwind-bootstrap-grid&lang=vi">Tiếng Việt</a>
+        | <a href="https://openaitx.github.io/view.html?user=karolis-sh&project=tailwind-bootstrap-grid&lang=id">Bahasa Indonesia</a>
+        | <a href="https://openaitx.github.io/view.html?user=karolis-sh&project=tailwind-bootstrap-grid&lang=as">অসমীয়া</
+      </div>
+    </div>
+  </details>
+</div>
+
 # tailwind-bootstrap-grid
 
 [![npm version](https://img.shields.io/npm/v/tailwind-bootstrap-grid)](https://www.npmjs.com/package/tailwind-bootstrap-grid)
