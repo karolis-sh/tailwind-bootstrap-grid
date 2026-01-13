@@ -1,3 +1,8 @@
+// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable node/no-missing-import */
+// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable node/no-unsupported-features/es-syntax */
+
 import plugin from 'tailwindcss/plugin';
 import { z } from 'zod';
 

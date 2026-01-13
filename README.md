@@ -52,7 +52,6 @@ This will generate the Bootstrap v5 flexbox grid.
 ## Options
 
 - Original Bootstrap grid's options:
-
   - `grid_columns` (default - `12`) - grid size
   - `grid_gutter_width` (default - `"1.5rem"`) - container and rows gutter width
   - `grid_gutters` (default - `[0, 0]`) - gutter variable class steps

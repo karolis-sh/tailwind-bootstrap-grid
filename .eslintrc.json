@@ -2,7 +2,8 @@
   "extends": [
     "plugin:@k.sh/esnext",
     "plugin:@k.sh/node",
-    "plugin:@k.sh/prettier"
+    "plugin:@k.sh/prettier",
+    "plugin:@k.sh/typescript"
   ],
   "plugins": [],
   "env": {}
