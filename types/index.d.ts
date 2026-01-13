@@ -8,7 +8,6 @@ declare module 'tailwind-bootstrap-grid' {
     grid_gutters?: string[];
     generate_container?: boolean;
     container_max_widths?: string[];
-    rtl?: boolean;
   }
 
   function tailwindBootstrapGrid(

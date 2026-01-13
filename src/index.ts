@@ -50,7 +50,6 @@ module.exports = plugin.withOptions((pluginOptions) => (options) => {
           }
           return result;
         }),
-      rtl: z.coerce.boolean().default(false),
     })
     .default({});
 
@@ -68,7 +67,6 @@ module.exports = plugin.withOptions((pluginOptions) => (options) => {
     grid_gutters,
     generate_container,
     container_max_widths,
-    rtl,
   } = parsedPluginOptions.data;
 
   if (_debug) {
@@ -101,10 +99,8 @@ module.exports = plugin.withOptions((pluginOptions) => (options) => {
         '.container, .container-fluid': {
           maxWidth: 'var(--container-max-width)',
           width: '100%',
-          marginRight: 'auto',
-          marginLeft: 'auto',
-          paddingRight: `var(--bs-gutter-x, calc(${grid_gutter_width} / 2))`,
-          paddingLeft: `var(--bs-gutter-x, calc(${grid_gutter_width} / 2))`,
+          marginInline: 'auto',
+          paddingInline: `var(--bs-gutter-x, calc(${grid_gutter_width} / 2))`,
         },
       });
     }
@@ -121,15 +117,13 @@ module.exports = plugin.withOptions((pluginOptions) => (options) => {
         display: 'flex',
         flexWrap: 'wrap',
         marginTop: 'calc(var(--bs-gutter-y) * -1)',
-        marginRight: 'calc(var(--bs-gutter-x) / -2)',
-        marginLeft: 'calc(var(--bs-gutter-x) / -2)',
+        marginInline: 'calc(var(--bs-gutter-x) / -2)',
         '> *': {
           boxSizing: 'border-box',
           flexShrink: '0',
           width: '100%',
           maxWidth: '100%',
-          paddingRight: 'calc(var(--bs-gutter-x) / 2)',
-          paddingLeft: 'calc(var(--bs-gutter-x) / 2)',
+          paddingInline: 'calc(var(--bs-gutter-x) / 2)',
           marginTop: 'var(--bs-gutter-y)',
         },
       },
@@ -183,17 +177,11 @@ module.exports = plugin.withOptions((pluginOptions) => (options) => {
     // Offsets
     // =============================================================================================
     addComponents([
-      ...[0, ...columns.slice(0, -1)].map((size): Record<string, CssInJs> => {
-        const margin = `${(100 / grid_columns) * size}%`;
-        return rtl
-          ? {
-              [`[dir="ltr"] .offset-${size}`]: { marginLeft: margin },
-              [`[dir="rtl"] .offset-${size}`]: { marginRight: margin },
-            }
-          : {
-              [`.offset-${size}`]: { marginLeft: margin },
-            };
-      }),
+      ...[0, ...columns.slice(0, -1)].map((size) => ({
+        [`.offset-${size}`]: {
+          marginInlineStart: `${(100 / grid_columns) * size}%`,
+        },
+      })),
     ]);
   }
 
