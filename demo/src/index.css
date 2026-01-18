@@ -2,7 +2,6 @@
 /* @config '../tailwind.config.js'; */
 
 @plugin '../../lib' {
-  rtl: true;
   grid_columns: 12;
   grid_gutter_width: '1.5rem';
   generate_container: true;

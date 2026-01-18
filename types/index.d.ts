@@ -1,4 +1,5 @@
 declare module 'tailwind-bootstrap-grid' {
+  // eslint-disable-next-line node/no-unsupported-features/es-syntax, import/no-unresolved, node/no-missing-import
   import { PluginCreator } from 'tailwindcss/types/config';
 
   interface TailwindBootstrapGridOptions {
@@ -7,7 +8,6 @@ declare module 'tailwind-bootstrap-grid' {
     grid_gutters?: string[];
     generate_container?: boolean;
     container_max_widths?: string[];
-    rtl?: boolean;
   }
 
   function tailwindBootstrapGrid(
