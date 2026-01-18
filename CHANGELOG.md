@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.0.0](https://github.com/karolis-sh/tailwind-bootstrap-grid/compare/v6.0.0...v7.0.0) (2026-01-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* Removed `rtl` option - RTL is now automatic.
+
+### Features
+
+* replace physical properties with CSS logical properties ([7bdf231](https://github.com/karolis-sh/tailwind-bootstrap-grid/commit/7bdf2311e84fbb586d1e9172081639bc28e8738b))
+
 ## [6.0.0](https://github.com/karolis-sh/tailwind-bootstrap-grid/compare/v5.1.0...v6.0.0) (2025-05-14)
 
 
